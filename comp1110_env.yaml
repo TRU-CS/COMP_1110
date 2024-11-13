@@ -1,0 +1,15 @@
+# install with conda env create -f comp1110_env.yaml
+
+name: comp1110
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python
+  - ipykernel
+  - pandas
+  - numpy
+  - matplotlib
+  - pip
+  - pip:
+    - otter-grader
