@@ -22,6 +22,7 @@ To get started with the assignments and projects in this repository, follow thes
    git clone https://github.com/your-username/COMP_1110.git
 2. **Set up conda environment (Do this once)**:
    ```bash
+   cd COMP_1110
    conda env create -f comp1110_env.yaml
 3. **Activate conda environment**:
    ```bash
