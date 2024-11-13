@@ -6,6 +6,8 @@ Welcome to the COMP_1110 repository! This repository contains the assignments an
 
 - **Assignments**: Imported assignments that need to be converted to autograder
 - **Seminars**: Imported assignments that need  to be converted to autograder
+- **source**: A folder that contains all the assignment solutions
+- **release**: A folder that contains the students' version (without solutions), and the autograder zip file to be uploaded on Gradescope.
 
 ## Generating autograded assignemnts
 
@@ -37,6 +39,6 @@ Replace the path and folder's name as appropriate. In this example, I run the co
     - There are two type of test cells: 
       - **visible** tests where students can see it directly in their notebook, and  
       - **hidden** tests where students cannot see it and it will only apply after they submit their work to Gradescope
-
+    - Distribute work to students: Everything in the `release/template/student` folder including data, img, and the ipynb files will need to be shared with the students.
 7. **Upload the autograder zip file to Gradescope**
     - Under `release/template/autograder` folder, you will see a `.zip` file which contains the autograder. Please upload them to Gradescope
