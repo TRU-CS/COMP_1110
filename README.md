@@ -2,6 +2,10 @@
 
 Welcome to the COMP_1110 repository! This repository contains the assignments and projects for the COMP_1110 course. The course focuses on fundamental concepts in computer science and programming, providing students with hands-on experience through various assignments and projects.
 
+## Documentations:
+- [Otter-grader](https://otter-grader.readthedocs.io/en/latest/otter_assign/notebook_format.html). This is a library to generate autograder zip file from a jupyter notebook.
+- [Gradescope](https://gradescope-autograders.readthedocs.io/en/latest/specs/). This is a platform to host the autograder and run autotest againsts students submissions
+
 ## Contents
 
 - **Assignments**: Imported assignments that need to be converted to autograder
