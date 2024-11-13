@@ -26,6 +26,17 @@ To get started with the assignments and projects in this repository, follow thes
    - `img` folder is where you can save images that you want students to use in the assignment
    - `requirements.text` is where you can specify libraries that students need in this assignments, these libraries will be installed on Gradescope's Docker image
 5. **Generate student's version and autograder zip files**:
-Replace the path and folder's name as appropriate. In this example, I run the command `otter assign` by retrieving the file from `source/template/template.ipynb` and the results will be exported to `release/template` folder
    ```bash
    otter assign source/template/template.ipynb release/template
+
+Replace the path and folder's name as appropriate. In this example, I run the command `otter assign` by retrieving the file from `source/template/template.ipynb` and the results will be exported to `release/template` folder
+
+6. **Check your student version**:
+    - You will be able to see the student's version under `release/template/student/template.ipynb`. Open this and make sure no solutions were included here
+    - You can even type some answers and run the auto test cells to see if it works
+    - There are two type of test cells: 
+      - **visible** tests where students can see it directly in their notebook, and  
+      - **hidden** tests where students cannot see it and it will only apply after they submit their work to Gradescope
+
+7. **Upload the autograder zip file to Gradescope**
+    - Under `release/template/autograder` folder, you will see a `.zip` file which contains the autograder. Please upload them to Gradescope
