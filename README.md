@@ -31,12 +31,7 @@ To get started with the assignments and projects in this repository, follow thes
 
 Now you have two options to generate autograded assignments depending on which format you use (jupyter notebook or python script)
 
-<style>
-summary {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-</style>
+
 
 <details>
 <summary>Option 1: Jupyter Notebook</summary>
@@ -64,13 +59,6 @@ Replace the path and folder's name as appropriate. In this example, I run the co
     - Under `release/template/autograder` folder, you will see a `.zip` file which contains the autograder. Please upload them to Gradescope
 </details>
 
-
-<style>
-summary {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-</style>
 
 <details>
 <summary>Option 2: Python scripts</summary>
