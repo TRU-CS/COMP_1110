@@ -12,6 +12,7 @@ Welcome to the COMP_1110 repository! This repository contains the assignments an
 - **Seminars**: Imported assignments that need  to be converted to autograder
 - **source**: A folder that contains all the assignment solutions
 - **release**: A folder that contains the students' version (without solutions), and the autograder zip file to be uploaded on Gradescope.
+- **autograder**: ????
 
 ## Generating autograded assignemnts
 
@@ -27,6 +28,20 @@ To get started with the assignments and projects in this repository, follow thes
 3. **Activate conda environment**:
    ```bash
    conda activate comp1110
+
+Now you have two options to generate autograded assignments depending on which format you use (jupyter notebook or python script)
+
+<style>
+summary {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+</style>
+
+<details>
+<summary>Option 1: Jupyter Notebook</summary>
+<br>
+
 4. **Create your assignment using the template in `source/template` folder**:
    - `template.ipynb` is a Jupyter notebook that instructor used to create the assignment
    - `data` folder is where you can save datasets that you want students to use in the assignment
@@ -47,3 +62,20 @@ Replace the path and folder's name as appropriate. In this example, I run the co
     - Distribute work to students: Everything in the `release/template/student` folder including data, img, and the ipynb files will need to be shared with the students.
 7. **Upload the autograder zip file to Gradescope**
     - Under `release/template/autograder` folder, you will see a `.zip` file which contains the autograder. Please upload them to Gradescope
+</details>
+
+
+<style>
+summary {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+</style>
+
+<details>
+<summary>Option 2: Python scripts</summary>
+<br>
+
+Insert here
+
+</details>
