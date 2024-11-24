@@ -66,7 +66,7 @@ def python_quiz_application():
             print(f"Invalid choice. The correct answer was: {correct_answer}")
 
     # Display final result
-    print(f"\nQuiz completed! {player_name}, your final score is: {calculate_result}/{len(questions)}")
+    print(f"Quiz completed! {player_name}, your final score is: {calculate_result}/{len(questions)}")
 
 if __name__=='__main__':
     # Run the quiz application
