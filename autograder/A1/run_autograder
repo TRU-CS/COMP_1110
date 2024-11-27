@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Copy the `questions` folder from the submission to the source directory for testing
-cp -r /autograder/submission/questions /autograder/source/questions
+cp -r /autograder/submission/* /autograder/source/*
 
 # Navigate to the source directory
 cd /autograder/source

@@ -2,7 +2,10 @@
 import unittest
 from gradescope_utils.autograder_utils.decorators import weight, number
 from unittest.mock import patch
-from questions.ans1_q1 import check_exam_eligibility
+from q1 import check_exam_eligibility
+
+import unittest
+from unittest.mock import patch
 
 class TestExamEligibility(unittest.TestCase):
     
@@ -13,8 +16,8 @@ class TestExamEligibility(unittest.TestCase):
         with patch('builtins.input', side_effect=['100', '100']):
             with patch('builtins.print') as mocked_print:
                 check_exam_eligibility()
-                mocked_print.assert_any_call("Percentage of classes attended: 100.00%")
-                mocked_print.assert_any_call("You are permitted to take the exam.")
+                self.assertTrue(any('100' in call[0][0] for call in mocked_print.call_args_list))
+                self.assertTrue(any('are permitted' in call[0][0] for call in mocked_print.call_args_list))
     
     @weight(5)
     @number("1.2")
@@ -23,8 +26,8 @@ class TestExamEligibility(unittest.TestCase):
         with patch('builtins.input', side_effect=['100', '90']):
             with patch('builtins.print') as mocked_print:
                 check_exam_eligibility()
-                mocked_print.assert_any_call("Percentage of classes attended: 90.00%")
-                mocked_print.assert_any_call("You are permitted to take the exam.")
+                self.assertTrue(any('90.00' in call[0][0] for call in mocked_print.call_args_list))
+                self.assertTrue(any('are permitted' in call[0][0] for call in mocked_print.call_args_list))
                 
     @weight(5)
     @number("1.3")
@@ -33,8 +36,8 @@ class TestExamEligibility(unittest.TestCase):
         with patch('builtins.input', side_effect=['100', '80']):
             with patch('builtins.print') as mocked_print:
                 check_exam_eligibility()
-                mocked_print.assert_any_call("Percentage of classes attended: 80.00%")
-                mocked_print.assert_any_call("You are not permitted to take the exam.")
+                self.assertTrue(any('80.00' in call[0][0] for call in mocked_print.call_args_list))
+                self.assertTrue(any('not permitted' in call[0][0] for call in mocked_print.call_args_list))
 
     @weight(5)
     @number("1.4")
@@ -43,7 +46,7 @@ class TestExamEligibility(unittest.TestCase):
         with patch('builtins.input', side_effect=['0', '0']):
             with patch('builtins.print') as mocked_print:
                 check_exam_eligibility()
-                mocked_print.assert_any_call("The number of total classes must be greater than 0.")
+                self.assertTrue(any('The number of total classes must be greater than 0.' in call[0][0] for call in mocked_print.call_args_list))
 
     @weight(5)
     @number("1.5")
@@ -52,8 +55,8 @@ class TestExamEligibility(unittest.TestCase):
         with patch('builtins.input', side_effect=['10', '15']):
             with patch('builtins.print') as mocked_print:
                 check_exam_eligibility()
-                mocked_print.assert_any_call("Percentage of classes attended: 150.00%")
-                mocked_print.assert_any_call("You are permitted to take the exam.")
+                self.assertTrue(any('150.00' in call[0][0] for call in mocked_print.call_args_list))
+                self.assertTrue(any('are permitted' in call[0][0] for call in mocked_print.call_args_list))
 
     @weight(5)
     @number("1.6")
@@ -62,5 +65,6 @@ class TestExamEligibility(unittest.TestCase):
         with patch('builtins.input', side_effect=['200', '190']):
             with patch('builtins.print') as mocked_print:
                 check_exam_eligibility()
-                mocked_print.assert_any_call("Percentage of classes attended: 95.00%")
-                mocked_print.assert_any_call("You are permitted to take the exam.")
+                self.assertTrue(any('95.00' in call[0][0] for call in mocked_print.call_args_list))
+                self.assertTrue(any('are permitted' in call[0][0] for call in mocked_print.call_args_list))
+

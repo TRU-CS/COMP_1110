@@ -27,6 +27,9 @@ If the user inputs `total_classes = 50` and `classes_attended = 40`, the output 
 Percentage of classes attended: 80.00%
 You are not permitted to take the exam.
 ```
+**Edge cases**
+
+When user inputs the total number of classes less or equal than 0, the program should also print out a meaningful message "The number of total classes must be greater than 0." 
 
 ---
 
@@ -50,6 +53,9 @@ If the user inputs `45`, the output should be:
 ```
 45 is not a three-digit number.
 ```
+**Edge cases**
+
+When user inputs non-valid input such as a string instead of a number, the program should catch the `ValueError` exceptions and print out a meaningful message "Invalid input. Please enter a valid integer."
 
 ---
 
@@ -94,3 +100,127 @@ The final output should display:
 Player: Alex 
 Your total score is: 4 out of 5
 ```
+**Do NOT change the order of the questions**
+
+### Easy Questions
+1. What is the capital of France?
+
+a) Paris
+b) London
+c) Rome
+d) Berlin
+> Answer: a
+
+2. What color are bananas?
+
+a) Red
+b) Yellow
+c) Green
+d) Blue
+> Answer: b
+
+3. 2 + 2 = ?
+
+a) 3
+b) 5
+c) 1
+d) 4
+> Answer: d
+
+4. Which planet is known as the Red Planet?
+
+a) Mars
+b) Venus
+c) Earth
+d) Jupiter
+> Answer: a
+
+5. How many days are there in a week?
+
+a) 5
+b) 6
+c) 7
+d) 8
+> Answer: c
+
+### Average Questions
+1. What is the capital of Canada?
+
+a) Vancouver
+b) Montreal
+c) Ottawa
+d) Toronto
+> Answer: c
+
+2. Which is the largest ocean on Earth?
+
+a) Indian
+b) Pacific
+c) Atlantic
+d) Arctic
+> Answer: b
+
+3. Which element has the atomic number 1?
+
+a) Hydrogen
+b) Oxygen
+c) Helium
+d) Carbon
+> Answer: a
+
+4. How many continents are there?
+
+a) 5
+b) 6
+c) 7
+d) 8
+> Answer: c
+
+5. Who wrote 'Hamlet'?
+
+a) Shakespeare
+b) Tolstoy
+c) Hemingway
+d) Dickens
+> Answer: a
+
+### Hard Questions
+1. What is the square root of 144?
+
+a) 10
+b) 11
+c) 12
+d) 13
+> Answer: c
+
+2. What is 10^3?
+
+a) 1000
+b) 100
+c) 10
+d) 10000
+> Answer: a
+
+3. In which year did World War I begin?
+
+a) 1923
+b) 1914
+c) 1900
+d) 1939
+> Answer: b
+
+4. What is the boiling point of water in Celsius?
+
+a) 0
+b) 50
+c) 100
+d) 212
+> Answer: c
+
+5. What is the derivative of x^2?
+
+a) x
+b) 2x
+c) x^2
+d) x^3
+> Answer: b

@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch
 from io import StringIO
-from questions.ans1_q3 import python_quiz_application  
+from q3 import python_quiz_application  
 from gradescope_utils.autograder_utils.decorators import weight, number
 
 class TestPythonQuizApplication(unittest.TestCase):
