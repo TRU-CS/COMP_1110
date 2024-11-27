@@ -7,7 +7,7 @@ from gradescope_utils.autograder_utils.decorators import weight, number
 class TestPythonQuizApplication(unittest.TestCase):
 
     @weight(5)
-    @number("4.1")
+    @number("3.1")
     def test_easy_level_mixed_answers(self):
         """Test Case 1: Easy level with a mix of correct and incorrect answers."""
         inputs = [
@@ -34,7 +34,7 @@ class TestPythonQuizApplication(unittest.TestCase):
             self.assertEqual(invalid_choice_count, 2)
 
     @weight(5)
-    @number("4.2")
+    @number("3.2")
     def test_average_level_all_correct(self):
         """Test Case 2: Average level with all correct answers."""
         inputs = [
@@ -57,7 +57,7 @@ class TestPythonQuizApplication(unittest.TestCase):
             self.assertEqual(correct_count, 5)
 
     @weight(5)
-    @number("4.3")
+    @number("3.3")
     def test_hard_level_all_incorrect(self):
         """Test Case 3: Hard level with all incorrect answers."""
         inputs = [
@@ -84,7 +84,7 @@ class TestPythonQuizApplication(unittest.TestCase):
             self.assertEqual(invalid_choice_count, 5)
 
     @weight(5)
-    @number("4.4")
+    @number("3.4")
     def test_invalid_level_choice(self):
         """Test Case 4: Invalid level choice."""
         inputs = ["Dave", "4"]  # Invalid level
@@ -96,7 +96,7 @@ class TestPythonQuizApplication(unittest.TestCase):
             self.assertIn("Invalid choice. Exiting the quiz.", output)
 
     @weight(5)
-    @number("4.5")
+    @number("3.5")
     def test_no_questions_answered(self):
         """Test Case 5: No questions answered due to exiting on invalid level."""
         inputs = ["Eve", "0"]  # Invalid level input

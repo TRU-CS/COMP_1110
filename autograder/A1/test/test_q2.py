@@ -10,7 +10,7 @@ class TestCheckThreeDigit(unittest.TestCase):
 
 
     @weight(5)
-    @number("1.1")
+    @number("2.1")
     def test_three_digit_number(self):
         """Test Case 1: Input is a three-digit number."""
         with patch('builtins.input', side_effect=['123']):
@@ -21,7 +21,7 @@ class TestCheckThreeDigit(unittest.TestCase):
                 self.assertTrue(any("is a" in line for line in output))
 
     @weight(5)
-    @number("1.2")
+    @number("2.2")
     def test_not_three_digit_number(self):
         """Test Case 2: Input is not a three-digit number."""
         with patch('builtins.input', side_effect=['45']):
@@ -32,7 +32,7 @@ class TestCheckThreeDigit(unittest.TestCase):
                 self.assertTrue(any("not " in line for line in output))
 
     @weight(5)
-    @number("1.3")
+    @number("2.3")
     def test_negative_three_digit_number(self):
         """Test Case 3: Input is a negative three-digit number."""
         with patch('builtins.input', side_effect=['-456']):
@@ -43,7 +43,7 @@ class TestCheckThreeDigit(unittest.TestCase):
                 self.assertTrue(any("is a" in line for line in output))
 
     @weight(5)
-    @number("1.4")
+    @number("2.4")
     def test_not_three_digit_negative_number(self):
         """Test Case 4: Input is not a three-digit number (negative)."""
         with patch('builtins.input', side_effect=['-23']):
@@ -54,7 +54,7 @@ class TestCheckThreeDigit(unittest.TestCase):
                 self.assertTrue(any("not " in line for line in output))
 
     @weight(5)
-    @number("1.5")
+    @number("2.5")
     def test_invalid_input(self):
         """Test Case 5: Input is not a valid integer."""
         with patch('builtins.input', side_effect=['abc']):
