@@ -4,8 +4,3 @@
 
 def python_quiz_application():
     # YOUR CODE HERE
-    return None
-
-if __name__=='__main__':
-    # Run the quiz application
-    python_quiz_application()
