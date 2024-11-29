@@ -1,159 +1,40 @@
+# Gradescope Autograder
 
-# Python Programming Exercises - Assignment 2
-
-A folder and directory strucutre has been provided to you. Add your code into the template files. 
-Do not change the directory strucutre   
-
-## Exercise 1: Write a Python program to convert a distance from kilometers to miles.
-**Object Name:**  
-
-**Input:**  
-The program should contain a function called `convert_to_miles` that performs the following:  
-1. Prompts the user to enter a distance in kilometers (`distance_km`).
-
-**Expected Output:**  
-The program should:  
-1. Convert the input distance from kilometers to miles using the formula:  
-   `Miles = Kilometers × 0.6214`
-2. Display the converted distance in miles, formatted to two decimal places.
-
-For example:  
-If the user inputs `distance_km = 10`, the output should be:
-
-10 kilometers is equal to 6.21 miles.
-
-
-## Exercise 2: Write a Python program to create a simple math quiz with addition problems.
-**Object Name:**  
-
-**Input:**  
-The program should contain a function called `math_quiz` that performs the following:  
-1. Generates two random integers (`num1` and `num2`) for the quiz.  
-2. Displays the addition problem in the format:
- ```
-       num1
-    +  num2
-    --------
- ```
-
-3. Prompts the user to input their answer to the problem.
-
-**Expected Output:**  
-The program should:  
-1. Check if the user's answer is correct.  
-2. If the answer is correct, display a congratulatory message (e.g., `Correct! Great job!`).  
-3. If the answer is incorrect, display the correct answer in a message (e.g., `Incorrect. The correct answer is 469.`).
+This repository contains all the necessary files to create and test a Gradescope autograder. Follow the instructions below to set up, test, and deploy the autograder for evaluating student submissions.
 
 ---
 
-## Exercise 3: Write a Python program to guess a user's personality type based on their answers to three yes/no questions.
-**Object Name:**  
+## Repository Structure
 
-**Input:**  
-The program should contain a function called `who_am_i` that performs the following:  
-1. Asks the user three yes/no questions:  
-``` 
-   - "Do you like being around a lot of people?"  
-   - "Do you enjoy trying new things?"  
-   - "Do you prefer to plan things out?"
-```
+Here’s a brief overview of the files and their purpose:
 
-**Expected Output:**  
-The program should:  
-1. Evaluate the user's responses (yes or no) to the three questions.  
-2. Based on the responses, output one of the following messages:  
-   - If all answers are yes, print: `You are adventurous and outgoing!`  
-   - If all answers are no, print: `You are thoughtful and reserved.`  
-   - If the answers are a mix of yes and no, print: `You have a balanced personality.`
+- **`setup.sh`**: A shell script to configure the environment (e.g., installing dependencies) for the autograder.
+- **`requirements.txt`**: Lists Python packages required by the autograder, which will be installed during setup.
+- **`test`**: A folder containing all test cases written using the `unittest` framework. These test cases are organized to evaluate submissions for correctness, efficiency, and edge-case handling.
+- **`run_tests.py`**: A script to locally test the autograder. Use this to verify the behavior of your test cases before uploading to Gradescope.
+- **`run_autograder`**: The main entry point for the autograder on Gradescope. Gradescope executes this script to grade student submissions.
+- **`README.md`**: This file. Provides documentation for setting up and using the autograder.
+- **`autograder.zip`**: A ready-to-upload archive containing all the required files for deploying the autograder on Gradescope (excluding the `solutions` folder).
+- **`solutions`**: A folder containing the solutions
+- **`student`**: A folder containing the template scripts and assignment instructions in `README.md`
+---
 
-For example:  
-If the user answers:
+## Setting Up the Autograder
 
-```
-Do you like being around a lot of people? Yes  
-Do you enjoy trying new things? No  
-Do you prefer to plan things out? Yes
+To create and upload the autograder to Gradescope:
 
-The output should be:
+1. Ensure all the required files are in place (as listed above).
+2. Create a ZIP file of all the necessary files for Gradescope. The ZIP file should **include all files and folders except the `solutions` & `student` folders**.
+   - The provided `autograder.zip` already contains the correct configuration.
+3. Upload the `autograder.zip` file to Gradescope under the "Autograder" section of the assignment setup.
 
-You have a balanced personality.
-```
+---
 
+## Testing the Autograder 
 
+1. Upload the python scripts in the `solutions` folder to the assignment on Gradescope
+2. It should pass all the tests
 
-
-## Exercise 4: Write a Python program to implement the FizzBuzz game for numbers from 1 to 20.
-**Object Name:**  
-
-**Input:**  
-The program should contain a function called `fizz_buzz` that performs the following:  
-1. Iterates through numbers from 1 to 20.
-
-**Expected Output:**  
-The program should:  
-1. Print `Fizz` for numbers that are multiples of 3.  
-2. Print `Buzz` for numbers that are multiples of 5.  
-3. Print `FizzBuzz` for numbers that are multiples of both 3 and 5.  
-4. Print the number itself if it is not a multiple of 3 or 5.
-
-For example:  
-The output should be:
-```
-1  
-2  
-Fizz  
-4  
-Buzz  
-Fizz  
-7  
-8  
-Fizz  
-Buzz  
-11  
-Fizz  
-13  
-14  
-FizzBuzz  
-16  
-17  
-Fizz  
-19  
-Buzz
-```
-
-## Exercise 5: Write a Python program to find the smallest and largest numbers from user input.
-**Object Name:**  
-
-**Input:**  
-The program should contain a function called `find_min_max` that performs the following:  
-1. Prompts the user to enter numbers one by one.  
-2. Stops taking input when the user enters `0`.
-
-**Expected Output:**  
-The program should:  
-1. Ignore the input `0` when finding the smallest and largest numbers.  
-2. Display the smallest and largest numbers from the entered values.  
-3. If no numbers are entered (other than 0), display the exact appropriate message of `No numbers were entered.`.
-
-For example:  
-If the user inputs:
-
-```
-Enter a number: 5  
-Enter a number: 2  
-Enter a number: 9  
-Enter a number: 0
-
-The output should be:
-
-Smallest number: 2  
-Largest number: 9
-```
-
-If the user inputs `0` as the first number, the output should be:
-
-```
-No numbers were entered.
-```
-
-
+## Assignment distribution
+1. Upload everything in the `student` folder to Moodle and students will download and work on the file locally.
+2. Alternatively, use Github classroom to streamline the assignment distribution process so each student will can their own github repo that contains the assignment tempalte
