@@ -1,6 +1,4 @@
-Here is your complete README file in markdown format:
 
-```markdown
 # Python Programming Exercises - Assignment 2
 
 ## Exercise 1: Write a Python program to convert a distance from kilometers to miles.
@@ -154,5 +152,4 @@ If the user inputs `0` as the first number, the output should be:
 
 No numbers were entered.
 
-```
 
