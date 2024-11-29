@@ -29,10 +29,11 @@ Write a program called `Asn2_q2.py`.
 The program should contain a function called `math_quiz` that performs the following:  
 1. Generates two random integers (`num1` and `num2`) for the quiz.  
 2. Displays the addition problem in the format:
-
+ ```
        num1
     +  num2
     --------
+ ```
 
 3. Prompts the user to input their answer to the problem.
 
@@ -51,9 +52,11 @@ Write a program called `Asn2_q3.py`.
 **Input:**  
 The program should contain a function called `who_am_i` that performs the following:  
 1. Asks the user three yes/no questions:  
+``` 
    - "Do you like being around a lot of people?"  
    - "Do you enjoy trying new things?"  
    - "Do you prefer to plan things out?"
+```
 
 **Expected Output:**  
 The program should:  
@@ -66,6 +69,7 @@ The program should:
 For example:  
 If the user answers:
 
+```
 Do you like being around a lot of people? Yes  
 Do you enjoy trying new things? No  
 Do you prefer to plan things out? Yes
@@ -73,6 +77,7 @@ Do you prefer to plan things out? Yes
 The output should be:
 
 You have a balanced personality.
+```
 
 
 
@@ -94,7 +99,7 @@ The program should:
 
 For example:  
 The output should be:
-
+```
 1  
 2  
 Fizz  
@@ -115,9 +120,7 @@ FizzBuzz
 Fizz  
 19  
 Buzz
-
-
-
+```
 
 ## Exercise 5: Write a Python program to find the smallest and largest numbers from user input.
 **Object Name:**  
@@ -137,6 +140,7 @@ The program should:
 For example:  
 If the user inputs:
 
+```
 Enter a number: 5  
 Enter a number: 2  
 Enter a number: 9  
@@ -146,10 +150,12 @@ The output should be:
 
 Smallest number: 2  
 Largest number: 9
-
+```
 
 If the user inputs `0` as the first number, the output should be:
 
+```
 No numbers were entered.
+```
 
 
