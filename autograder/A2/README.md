@@ -1,9 +1,11 @@
 
 # Python Programming Exercises - Assignment 2
 
+A folder and directory strucutre has been provided to you. Add your code into the template files. 
+Do not change the directory strucutre   
+
 ## Exercise 1: Write a Python program to convert a distance from kilometers to miles.
 **Object Name:**  
-Write a program called `Asn2_q1.py`.
 
 **Input:**  
 The program should contain a function called `convert_to_miles` that performs the following:  
@@ -23,7 +25,6 @@ If the user inputs `distance_km = 10`, the output should be:
 
 ## Exercise 2: Write a Python program to create a simple math quiz with addition problems.
 **Object Name:**  
-Write a program called `Asn2_q2.py`.
 
 **Input:**  
 The program should contain a function called `math_quiz` that performs the following:  
@@ -47,7 +48,6 @@ The program should:
 
 ## Exercise 3: Write a Python program to guess a user's personality type based on their answers to three yes/no questions.
 **Object Name:**  
-Write a program called `Asn2_q3.py`.
 
 **Input:**  
 The program should contain a function called `who_am_i` that performs the following:  
@@ -84,7 +84,6 @@ You have a balanced personality.
 
 ## Exercise 4: Write a Python program to implement the FizzBuzz game for numbers from 1 to 20.
 **Object Name:**  
-Write a program called `Asn2_q4.py`.
 
 **Input:**  
 The program should contain a function called `fizz_buzz` that performs the following:  
@@ -124,7 +123,6 @@ Buzz
 
 ## Exercise 5: Write a Python program to find the smallest and largest numbers from user input.
 **Object Name:**  
-Write a program called `Asn2_q5.py`.
 
 **Input:**  
 The program should contain a function called `find_min_max` that performs the following:  
