@@ -2,7 +2,7 @@
 import unittest
 from gradescope_utils.autograder_utils.decorators import weight, number
 from unittest.mock import patch
-from q2 import check_three_digit
+from student.q2 import check_three_digit
 
 class TestCheckThreeDigit(unittest.TestCase):
     def init(self):

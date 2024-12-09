@@ -2,10 +2,7 @@
 import unittest
 from gradescope_utils.autograder_utils.decorators import weight, number
 from unittest.mock import patch
-from q1 import check_exam_eligibility
-
-import unittest
-from unittest.mock import patch
+from student.q1 import check_exam_eligibility
 
 class TestExamEligibility(unittest.TestCase):
     
@@ -15,7 +12,8 @@ class TestExamEligibility(unittest.TestCase):
         """Test Case 1: Student attended all classes, 100% attendance."""
         with patch('builtins.input', side_effect=['100', '100']):
             with patch('builtins.print') as mocked_print:
-                check_exam_eligibility()
+                attendance = check_exam_eligibility()
+                self.assertEqual(attendance, 100.0)
                 self.assertTrue(any('100' in call[0][0] for call in mocked_print.call_args_list))
                 self.assertTrue(any('are permitted' in call[0][0] for call in mocked_print.call_args_list))
     
@@ -25,7 +23,8 @@ class TestExamEligibility(unittest.TestCase):
         """Test Case 2: Student has exactly 90% attendance, meets eligibility."""
         with patch('builtins.input', side_effect=['100', '90']):
             with patch('builtins.print') as mocked_print:
-                check_exam_eligibility()
+                attendance = check_exam_eligibility()
+                self.assertEqual(attendance, 90.0)
                 self.assertTrue(any('90.00' in call[0][0] for call in mocked_print.call_args_list))
                 self.assertTrue(any('are permitted' in call[0][0] for call in mocked_print.call_args_list))
                 
@@ -35,7 +34,8 @@ class TestExamEligibility(unittest.TestCase):
         """Test Case 3: Student attended below 90%, not eligible for exam."""
         with patch('builtins.input', side_effect=['100', '80']):
             with patch('builtins.print') as mocked_print:
-                check_exam_eligibility()
+                attendance = check_exam_eligibility()
+                self.assertEqual(attendance, 80.0)
                 self.assertTrue(any('80.00' in call[0][0] for call in mocked_print.call_args_list))
                 self.assertTrue(any('not permitted' in call[0][0] for call in mocked_print.call_args_list))
 
@@ -45,7 +45,8 @@ class TestExamEligibility(unittest.TestCase):
         """Test Case 4: Zero classes held to handle validation gracefully."""
         with patch('builtins.input', side_effect=['0', '0']):
             with patch('builtins.print') as mocked_print:
-                check_exam_eligibility()
+                attendance = check_exam_eligibility()
+                self.assertIsNone(attendance)
                 self.assertTrue(any('The number of total classes must be greater than 0.' in call[0][0] for call in mocked_print.call_args_list))
 
     @weight(5)
@@ -54,7 +55,8 @@ class TestExamEligibility(unittest.TestCase):
         """Test Case 5: Attended more than held (edge case)."""
         with patch('builtins.input', side_effect=['10', '15']):
             with patch('builtins.print') as mocked_print:
-                check_exam_eligibility()
+                attendance = check_exam_eligibility()
+                self.assertEqual(attendance, 150.0)
                 self.assertTrue(any('150.00' in call[0][0] for call in mocked_print.call_args_list))
                 self.assertTrue(any('are permitted' in call[0][0] for call in mocked_print.call_args_list))
 
@@ -64,7 +66,7 @@ class TestExamEligibility(unittest.TestCase):
         """Test Case 6: 95% attendance, eligible for the exam."""
         with patch('builtins.input', side_effect=['200', '190']):
             with patch('builtins.print') as mocked_print:
-                check_exam_eligibility()
+                attendance = check_exam_eligibility()
+                self.assertEqual(attendance, 95.0)
                 self.assertTrue(any('95.00' in call[0][0] for call in mocked_print.call_args_list))
                 self.assertTrue(any('are permitted' in call[0][0] for call in mocked_print.call_args_list))
-

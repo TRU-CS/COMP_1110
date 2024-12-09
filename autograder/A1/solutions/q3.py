@@ -68,6 +68,8 @@ def python_quiz_application():
     # Display final result
     print(f"Quiz completed! {player_name}, your final score is: {calculate_result}/{len(questions)}")
 
+    return calculate_result
+
 if __name__=='__main__':
     # Run the quiz application
     python_quiz_application()

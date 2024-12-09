@@ -20,6 +20,8 @@ def check_exam_eligibility():
     else:
         print("You are not permitted to take the exam.")
 
+    return attendance_percentage
+
 if __name__ == '__main__':
     # Call the function
     check_exam_eligibility()
