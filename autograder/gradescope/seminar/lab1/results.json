@@ -1,0 +1,57 @@
+{
+    "tests": [
+        {
+            "name": "Test Case 1.7: Alphabetic Pyramid",
+            "score": 5,
+            "max_score": 5,
+            "status": "passed",
+            "number": "1.7"
+        },
+        {
+            "name": "Test Case 1.5: Box Border Pattern",
+            "score": 5,
+            "max_score": 5,
+            "status": "passed",
+            "number": "1.5"
+        },
+        {
+            "name": "Test Case 1.2: Display Statement Across Two Lines",
+            "score": 5,
+            "max_score": 5,
+            "status": "passed",
+            "number": "1.2"
+        },
+        {
+            "name": "Test Case 1.3: Statement with Two Methods",
+            "score": 5,
+            "max_score": 5,
+            "status": "passed",
+            "number": "1.3"
+        },
+        {
+            "name": "Test Case 1.4: Pyramid Pattern",
+            "score": 5,
+            "max_score": 5,
+            "status": "passed",
+            "number": "1.4"
+        },
+        {
+            "name": "Test Case 1.6: Stair-Step Pattern",
+            "score": 5,
+            "max_score": 5,
+            "status": "passed",
+            "number": "1.6"
+        },
+        {
+            "name": "Test Case 1.1: Twinkle Twinkle in Specific Format",
+            "score": 5,
+            "max_score": 5,
+            "status": "passed",
+            "number": "1.1"
+        }
+    ],
+    "leaderboard": [],
+    "visibility": "visible",
+    "execution_time": "0.00",
+    "score": 35
+}
