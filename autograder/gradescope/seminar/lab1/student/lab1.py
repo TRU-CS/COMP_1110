@@ -79,23 +79,23 @@ def alphabetic_pyramid():
 if __name__ == "__main__":
     # Uncomment the function calls below to test your implementation
     
-    # print("1. Twinkle Twinkle in Specific Format:")
-    # twinkle_twinkle()
+    print("1. Twinkle Twinkle in Specific Format:")
+    twinkle_twinkle()
     
-    # print("\n2. Display Statement Across Two Lines:")
-    # display_statement()
+    print("\n2. Display Statement Across Two Lines:")
+    display_statement()
     
-    # print("\n3. Statement with Two Methods:")
-    # display_two_methods()
+    print("\n3. Statement with Two Methods:")
+    display_two_methods()
     
-    # print("\n4.1 Pyramid Pattern:")
-    # pyramid_pattern()
+    print("\n4.1 Pyramid Pattern:")
+    pyramid_pattern()
     
-    # print("\n4.2 Box Border Pattern:")
-    # box_border_pattern()
+    print("\n4.2 Box Border Pattern:")
+    box_border_pattern()
     
-    # print("\n4.3 Stair-Step Pattern:")
-    # stair_step_pattern()
+    print("\n4.3 Stair-Step Pattern:")
+    stair_step_pattern()
     
-    # print("\n4.4 Alphabetic Pyramid:")
-    # alphabetic_pyramid()
+    print("\n4.4 Alphabetic Pyramid:")
+    alphabetic_pyramid()
