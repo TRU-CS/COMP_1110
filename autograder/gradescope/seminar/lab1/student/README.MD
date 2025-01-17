@@ -45,6 +45,7 @@ ohhh!!!
 Python is so fun!!! && It is Easy! Get Started
 ```
 
+<div style="page-break-after: always;"></div>
 
 ### **4. Generate Patterns**
 
@@ -96,6 +97,7 @@ K L M N O
 ```
 
 
+<div style="page-break-after: always;"></div>
 
 ## **Submission Guidelines**
 1. A template code has been provded to you called lab1.py
