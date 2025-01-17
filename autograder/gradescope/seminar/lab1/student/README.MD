@@ -2,7 +2,7 @@
 
 # **Python Programming: Lab Activity 1**
 
-**Due Date:** September 16, 11:59 PM
+**Due Date:** TBD
 
 
 ## **Objective**
@@ -98,14 +98,15 @@ K L M N O
 
 
 ## **Submission Guidelines**
-1. Each task must be written in its respective Python script file.
-2. Ensure the output matches the provided examples exactly, including spacing and formatting.
-3. Use comments in your code to explain your approach for each task.
-4. Submit all Python files in a single zip folder.
+1. A template code has been provded to you called lab1.py
+2. Please do not change anything in the template and add code in designated areas
+3. You have been provided instructions to replace a section with your code and uncomment the others. 
+4. Submit the final file and do not rename it.
 
 
 
 ## **Grading Criteria**
+- **AutoGrader:** Your solution will be evaluated using an autograder, so ensure your output matches the specifications in the question exactly. Partial correctness will not earn marks.
 - **Completeness:** Each task is solved as per the instructions.
 - **Accuracy:** Outputs match the expected format precisely.
 - **Code Quality:** Clear, well-documented, and efficient solutions.

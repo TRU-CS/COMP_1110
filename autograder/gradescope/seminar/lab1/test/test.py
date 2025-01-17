@@ -35,14 +35,52 @@ class TestPatterns(unittest.TestCase):
     def test_twinkle_twinkle(self):
         """Test Case 1.1: Twinkle Twinkle in Specific Format"""
         twinkle_twinkle()
-        output = self.held_output.getvalue().strip()
-        expected_output = """Twinkle, twinkle, little star, 
-    How I wonder what you are!  
-        Up above the world so high,      
-        Like a diamond in the sky.  
-Twinkle, twinkle, little star,  
-    How I wonder what you are"""
-        self.assertEqual(output, expected_output)
+        output = self.held_output.getvalue()
+
+        # Step 1: Normalize and match bare content
+        expected_output = """
+        Twinkle, twinkle, little star,
+            How I wonder what you are!
+                Up above the world so high,
+                Like a diamond in the sky.
+        Twinkle, twinkle, little star,
+            How I wonder what you are
+        """
+        normalized_output = " ".join(output.split())
+        normalized_expected = " ".join(expected_output.split())
+
+        # Assert bare content matches
+        self.assertEqual(
+            normalized_output,
+            normalized_expected,
+            "Bare content does not match the expected output."
+        )
+
+        # Step 2: Check leading whitespace differences if bare content matches
+        output_lines = output.strip().split("\n")
+        expected_lines = expected_output.strip().split("\n")
+
+        # Count leading spaces in each line
+        output_whitespace_counts = [len(line) - len(line.lstrip()) for line in output_lines]
+        expected_whitespace_counts = [len(line) - len(line.lstrip()) for line in expected_lines]
+
+        # Calculate differences in leading spaces
+        output_whitespace_differences = [
+            output_whitespace_counts[i + 1] - output_whitespace_counts[i]
+            for i in range(len(output_whitespace_counts) - 1)
+        ]
+        expected_whitespace_differences = [
+            expected_whitespace_counts[i + 1] - expected_whitespace_counts[i]
+            for i in range(len(expected_whitespace_counts) - 1)
+        ]
+
+        # Assert that spacing differences match
+        self.assertEqual(
+            output_whitespace_differences,
+            expected_whitespace_differences,
+            f"Whitespace differences {output_whitespace_differences} do not match expected differences {expected_whitespace_differences}."
+        )
+
 
     @weight(5)
     @number("1.2")
@@ -74,6 +112,7 @@ Twinkle, twinkle, little star,
             pyramid_pattern()
             output = mock_stdout.getvalue().splitlines()
 
+        # Step 1: Match raw content ignoring spaces and newlines
         expected_output = [
             "    A",
             "   A A",
@@ -81,10 +120,35 @@ Twinkle, twinkle, little star,
             " A A A A",
             "A A A A A",
         ]
-        
-        # Compare line by line
-        for i, (captured_line, expected_line) in enumerate(zip(output, expected_output), start=1):
-            self.assertEqual(captured_line, expected_line)
+
+        # Normalize content by removing extra spaces and comparing line by line
+        normalized_output = [" ".join(line.split()) for line in output]
+        normalized_expected = [" ".join(line.split()) for line in expected_output]
+
+        # Assert that normalized lines match
+        self.assertEqual(
+            normalized_output,
+            normalized_expected,
+            "Normalized content does not match the expected content."
+        )
+
+        # Step 2: Verify that the difference in leading spaces decrements by 1 as we go down
+        output_whitespace_counts = [len(line) - len(line.lstrip()) for line in output]  # Count leading spaces in each line
+        whitespace_differences = [
+            output_whitespace_counts[i] - output_whitespace_counts[i + 1]
+            for i in range(len(output_whitespace_counts) - 1)
+        ]
+
+        # Expected difference pattern: 1 for every step
+        expected_differences = [1] * (len(output_whitespace_counts) - 1)
+
+        # Assert that the differences in leading spaces match the expected pattern
+        self.assertEqual(
+            whitespace_differences,
+            expected_differences,
+            f"Whitespace differences {whitespace_differences} do not match expected differences {expected_differences}."
+        )
+
 
 
 
@@ -96,15 +160,27 @@ Twinkle, twinkle, little star,
         box_border_pattern()
         output = self.held_output.getvalue().strip()
 
-        # Expected raw output without normalization
+        # Expected raw output
         expected_output = (
             "O O O O O\n"
             "O       O\n"
             "O       O\n"
             "O       O\n"
             "O O O O O"
-        )
-        self.assertEqual(output, expected_output)
+        ).strip()
+
+        # Split into lines for line-by-line comparison
+        output_lines = [line.strip() for line in output.splitlines()]
+        expected_lines = [line.strip() for line in expected_output.splitlines()]
+
+        # Compare line by line
+        for i, (captured_line, expected_line) in enumerate(zip(output_lines, expected_lines), start=1):
+            self.assertEqual(
+                captured_line,
+                expected_line,
+                f"Mismatch on line {i}: Captured: '{captured_line}', Expected: '{expected_line}'"
+            )
+
 
 
 
@@ -116,8 +192,7 @@ Twinkle, twinkle, little star,
         stair_step_pattern()
         output = self.held_output.getvalue().strip()
 
-        # Normalize whitespace in both output and expected
-        normalized_output = "\n".join(" ".join(line.split()) for line in output.splitlines())
+        # Expected output
         expected_output = (
             "*\n"
             "* *\n"
@@ -125,16 +200,19 @@ Twinkle, twinkle, little star,
             "* * * *\n"
             "* * * * *"
         )
-        normalized_expected = "\n".join(" ".join(line.split()) for line in expected_output.splitlines())
 
-        # # Debugging: Print captured and normalized outputs
-        # print("Captured Output (Normalized):")
-        # print(repr(normalized_output))
-        # print("Expected Output (Normalized):")
-        # print(repr(normalized_expected))
+        # Split and strip lines for line-by-line comparison
+        output_lines = [line.strip() for line in output.splitlines()]
+        expected_lines = [line.strip() for line in expected_output.splitlines()]
 
-        # Compare normalized outputs
-        self.assertEqual(normalized_output, normalized_expected)
+        # Compare line by line
+        for i, (captured_line, expected_line) in enumerate(zip(output_lines, expected_lines), start=1):
+            self.assertEqual(
+                captured_line,
+                expected_line,
+                f"Mismatch on line {i}: Captured: '{captured_line}', Expected: '{expected_line}'"
+            )
+
 
     @weight(5)
     @number("1.7")
@@ -142,8 +220,8 @@ Twinkle, twinkle, little star,
         """Test Case 1.7: Alphabetic Pyramid"""
         alphabetic_pyramid()
         output = self.held_output.getvalue().strip()
-        normalized_output = "\n".join(" ".join(line.split()) for line in output.splitlines())
 
+        # Expected output
         expected_output = (
             "A\n"
             "B C\n"
@@ -151,7 +229,19 @@ Twinkle, twinkle, little star,
             "G H I J\n"
             "K L M N O"
         )
-        self.assertEqual(normalized_output, expected_output)
+
+        # Split and strip lines for line-by-line comparison
+        output_lines = [line.strip() for line in output.splitlines()]
+        expected_lines = [line.strip() for line in expected_output.splitlines()]
+
+        # Compare line by line
+        for i, (captured_line, expected_line) in enumerate(zip(output_lines, expected_lines), start=1):
+            self.assertEqual(
+                captured_line,
+                expected_line,
+                f"Mismatch on line {i}: Captured: '{captured_line}', Expected: '{expected_line}'"
+            )
+
 
 if __name__ == "__main__":
     unittest.main()
