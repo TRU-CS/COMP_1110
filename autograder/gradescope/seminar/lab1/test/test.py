@@ -7,7 +7,7 @@ from unittest.mock import patch
 
 
 # Import functions from the student's script
-from student.lab1 import (
+from lab1 import (
     twinkle_twinkle,
     display_statement,
     display_two_methods,
