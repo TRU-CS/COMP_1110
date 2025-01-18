@@ -86,6 +86,7 @@ class TestPatterns(unittest.TestCase):
     @number("1.2")
     def test_display_statement(self):
         """Test Case 1.2: Display Statement Across Two Lines"""
+        ## strip whitespaces
         display_statement()
         output = self.held_output.getvalue().strip()
         expected_output = "I am using Python\nIt’s my First Assignment"
@@ -110,9 +111,13 @@ class TestPatterns(unittest.TestCase):
         """Test Case 1.4: Pyramid Pattern"""
         with patch('sys.stdout', new_callable=StringIO) as mock_stdout:
             pyramid_pattern()
-            output = mock_stdout.getvalue().splitlines()
+            output = mock_stdout.getvalue().strip().splitlines()
+
+        ## Add strip here
 
         # Step 1: Match raw content ignoring spaces and newlines
+
+        ## remove any empty new lines
         expected_output = [
             "    A",
             "   A A",
@@ -150,9 +155,6 @@ class TestPatterns(unittest.TestCase):
         )
 
 
-
-
-
     @weight(5)
     @number("1.5")
     def test_box_border_pattern(self):
@@ -161,6 +163,7 @@ class TestPatterns(unittest.TestCase):
         output = self.held_output.getvalue().strip()
 
         # Expected raw output
+        ## match content as well
         expected_output = (
             "O O O O O\n"
             "O       O\n"
@@ -173,6 +176,10 @@ class TestPatterns(unittest.TestCase):
         output_lines = [line.strip() for line in output.splitlines()]
         expected_lines = [line.strip() for line in expected_output.splitlines()]
 
+        ## TODO: 
+        ### assert len(output_lines)==len(expected_lines)
+        self.assertEqual(len(output_lines),len(expected_line))
+
         # Compare line by line
         for i, (captured_line, expected_line) in enumerate(zip(output_lines, expected_lines), start=1):
             self.assertEqual(
@@ -180,8 +187,6 @@ class TestPatterns(unittest.TestCase):
                 expected_line,
                 f"Mismatch on line {i}: Captured: '{captured_line}', Expected: '{expected_line}'"
             )
-
-
 
 
 
@@ -204,6 +209,9 @@ class TestPatterns(unittest.TestCase):
         # Split and strip lines for line-by-line comparison
         output_lines = [line.strip() for line in output.splitlines()]
         expected_lines = [line.strip() for line in expected_output.splitlines()]
+
+        self.assertEqual(len(output_lines),len(expected_line))
+
 
         # Compare line by line
         for i, (captured_line, expected_line) in enumerate(zip(output_lines, expected_lines), start=1):
@@ -233,6 +241,9 @@ class TestPatterns(unittest.TestCase):
         # Split and strip lines for line-by-line comparison
         output_lines = [line.strip() for line in output.splitlines()]
         expected_lines = [line.strip() for line in expected_output.splitlines()]
+
+        self.assertEqual(len(output_lines),len(expected_line))
+
 
         # Compare line by line
         for i, (captured_line, expected_line) in enumerate(zip(output_lines, expected_lines), start=1):
