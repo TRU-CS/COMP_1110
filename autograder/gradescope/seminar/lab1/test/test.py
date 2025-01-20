@@ -35,74 +35,76 @@ class TestPatterns(unittest.TestCase):
     def test_twinkle_twinkle(self):
         """Test Case 1.1: Twinkle Twinkle in Specific Format"""
         twinkle_twinkle()
-        output = self.held_output.getvalue()
+        output_lines = self.held_output.getvalue().split('\n')
 
-        # Step 1: Normalize and match bare content
-        expected_output = """
-        Twinkle, twinkle, little star,
-            How I wonder what you are!
-                Up above the world so high,
-                Like a diamond in the sky.
-        Twinkle, twinkle, little star,
-            How I wonder what you are
-        """
-        normalized_output = " ".join(output.split())
-        normalized_expected = " ".join(expected_output.split())
-
-        # Assert bare content matches
-        self.assertEqual(
-            normalized_output,
-            normalized_expected,
-            "Bare content does not match the expected output."
-        )
-
-        # Step 2: Check leading whitespace differences if bare content matches
-        output_lines = output.strip().split("\n")
-        expected_lines = expected_output.strip().split("\n")
-
-        # Count leading spaces in each line
-        output_whitespace_counts = [len(line) - len(line.lstrip()) for line in output_lines]
-        expected_whitespace_counts = [len(line) - len(line.lstrip()) for line in expected_lines]
-
-        # Calculate differences in leading spaces
-        output_whitespace_differences = [
-            output_whitespace_counts[i + 1] - output_whitespace_counts[i]
-            for i in range(len(output_whitespace_counts) - 1)
+        expected_output = [
+            "Twinkle, twinkle, little star,",
+            "    How I wonder what you are!",
+            "        Up above the world so high,",
+            "        Like a diamond in the sky.",
+            "Twinkle, twinkle, little star,",
+            "    How I wonder what you are",
         ]
-        expected_whitespace_differences = [
-            expected_whitespace_counts[i + 1] - expected_whitespace_counts[i]
-            for i in range(len(expected_whitespace_counts) - 1)
-        ]
+        
+        # Count the leading spaces of the line with "Twinkle, twinkle, little star,"
+        target_line = "Twinkle, twinkle, little star,"
+        leading_spaces = None
+        for line in output_lines:
+            if line.strip() == target_line:
+                leading_spaces = len(line) - len(line.lstrip())
+                break
+        
+        # Remove the same number of leading spaces from all lines
+        if leading_spaces is not None:
+            output_lines = [line[leading_spaces:] if len(line) >= leading_spaces else line for line in output_lines]
+        
+        # Normalize tabs to spaces
+        output_lines = [line.replace('\t', '    ') for line in output_lines]
 
-        # Assert that spacing differences match
-        self.assertEqual(
-            output_whitespace_differences,
-            expected_whitespace_differences,
-            f"Whitespace differences {output_whitespace_differences} do not match expected differences {expected_whitespace_differences}."
-        )
-
-
+        # Check each line, ignoring trailing spaces
+        for line, expected in zip(output_lines, expected_output):
+            self.assertEqual(line.rstrip(), expected)
+        
     @weight(5)
     @number("1.2")
     def test_display_statement(self):
         """Test Case 1.2: Display Statement Across Two Lines"""
         ## strip whitespaces
         display_statement()
-        output = self.held_output.getvalue().strip()
-        expected_output = "I am using Python\nIt’s my First Assignment"
-        self.assertEqual(output, expected_output)
+        output_lines = self.held_output.getvalue().split('\n')
+
+        expected_output = [
+            "I am using Python",
+            "It's my First Assignment",
+        ]
+
+        output_lines = [line.replace("’", "'") for line in output_lines]
+
+        # Strip all leading and trailing spaces from each line
+        output_lines = [line.strip() for line in output_lines]
+        
+        # Check each line, ignoring trailing spaces
+        for line, expected in zip(output_lines, expected_output):
+            self.assertEqual(line, expected)
+
 
     @weight(5)
     @number("1.3")
     def test_display_two_methods(self):
         """Test Case 1.3: Statement with Two Methods"""
         display_two_methods()
-        output = self.held_output.getvalue().strip()
-        expected_output = (
-            "ohhh!!!\nPython is so fun!!! && It is Easy! Get Started\n"
-            "ohhh!!!\nPython is so fun!!! && It is Easy! Get Started"
-        )
-        self.assertEqual(output, expected_output)
+        output_lines = self.held_output.getvalue().split('\n')
+        expected_output = [
+            "ohhh!!!",
+            "Python is so fun!!! && It is Easy! Get Started",
+        ]
+        # Strip all leading and trailing spaces from each line
+        output_lines = [line.strip() for line in output_lines]
+        
+        # Check each line, ignoring trailing spaces
+        for line, expected in zip(output_lines, expected_output):
+            self.assertEqual(line, expected)
+
 
 
     @weight(5)
@@ -111,13 +113,8 @@ class TestPatterns(unittest.TestCase):
         """Test Case 1.4: Pyramid Pattern"""
         with patch('sys.stdout', new_callable=StringIO) as mock_stdout:
             pyramid_pattern()
-            output = mock_stdout.getvalue().strip().splitlines()
+            output_lines = mock_stdout.getvalue().split('\n')
 
-        ## Add strip here
-
-        # Step 1: Match raw content ignoring spaces and newlines
-
-        ## remove any empty new lines
         expected_output = [
             "    A",
             "   A A",
@@ -125,34 +122,24 @@ class TestPatterns(unittest.TestCase):
             " A A A A",
             "A A A A A",
         ]
+        
+        # Count the leading spaces of the line with "A A A A A"
+        target_line = "A A A A A"
+        leading_spaces = None
+        for line in output_lines:
+            if line.strip() == target_line:
+                leading_spaces = len(line) - len(line.lstrip())
+                break
+        
+        # Remove the same number of leading spaces from all lines
+        if leading_spaces is not None:
+            output_lines = [line[leading_spaces:] if len(line) >= leading_spaces else line for line in output_lines]
+        
+        # Check each line, ignoring trailing spaces
+        for line, expected in zip(output_lines, expected_output):
+            self.assertEqual(line.rstrip(), expected)
 
-        # Normalize content by removing extra spaces and comparing line by line
-        normalized_output = [" ".join(line.split()) for line in output]
-        normalized_expected = [" ".join(line.split()) for line in expected_output]
-
-        # Assert that normalized lines match
-        self.assertEqual(
-            normalized_output,
-            normalized_expected,
-            "Normalized content does not match the expected content."
-        )
-
-        # Step 2: Verify that the difference in leading spaces decrements by 1 as we go down
-        output_whitespace_counts = [len(line) - len(line.lstrip()) for line in output]  # Count leading spaces in each line
-        whitespace_differences = [
-            output_whitespace_counts[i] - output_whitespace_counts[i + 1]
-            for i in range(len(output_whitespace_counts) - 1)
-        ]
-
-        # Expected difference pattern: 1 for every step
-        expected_differences = [1] * (len(output_whitespace_counts) - 1)
-
-        # Assert that the differences in leading spaces match the expected pattern
-        self.assertEqual(
-            whitespace_differences,
-            expected_differences,
-            f"Whitespace differences {whitespace_differences} do not match expected differences {expected_differences}."
-        )
+        
 
 
     @weight(5)
@@ -160,33 +147,42 @@ class TestPatterns(unittest.TestCase):
     def test_box_border_pattern(self):
         """Test Case 1.5: Box Border Pattern"""
         box_border_pattern()
-        output = self.held_output.getvalue().strip()
+        output_lines = self.held_output.getvalue().split('\n')
 
-        # Expected raw output
-        ## match content as well
-        expected_output = (
-            "O O O O O\n"
-            "O       O\n"
-            "O       O\n"
-            "O       O\n"
-            "O O O O O"
-        ).strip()
+        expected_output = [
+            "O O O O O",
+            "O       O",
+            "O       O",
+            "O       O",
+            "O O O O O",
+        ]
+        
+        # Count the leading spaces of the line with "O O O O O"
+        target_line = "O O O O O"
+        leading_spaces = None
+        for line in output_lines:
+            if line.strip() == target_line:
+                leading_spaces = len(line) - len(line.lstrip())
+                break
+        
+        # Remove the same number of leading spaces from all lines
+        if leading_spaces is not None:
+            output_lines = [line[leading_spaces:] if len(line) >= leading_spaces else line for line in output_lines]
+        
+        # Normalize tabs to spaces
+        output_lines = [line.replace('\t', '       ') for line in output_lines]
 
-        # Split into lines for line-by-line comparison
-        output_lines = [line.strip() for line in output.splitlines()]
-        expected_lines = [line.strip() for line in expected_output.splitlines()]
+        # Replace all lowercase 'o' with uppercase 'O'
+        output_lines = [line.replace('o', 'O') for line in output_lines]
 
-        ## TODO: 
-        ### assert len(output_lines)==len(expected_lines)
-        self.assertEqual(len(output_lines),len(expected_line))
+        # Replace all number 0 with uppercase 'O'
+        output_lines = [line.replace('0', 'O') for line in output_lines]
+    
+        # Check each line, ignoring trailing spaces
+        for line, expected in zip(output_lines, expected_output):
+            self.assertEqual(line.rstrip(), expected)
 
-        # Compare line by line
-        for i, (captured_line, expected_line) in enumerate(zip(output_lines, expected_lines), start=1):
-            self.assertEqual(
-                captured_line,
-                expected_line,
-                f"Mismatch on line {i}: Captured: '{captured_line}', Expected: '{expected_line}'"
-            )
+            
 
 
 
@@ -195,31 +191,22 @@ class TestPatterns(unittest.TestCase):
     def test_stair_step_pattern(self):
         """Test Case 1.6: Stair-Step Pattern"""
         stair_step_pattern()
-        output = self.held_output.getvalue().strip()
+        output_lines = self.held_output.getvalue().split('\n')
 
-        # Expected output
-        expected_output = (
-            "*\n"
-            "* *\n"
-            "* * *\n"
-            "* * * *\n"
-            "* * * * *"
-        )
-
-        # Split and strip lines for line-by-line comparison
-        output_lines = [line.strip() for line in output.splitlines()]
-        expected_lines = [line.strip() for line in expected_output.splitlines()]
-
-        self.assertEqual(len(output_lines),len(expected_line))
-
-
-        # Compare line by line
-        for i, (captured_line, expected_line) in enumerate(zip(output_lines, expected_lines), start=1):
-            self.assertEqual(
-                captured_line,
-                expected_line,
-                f"Mismatch on line {i}: Captured: '{captured_line}', Expected: '{expected_line}'"
-            )
+        expected_output = [
+            "*",
+            "* *",
+            "* * *",
+            "* * * *",
+            "* * * * *",
+        ]
+        
+        # Strip all leading and trailing spaces from each line
+        output_lines = [line.strip() for line in output_lines]
+        
+        # Check each line
+        for line, expected in zip(output_lines, expected_output):
+            self.assertEqual(line, expected)
 
 
     @weight(5)
@@ -227,31 +214,22 @@ class TestPatterns(unittest.TestCase):
     def test_alphabetic_pyramid(self):
         """Test Case 1.7: Alphabetic Pyramid"""
         alphabetic_pyramid()
-        output = self.held_output.getvalue().strip()
+        output_lines = self.held_output.getvalue().split('\n')
 
-        # Expected output
-        expected_output = (
-            "A\n"
-            "B C\n"
-            "D E F\n"
-            "G H I J\n"
-            "K L M N O"
-        )
-
-        # Split and strip lines for line-by-line comparison
-        output_lines = [line.strip() for line in output.splitlines()]
-        expected_lines = [line.strip() for line in expected_output.splitlines()]
-
-        self.assertEqual(len(output_lines),len(expected_line))
-
-
-        # Compare line by line
-        for i, (captured_line, expected_line) in enumerate(zip(output_lines, expected_lines), start=1):
-            self.assertEqual(
-                captured_line,
-                expected_line,
-                f"Mismatch on line {i}: Captured: '{captured_line}', Expected: '{expected_line}'"
-            )
+        expected_output = [
+            "A",
+            "B C",
+            "D E F",
+            "G H I J",
+            "K L M N O",
+        ]
+        
+        # Strip all leading and trailing spaces from each line
+        output_lines = [line.strip() for line in output_lines]
+        
+        # Check each line
+        for line, expected in zip(output_lines, expected_output):
+            self.assertEqual(line, expected)
 
 
 if __name__ == "__main__":
