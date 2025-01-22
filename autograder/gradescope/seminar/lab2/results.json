@@ -1,0 +1,48 @@
+{
+    "tests": [
+        {
+            "name": "Test calculate_distance returns correct values.",
+            "status": "passed",
+            "output": "1. Distance Traveled:\nThe car will travel 420 miles in 6 hours.\nThe car will travel 700 miles in 10 hours.\n\n"
+        },
+        {
+            "name": "Test day_of_week with an invalid day number.",
+            "status": "passed",
+            "output": "5. Day of the Week:\nError: Please enter a number between 1 and 7.\n\n"
+        },
+        {
+            "name": "Test convert_seconds with seconds < 60.",
+            "status": "passed",
+            "output": "3. Convert Seconds to Minutes and Seconds:\n45 seconds is less than 1 minute.\n\n"
+        },
+        {
+            "name": "Test book_club_points for 4 books.",
+            "status": "passed",
+            "output": "4. Book Club Points System:\nPoints awarded: 15\n\n"
+        },
+        {
+            "name": "Test day_of_week with a valid day number.",
+            "status": "failed",
+            "output": "5. Day of the Week:\nThe corresponding day is Wednesday.\n\n\nTest Failed: 'Wednesday' != 'wednesday'\n- Wednesday\n? ^\n+ wednesday\n? ^\n\n"
+        },
+        {
+            "name": "Test calculate_mpg with valid input.",
+            "status": "passed",
+            "output": "2. Calculate Miles-Per-Gallon (MPG):\nThe car's MPG is 10.00.\n\n"
+        },
+        {
+            "name": "Test convert_seconds with seconds >= 60.",
+            "status": "passed",
+            "output": "3. Convert Seconds to Minutes and Seconds:\n125 seconds is equal to 2 minute(s) and 5 second(s).\n\n"
+        },
+        {
+            "name": "Test book_club_points for zero books.",
+            "status": "passed",
+            "output": "4. Book Club Points System:\nPoints awarded: 0\n\n"
+        }
+    ],
+    "leaderboard": [],
+    "visibility": "visible",
+    "execution_time": "0.00",
+    "score": 0.0
+}
