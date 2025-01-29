@@ -48,9 +48,17 @@ def print_even_numbers():
     start = int(input("Enter the starting number: "))
     end = int(input("Enter the ending number: "))
     
-    even_numbers = [num for num in range(start, end + 1) if num % 2 == 0]
-    print("Even numbers:", ", ".join(map(str, even_numbers)))
-    return even_numbers
+    # Ensure the start number is even
+    if start % 2 != 0:
+        start += 1  # If odd, move to the next even number
+
+    # Iterate and print even numbers
+    for num in range(start, end + 1, 2):
+        if num == end or num == end - 1:  # Avoid trailing comma
+            print(num)
+        else:
+            print(num, end=", ")
+    return None
 
 
 def sum_of_digits_while():
