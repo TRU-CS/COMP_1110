@@ -33,7 +33,7 @@ def python_quiz_application():
     ]
 
     questions_hard = [
-        ("What is the square root of 144?", "d", ["a) 10", "b) 11", "c) 12", "d) 12"]),
+        ("What is the square root of 144?", "c", ["a) 10", "b) 11", "c) 12", "d) 13"]),
         ("What is 10^3?", "a", ["a) 1000", "b) 100", "c) 10", "d) 10000"]),
         ("In which year did World War I begin?", "b", ["a) 1923", "b) 1914", "c) 1900", "d) 1939"]),
         ("What is the boiling point of water in Celsius?", "c", ["a) 0", "b) 50", "c) 100", "d) 212"]),
