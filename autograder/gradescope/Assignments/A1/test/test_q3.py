@@ -17,21 +17,7 @@ class TestPythonQuizApplication(unittest.TestCase):
         ]
         with patch('builtins.input', side_effect=inputs), patch('sys.stdout', new_callable=StringIO) as mock_stdout:
             calculate_result=python_quiz_application()
-            # output = mock_stdout.getvalue()
-
-            # Check if the player's name is in the output
-            # self.assertIn("Welcome to the Python Quiz, Alice!", output)
-
-            # Expected final score is 3/5
-            # self.assertIn("your final score is: 3/5", output)
-
-            # Check the number of "Correct!" messages
-            # correct_count = output.count("Correct!")
             self.assertEqual(calculate_result, 3)
-
-            # Check the number of "Invalid choice." messages
-            # invalid_choice_count = output.count("Invalid choice. The correct answer was:")
-            # self.assertEqual(invalid_choice_count, 2)
 
     @weight(5)
     @number("3.2")
@@ -44,16 +30,6 @@ class TestPythonQuizApplication(unittest.TestCase):
         ]
         with patch('builtins.input', side_effect=inputs), patch('sys.stdout', new_callable=StringIO) as mock_stdout:
             calculate_result= python_quiz_application()
-            # output = mock_stdout.getvalue()
-
-            # Check if the player's name is in the output
-            # self.assertIn("Welcome to the Python Quiz, Bob!", output)
-
-            # Check that the final score is correct
-            # self.assertIn("your final score is: 5/5", output)
-
-            # Check that there are 5 "Correct!" messages
-            # correct_count = output.count("Correct!")
             self.assertEqual(calculate_result, 5)
 
     @weight(5)
@@ -67,21 +43,7 @@ class TestPythonQuizApplication(unittest.TestCase):
         ]
         with patch('builtins.input', side_effect=inputs), patch('sys.stdout', new_callable=StringIO) as mock_stdout:
             calculate_result=python_quiz_application()
-            # output = mock_stdout.getvalue()
-
-            # Check if the player's name is in the output
-            # self.assertIn("Welcome to the Python Quiz, Charlie!", output)
-
-            # Check that the final score is correct
-            # self.assertIn("your final score is: 0/5", output)
-
-            # Check that there are 0 "Correct!" messages
-            # correct_count = output.count("Correct!")
             self.assertEqual(calculate_result, 0)
-
-            # Check that there are 5 "Invalid choice." messages
-            # invalid_choice_count = output.count("Invalid choice. The correct answer was:")
-            # self.assertEqual(invalid_choice_count, 5)
 
     @weight(5)
     @number("3.4")
