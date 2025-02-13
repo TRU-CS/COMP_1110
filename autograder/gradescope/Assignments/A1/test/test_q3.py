@@ -95,5 +95,3 @@ class TestPythonQuizApplication(unittest.TestCase):
             # Check if the word "invalid" appears in the output
             self.assertIn("invalid", output.lower())
 
-if __name__ == '__main__':
-    unittest.main()
