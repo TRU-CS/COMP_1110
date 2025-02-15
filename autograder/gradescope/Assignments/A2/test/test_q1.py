@@ -1,6 +1,6 @@
 import unittest
 from gradescope_utils.autograder_utils.decorators import weight, number
-from student.q1 import convert_to_miles
+from q1 import convert_to_miles
 
 class TestConvertToMiles(unittest.TestCase):
 

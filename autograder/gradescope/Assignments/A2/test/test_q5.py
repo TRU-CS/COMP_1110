@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch
 from io import StringIO
-from student.q5 import find_min_max
+from q5 import find_min_max
 
 class TestFindMinMax(unittest.TestCase):
 

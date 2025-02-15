@@ -1,6 +1,6 @@
 import unittest
 from gradescope_utils.autograder_utils.decorators import weight, number
-from student.q1 import find_missing_number
+from q1 import find_missing_number
 
 class TestFindMissingNumber(unittest.TestCase):
 

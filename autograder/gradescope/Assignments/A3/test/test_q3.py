@@ -1,6 +1,6 @@
 import unittest
 from gradescope_utils.autograder_utils.decorators import weight, number
-from student.q3 import remove_duplicates
+from q3 import remove_duplicates
 
 class TestRemoveDuplicates(unittest.TestCase):
 

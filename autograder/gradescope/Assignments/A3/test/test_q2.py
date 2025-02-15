@@ -1,6 +1,6 @@
 import unittest
 from gradescope_utils.autograder_utils.decorators import weight, number
-from student.q2 import split_list
+from q2 import split_list
 
 class TestSplitList(unittest.TestCase):
 

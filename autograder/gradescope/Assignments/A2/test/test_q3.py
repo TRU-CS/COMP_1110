@@ -1,7 +1,7 @@
 import unittest
 from unittest.mock import patch
 from io import StringIO
-from student.q3 import who_am_i
+from q3 import who_am_i
 
 class TestWhoAmI(unittest.TestCase):
 

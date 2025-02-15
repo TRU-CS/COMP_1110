@@ -1,6 +1,6 @@
 import unittest
 from gradescope_utils.autograder_utils.decorators import weight, number
-from student.q4 import generate_squares
+from q4 import generate_squares
 
 class TestGenerateSquares(unittest.TestCase):
 

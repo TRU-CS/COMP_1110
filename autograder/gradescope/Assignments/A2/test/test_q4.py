@@ -1,7 +1,7 @@
 import unittest
 from io import StringIO
 from unittest.mock import patch
-from student.q4 import fizz_buzz
+from q4 import fizz_buzz
 
 class TestFizzBuzz(unittest.TestCase):
 

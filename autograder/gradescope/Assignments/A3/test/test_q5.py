@@ -1,6 +1,6 @@
 import unittest
 from gradescope_utils.autograder_utils.decorators import weight, number
-from student.q5 import calculate_adjusted_average
+from q5 import calculate_adjusted_average
 
 class TestCalculateAdjustedAverage(unittest.TestCase):
 
