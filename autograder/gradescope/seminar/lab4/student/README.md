@@ -7,7 +7,7 @@
 ## **Assignment Tasks**
 
 ### Q1
-- Define a function called `max_of_three()` that take three int inputs from the user and return the largest number on the screen. (3 points)
+- Define a function called `max_of_three()` that prompts users to enter three integer inputs, and return the largest number on the screen. (3 points)
 
 ## **Submission Guidelines**
 1. Submit the provided file lab4.py with exsiting template code.
