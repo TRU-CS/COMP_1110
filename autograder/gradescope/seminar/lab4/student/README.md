@@ -44,9 +44,9 @@ Output: False
 
 ### Q3: Random number guessing game
 - Write a program that generates a random number in the range of 1 through 100, and asks the user to guess what the number is.
-- If the user’s guess is higher than the random number, the program should display “Too high, try again”.
-- If the user’s guess is lower than the random number, the program should display “Too low, try again”.
-- If the user guesses the number, the application should congratulate the user. (6 points)
+- If the user’s guess is higher than the random number, the program should print “Too high, try again”.
+- If the user’s guess is lower than the random number, the program should print “Too low, try again”.
+- If the user guesses the number, the application should print "Congratulations! You guessed it!". (6 points)
 
 Example output
 
@@ -66,6 +66,21 @@ Congratulations! You guessed it!
 
 (5 points)
 
+Example output
+```
+Enter a number: 16
+4.0
+```
+```
+Enter a number: -3
+Traceback (most recent call last):
+  File "/Users/.../lab4.py", line 15, in <module>
+    calculate_square_root()
+  File "/Users/.../lab4.py", line 8, in calculate_square_root
+    raise ValueError("Cannot calculate the square root of a negative number.")
+ValueError: Cannot calculate the square root of a negative number.
+
+```
 ### Q5: Create a Matrix
 - Write a Python program that creates a 2D list (a list of lists) to represent a matrix. 
 - Begin by asking the user to input the number of rows and columns for the matrix. 
