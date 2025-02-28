@@ -1,0 +1,43 @@
+{
+    "tests": [
+        {
+            "name": "Test max_of_three with valid input.",
+            "status": "passed",
+            "output": "1. Max of Three:\nThe maximum of 1, 12, and 34 is 34.\n\n"
+        },
+        {
+            "name": "Test isPalindrome with valid palindrome input.",
+            "status": "passed",
+            "output": "2. Palindrome Check:\n121 is a palindrome.\n\n"
+        },
+        {
+            "name": "Test isPalindrome with non-palindrome input.",
+            "status": "passed",
+            "output": "2. Palindrome Check:\n123 is not a palindrome.\n\n"
+        },
+        {
+            "name": "Test guessing_game with correct guess.",
+            "status": "passed",
+            "output": "3. Guessing Game:\nCongratulations! You guessed it!\n\n"
+        },
+        {
+            "name": "Test calculate_square_root with positive input.",
+            "status": "passed",
+            "output": "4. Calculate Square Root:\nThe square root of 25 is 5.0.\n\n"
+        },
+        {
+            "name": "Test calculate_square_root with negative input.",
+            "status": "passed",
+            "output": "4. Calculate Square Root:\nError: Cannot calculate the square root of a negative number.\n\n"
+        },
+        {
+            "name": "Test create_matrix with valid input.",
+            "status": "passed",
+            "output": "5. Create Matrix:\nMatrix created: [[1, 2, 3], [4, 5, 6]]\n\n"
+        }
+    ],
+    "leaderboard": [],
+    "visibility": "visible",
+    "execution_time": "0.00",
+    "score": 0
+}
