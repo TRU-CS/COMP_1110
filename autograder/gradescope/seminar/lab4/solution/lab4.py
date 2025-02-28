@@ -18,10 +18,11 @@ def isPalindrome():
     # Implement your palindrome check logic here
     num_str = str(num1)  # Convert the number to string
     if num_str == num_str[::-1]:  # Check if the string is equal to its reverse
-        return True  # print if it's a palindrome
+        result = True  # print if it's a palindrome
     else:
-        return False  # print if it's not a palindrome 
-      
+        result = False  # print if it's not a palindrome 
+    print(result)
+    return result
  
   
 
@@ -37,15 +38,12 @@ def guessing_game():
 
         if guess < number:
             print("Too low, try again.")
-            return "Guess is too low, try again."
         elif guess > number:
             print("Too high, try again.")
-            return "Guess is too high, try again."
         else:
             print("Congratulations! You guessed it!")
             number = random.randint(1, 100)  # Generate a new number
             game_active = False  # Set the flag to False to stop the game
-            return "Congratulations! You guessed it! A new number has been generated."
 
 
 
@@ -59,9 +57,10 @@ def calculate_square_root():
     num = float(input("Enter a number: "))
     
     if num < 0:
-        return "Error: Cannot calculate the square root of a negative number."
+        raise ValueError("Cannot calculate the square root of a negative number.")
     
     num_sqrt =  math.sqrt(num)
+    print(f"The square root of {num} is: {num_sqrt}")
     return num_sqrt
 
   
@@ -79,7 +78,9 @@ def create_matrix():
             value = int(input(f"Enter value for position ({i+1}, {j+1}): "))
             row.append(value)
         matrix.append(row)
-    
+    print("\nThe matrix you entered is:")
+    for row in matrix:
+        print(row)
     return matrix
   
 

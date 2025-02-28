@@ -6,40 +6,32 @@ def max_of_three():
     
     
 ##Q2
-def isPalindrome():
-    
+def isPalindrome() -> bool:
+    result = None # Store the result of the palindrome check as a boolean value
     # YOUR CODE HERE
-   
-   
-    return None.     # DO NOT CHANGE THIS LINE
+    return result # DO NOT CHANGE THIS LINE
 
 
 ##Q3
+import random
 def guessing_game():
     
     #YOUR CODE HERE
-    
-    
-    return "Game over. A new number has been generated."    # DO NOT CHANGE THIS LINE
-    
-    
+    pass
 
 ##Q4
 import math
 
 def calculate_square_root():
-   
-   #YOUR CODE HERE
-   
+    num_sqrt = None
+    #YOUR CODE HERE
+    
     return num_sqrt     # DO NOT CHANGE THIS LINE
 
-  
-  
-  
   ##Q5
- def create_matrix():
-   
-   #YOUR CODE HERE
+def create_matrix():
+    matrix = None
+    #YOUR CODE HERE
        
     return matrix         # DO NOT CHANGE THIS LINE
 
