@@ -37,8 +37,6 @@ documentation, and style. Regular expressions, networked programs, web services,
 visualization (Chapters 11, 12, 13, 15, 16) are **not covered** — those topics belong to later
 courses.
 
-**Prerequisites:** None. Bring a laptop to every class.
-
 ---
 
 ## Textbook
