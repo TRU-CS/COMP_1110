@@ -71,6 +71,10 @@ instance/
 # Sphinx documentation
 docs/_build/
 
+# Jupyter Book build output and execution cache
+book/_build/
+
+
 # PyBuilder
 .pybuilder/
 target/
@@ -163,3 +167,5 @@ cython_debug/
 .DS_Store
 
 random_testing.ipynb
+# MyST build output
+_build/

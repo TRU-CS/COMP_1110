@@ -1,0 +1,46 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  id: comp-1110-fall-2026
+  title: COMP 1110 - Introduction to Computer Programming
+  description: >-
+    A first course in computer programming using Python. Course outline and weekly
+    lecture notes for Fall 2026 at Thompson Rivers University.
+  keywords:
+    - Python
+    - introductory programming
+    - COMP 1110
+    - computer science education
+  authors:
+    - name: Quan Nguyen
+      affiliations:
+        - Thompson Rivers University
+      email: lnguyen@tru.ca
+  open_access: true
+  license: CC-BY-4.0
+  # Notebooks are committed with their outputs already stored, so the site builds
+  # without a kernel. Re-execute a notebook after editing any code cell (see README).
+  # Flat TOC: syllabus.md is first, so it is the landing page.
+  # Only the syllabus is published for now; uncomment weeks as they are released.
+  toc:
+    - file: syllabus.md
+    # - file: notebooks/week01_intro.ipynb
+    # - file: notebooks/week02_variables.ipynb
+    # - file: notebooks/week03_conditionals.ipynb
+    # - file: notebooks/week04_functions.ipynb
+    # - file: notebooks/week05_iteration.ipynb
+    # - file: notebooks/week06_midterm1_review.ipynb
+    # - file: notebooks/week07_strings.ipynb
+    # - file: notebooks/week08_files_testing_docs.ipynb
+    # - file: notebooks/week09_lists.ipynb
+    # - file: notebooks/week10_dictionaries.ipynb
+    # - file: notebooks/week11_tuples_sets_review.ipynb
+    # - file: notebooks/week12_oop.ipynb
+    # - file: notebooks/week13_style_and_polish.ipynb
+site:
+  template: book-theme
+  title: COMP 1110 - Fall 2026
+  options:
+    logo: img/logo2.png
+    favicon: img/logo2.png
+    hide_toc: false

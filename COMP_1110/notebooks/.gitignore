@@ -1,0 +1,14 @@
+# Data files the notebooks create when they run (see SPEC.md §5 — every notebook
+# writes any file it reads, so none of these need to be tracked).
+grades.txt
+mail_log.txt
+honour_roll.txt
+week09_grades.txt
+week10_text.txt
+week11_grades.txt
+
+.ipynb_checkpoints/
+__pycache__/
+
+# MyST build output
+_build/
