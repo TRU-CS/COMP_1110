@@ -211,13 +211,27 @@ If you do not have a team by the Week 3 deadline, I will assign you to one.
 
 You build as a team, but **you are graded as an individual.**
 
+#### Version control on GitHub — required
+
+Every team must keep its code in a **GitHub repository**, and every member must **commit and push
+their own contributions under their own GitHub account**. Do not have one person push the whole
+project on everyone's behalf, and do not paste teammates' code into your own commits.
+
+**The commit history is the evidence of your contribution.** It is what I check when I corroborate
+peer assessments, and a member whose contribution does not appear in the history has no record of
+having contributed — whatever the team says afterwards. Commit as you go, in reasonably sized pieces
+with meaningful messages, rather than in a single push at the end.
+
+Add me as a collaborator on the repository when you create it, and include the repository URL in
+your project proposal and your final submission.
+
 #### How the individual grade is computed
 
 | Component | Weight (of final grade) | Basis |
 | :--- | :--- | :--- |
 | **Individual presentation & Q&A** | **12%** | Your own 4-minute segment of the team presentation, plus your answers when questioned about the code |
 | **Team deliverable** (code, tests, documentation), **adjusted by peer factor** | **10%** | One team mark, multiplied by your individual peer-assessment factor |
-| **Project proposal** (team) | **3%** | 1-page team submission: problem, inputs, outputs, planned functions, who owns what |
+| **Project proposal** (team) | **3%** | 1-page team submission: problem, inputs, outputs, planned functions, who owns what, GitHub repository URL |
 
 **1. Presentation & Q&A — 12%, entirely individual.**
 Each team gets 20 minutes: a demo plus a segment from every member, followed by open Q&A. Your
@@ -245,8 +259,8 @@ team deliverable mark.
 - In documented cases of a member contributing essentially nothing, the factor may be set to **0**
   after I review the evidence.
 
-Peer ratings are **not** taken at face value. I corroborate them against the version-control history
-or submission log, the proposal's ownership plan, and your Q&A performance. Retaliatory,
+Peer ratings are **not** taken at face value. I corroborate them against the GitHub commit history,
+the proposal's ownership plan, and your Q&A performance. Retaliatory,
 collusive ("we all give each other 5"), or unjustified ratings are discarded. Anyone who submits no
 peer assessment receives a 1.00 factor themselves and forfeits input on their teammates.
 
