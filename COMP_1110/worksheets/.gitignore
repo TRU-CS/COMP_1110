@@ -1,0 +1,9 @@
+# Data files the worksheets create when a student runs them (every worksheet
+# writes any file it reads, so none of these need to be tracked).
+arcade_scores.txt
+empty_scores.txt
+game_log.txt
+song.txt
+
+.ipynb_checkpoints/
+__pycache__/
