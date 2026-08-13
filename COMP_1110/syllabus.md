@@ -222,8 +222,8 @@ peer assessments, and a member whose contribution does not appear in the history
 having contributed — whatever the team says afterwards. Commit as you go, in reasonably sized pieces
 with meaningful messages, rather than in a single push at the end.
 
-Add me as a collaborator on the repository when you create it, and include the repository URL in
-your project proposal and your final submission.
+The repository must be **public**, so that I can review the code and the commit history without
+being added to it. Include the repository URL in your project proposal and your final submission.
 
 #### How the individual grade is computed
 
