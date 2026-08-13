@@ -224,6 +224,8 @@ with meaningful messages, rather than in a single push at the end.
 
 The repository must be **public**, so that I can review the code and the commit history without
 being added to it. Include the repository URL in your project proposal and your final submission.
+Because every team's repository is public, you will be able to read other teams' code: you may not
+copy from it. See [Academic Integrity](#academic-integrity).
 
 #### How the individual grade is computed
 
@@ -403,6 +405,7 @@ Letter of Accommodation to the instructor as soon as possible. This letter will 
 necessary accommodations to ensure an equitable learning environment. Please arrange this early in
 the term to allow time for exam and assessment adjustments.
 
+(academic-integrity)=
 ### Academic Integrity
 
 Programming courses have a specific hazard: it is very easy to submit code you did not write and
@@ -412,8 +415,11 @@ do not understand, and very hard to pass the midterms if you have been doing tha
   copying another student's code, is not. Write your own solution, from your own keyboard.
 - **Midterms:** entirely individual, no collaboration, no outside help.
 - **Final project:** collaboration *within* your team is the point; collaboration *between* teams is
-  not. External code (tutorials, Stack Overflow, library documentation) must be cited in your README
-  with a comment in the code showing what came from where.
+  not. Project repositories are public, which means you can read other teams' code — you may not
+  copy from it. Taking code from another team's repository is plagiarism, and it is easy to detect:
+  both repositories are timestamped and I read the commit histories. External code (tutorials, Stack
+  Overflow, library documentation) must be cited in your README with a comment in the code showing
+  what came from where.
 
 Cases of academic dishonesty are reported per TRU policy.
 
