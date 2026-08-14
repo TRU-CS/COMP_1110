@@ -52,8 +52,7 @@ Please use the Trinket edition linked above rather than a PDF copy — its code 
 **runnable in the browser**, so you can edit and re-run every example as you read.
 
 **Software:** Python 3.11 or newer, plus a code editor. We will use **Visual Studio Code** with the
-Python extension in class; you are free to use IDLE, PyCharm, or Thonny instead. Google Colab is
-acceptable for worksheets but you must be able to run Python locally by Week 4.
+Python extension in class.
 
 ---
 
@@ -61,80 +60,18 @@ acceptable for worksheets but you must be able to run Python locally by Week 4.
 
 By the end of this course, students will be able to:
 
-### CLO 1 — Apply fundamental programming concepts
-
-Write Python programs using variables, input/output operations, conditional statements, and loops
-to solve structured computational problems.
-
-> *Competency:* Students can apply foundational programming concepts in Python, including
-> sequential execution, conditional branching, and iterative control structures, to design and
-> implement computational solutions for introductory programming problems.
-
-| | |
-| :--- | :--- |
-| **Key Knowledge** | Input and output operations · Variables and data types · Sequential execution · Selection structures (`if` / `if-else`) · Iteration structures (`for` and `while` loops) |
-| **Primary Skills** | Analyze program execution flow · Implement conditional and iterative logic · Construct simple algorithmic solutions · Trace and validate program behaviour |
-| **Target Dispositions** | Demonstrates logical reasoning in program construction · Shows attention to syntax accuracy and program structure · Develops confidence in computational problem-solving |
-
-### CLO 2 — Design modular programs using functions
-
-Design and implement Python programs that organize logic into reusable functions using parameters
-and return values.
-
-> *Competency:* Students can develop modular Python programs using functions to improve
-> readability, maintainability, and reusability while applying structured problem decomposition
-> techniques.
-
-| | |
-| :--- | :--- |
-| **Key Knowledge** | Function definition and invocation · Parameters and arguments · Return values · Scope and modular design |
-| **Primary Skills** | Decompose problems into reusable modules · Develop parameterized functions · Test and validate function behaviour · Organize code into logical program components |
-| **Target Dispositions** | Practices structured program design · Values readable and maintainable code · Demonstrates organized computational thinking |
-
-### CLO 3 — Use data structures to store and manipulate information
-
-Develop Python programs that use lists, tuples, sets, and dictionaries to organize, process, and
-analyze collections of data.
-
-> *Competency:* Students can apply Python data structures to organize, access, manipulate, and
-> process structured information while selecting appropriate data representations for different
-> computational problems.
-
-| | |
-| :--- | :--- |
-| **Key Knowledge** | Lists and indexing · Tuples and immutability · Sets and unique collections · Dictionaries and key-value structures · Iteration through collections · Basic data manipulation operations |
-| **Primary Skills** | Organize structured data using Python collections · Manipulate and iterate through data structures · Select appropriate structures for problem contexts · Process collections using loops and indexing · Retrieve and update stored information efficiently |
-| **Target Dispositions** | Demonstrates organized thinking when managing data · Recognizes relationships between data organization and program efficiency · Applies careful reasoning when selecting data structures · Values clarity and structure in program development |
-
-### CLO 4 — Debug and test programs
-
-Identify, analyze, and correct syntax, runtime, and logical errors in Python programs using
-systematic debugging and testing strategies.
-
-> *Competency:* Students can systematically identify, analyze, and resolve programming errors using
-> debugging strategies, testing methods, and logical reasoning techniques to improve program
-> correctness and reliability.
-
-| | |
-| :--- | :--- |
-| **Key Knowledge** | Syntax errors · Runtime errors · Logical errors · Debugging strategies · Program tracing techniques · Basic testing approaches |
-| **Primary Skills** | Trace program execution step-by-step · Identify syntax and logical errors · Interpret incorrect outputs and runtime behaviour · Apply debugging strategies to improve correctness · Test program functionality using sample inputs |
-| **Target Dispositions** | Demonstrates persistence when troubleshooting programs · Uses analytical reasoning during debugging · Approaches programming errors systematically · Develops confidence in identifying and correcting mistakes |
-
-### CLO 5 — Apply programming to solve simple problems
-
-Design and implement Python programs that solve introductory real-world or computational problems
-using appropriate programming constructs and algorithmic thinking strategies.
-
-> *Competency:* Students can apply computational reasoning and programming constructs to design,
-> implement, and evaluate algorithmic solutions for introductory programming and problem-solving
-> scenarios.
-
-| | |
-| :--- | :--- |
-| **Key Knowledge** | Algorithmic thinking · Problem decomposition · Program design process · Basic computational reasoning · Input-processing-output model |
-| **Primary Skills** | Translate problems into algorithms · Implement solutions using Python · Evaluate outputs and refine solutions · Apply computational reasoning strategies · Decompose larger problems into manageable tasks |
-| **Target Dispositions** | Demonstrates creativity in program design · Develops confidence in independent problem solving · Values systematic approaches to computational tasks · Shows persistence when refining program solutions |
+- **CLO 1 — Apply fundamental programming concepts.** Write Python programs using variables,
+  input/output operations, conditional statements, and loops to solve structured computational
+  problems.
+- **CLO 2 — Design modular programs using functions.** Design and implement Python programs that
+  organize logic into reusable functions using parameters and return values.
+- **CLO 3 — Use data structures to store and manipulate information.** Develop Python programs that
+  use lists, tuples, sets, and dictionaries to organize, process, and analyze collections of data.
+- **CLO 4 — Debug and test programs.** Identify, analyze, and correct syntax, runtime, and logical
+  errors in Python programs using systematic debugging and testing strategies.
+- **CLO 5 — Apply programming to solve simple problems.** Design and implement Python programs that
+  solve introductory real-world or computational problems using appropriate programming constructs
+  and algorithmic thinking strategies.
 
 ---
 
@@ -142,7 +79,7 @@ using appropriate programming constructs and algorithmic thinking strategies.
 
 | Component | Weight | Format | When |
 | :--- | :--- | :--- | :--- |
-| **Weekly Worksheets** (10 × 2%) | **20%** | Individual, on the COMP 1110 Practice Platform (link posted on Moodle) | Weeks 2–12 (see schedule) |
+| **Weekly Worksheets** (10 × 2%) | **20%** | Individual, on the COMP 1110 Practice Platform (link posted on Moodle) | Weeks 3–13 (see schedule) |
 | **Midterm 1** | **25%** | Closed-book, 60 min, on Moodle in class | Thu, Oct 15 (Week 6) |
 | **Midterm 2** | **25%** | Closed-book, 60 min, on Moodle in class | Thu, Nov 19 (Week 11) |
 | **Final Project** | **25%** | Group build, **individually graded** | Proposal Nov 5 · Presentations Dec 3 & 8 · Final submission Dec 8 |
@@ -160,8 +97,9 @@ Worksheets are **not on Moodle**. They live on the **COMP 1110 Practice Platform
 with your TRU ID and work through each worksheet task by task, running your Python in the browser.
 The link is posted on Moodle.
 
-- Released **Thursday after class**, due the following **Tuesday at 9:00 AM** (before class).
-- We start most Tuesday classes by working through selected worksheet problems together.
+- Released **Tuesday at 9:00 AM**, due the following **Monday at 11:59 PM**.
+- We start most Tuesday classes by working through problems from the worksheet that closed the
+  night before.
 - Worksheets are graded for correctness *and* for readable code (meaningful variable names,
   comments where the logic is non-obvious).
 - **The lowest worksheet score is dropped**, so 11 worksheets are released and your best 10 count.
@@ -271,8 +209,7 @@ team deliverable mark.
 
 Peer ratings are **not** taken at face value. I corroborate them against the GitHub commit history,
 the proposal's ownership plan, and your Q&A performance. Retaliatory,
-collusive ("we all give each other 5"), or unjustified ratings are discarded. Anyone who submits no
-peer assessment receives a 1.00 factor themselves and forfeits input on their teammates.
+collusive ("we all give each other 5"), or unjustified ratings are discarded.
 
 **3. Team deliverable — one mark, then adjusted.**
 Judged on correctness, appropriate use of functions, data structures, and classes, code style and
@@ -304,18 +241,18 @@ Classes run Tuesdays and Thursdays, 9:30 – 11:20 AM in OM 1241. Chapter number
 | Week | Dates | Topic | Reading | Due |
 | :--- | :--- | :--- | :--- | :--- |
 | **1** | **Thu Sep 10** | Course intro · What is a program? · Hardware, interpreters, and your first `print` · Setting up Python + VS Code | [Ch. 1 — Introduction](https://books.trinket.io/pfe/01-intro.html) | — |
-| **2** | Tue Sep 15 <br> Thu Sep 17 | Values, types, variables, expressions · `input()`, type conversion, operators, mnemonic names, comments | [Ch. 2 — Variables](https://books.trinket.io/pfe/02-variables.html) | **W1** (Tue) |
-| **3** | Tue Sep 22 <br> Thu Sep 24 | Boolean expressions and logical operators · `if` / `elif` / `else`, nested conditionals · `try` / `except` · **Project teams formed (Thu)** | [Ch. 3 — Conditionals](https://books.trinket.io/pfe/03-conditional.html) | **W2** (Tue) <br> **Teams due** (Thu) |
-| **4** | Tue Sep 29 <br> Thu Oct 1 | Functions: definition, invocation, parameters, arguments, return values · Scope · Why we decompose | [Ch. 4 — Functions](https://books.trinket.io/pfe/04-functions.html) | **W3** (Tue) |
-| **5** | Tue Oct 6 <br> Thu Oct 8 | Iteration: `while`, `for`, `break`, `continue` · Loop patterns: counting, summing, max/min · Loop-and-a-half | [Ch. 5 — Iterations](https://books.trinket.io/pfe/05-iterations.html) | **W4** (Tue) |
-| **6** | Tue Oct 13 <br> **Thu Oct 15** | **Introduction to Git & GitHub:** repositories, cloning, `commit` / `push`, reading a commit history, working on a repository as a team · **Final project deliverables explained:** proposal, team repository, presentation & Q&A, peer assessment, and how the individual grade is computed (Tue) <br> **MIDTERM 1** — Moodle, closed-book, 9:30–10:30 (Thu) | [GitHub — Hello World](https://docs.github.com/en/get-started/start-your-journey/hello-world) <br> Review [Ch. 1](https://books.trinket.io/pfe/01-intro.html)–[5](https://books.trinket.io/pfe/05-iterations.html) for Thursday | **Midterm 1** |
-| **7** | Tue Oct 20 <br> Thu Oct 22 | Strings as sequences · Indexing, slicing, immutability · Traversal, `in`, string methods · **String & output formatting:** f-strings, `format()`, alignment, rounding | [Ch. 6 — Strings](https://books.trinket.io/pfe/06-strings.html) | **W5** (Tue) |
-| **8** | Tue Oct 27 <br> Thu Oct 29 | Files: `open`, reading line by line, searching, writing files · Handling missing files (Tue) <br> **Testing & documentation:** test plans, edge cases, `assert`, intro to `unittest`, docstrings, README files (Thu) | [Ch. 7 — Files](https://books.trinket.io/pfe/07-files.html) <br> [A Beginner's Guide to Unit Tests in Python](https://www.dataquest.io/blog/unit-tests-python/) <br> [Documenting Python Code: A Complete Guide](https://realpython.com/documenting-python-code/) | **W6** (Tue) |
-| **9** | Tue Nov 3 <br> Thu Nov 5 | Lists: mutability, traversal, slices, methods, `split`/`join` · Aliasing and list arguments · Parsing lines | [Ch. 8 — Lists](https://books.trinket.io/pfe/08-lists.html) | **W7** (Tue) <br> **Team proposal** (Thu) |
-| **10** | **Tue Nov 10** <br> ~~Thu Nov 12~~ | Dictionaries: key-value structures, counting patterns, `get`, looping over dictionaries <br> *(no class Thu — fall mid-term break)* | [Ch. 9 — Dictionaries](https://books.trinket.io/pfe/09-dictionaries.html) | **W8** (Tue) |
-| **11** | Tue Nov 17 <br> **Thu Nov 19** | Tuples, sorting with `sorted` and `items()` · Sets and unique collections *(supplementary notes)* · Review (Tue) · **MIDTERM 2** — Moodle, closed-book, 9:30–10:30 (Thu) | [Ch. 10 — Tuples](https://books.trinket.io/pfe/10-tuples.html) + Moodle notes | **W9** (Tue) <br> **Midterm 2** |
-| **12** | Tue Nov 24 <br> Thu Nov 26 | **Object-oriented programming I:** why classes, defining a class, attributes, methods, `__init__`, objects vs. dictionaries (Tue) <br> **OOP II:** multiple instances, object lifecycle, a first look at inheritance (Thu) | [Ch. 14 — Objects](https://books.trinket.io/pfe/14-objects.html) | **W10** (Tue) |
-| **13** | Tue Dec 1 <br> Thu Dec 3 | **Formatting & code style:** PEP 8, naming, layout, comments that earn their place, auto-formatters and linters · Polishing your project for submission (Tue) <br> **Final project presentations & Q&A** (Thu) | [PEP 8 style guide](https://peps.python.org/pep-0008/) | **W11** (Tue) |
+| **2** | Tue Sep 15 <br> Thu Sep 17 | Values, types, variables, expressions · `input()`, type conversion, operators, mnemonic names, comments | [Ch. 2 — Variables](https://books.trinket.io/pfe/02-variables.html) | — |
+| **3** | Tue Sep 22 <br> Thu Sep 24 | Boolean expressions and logical operators · `if` / `elif` / `else`, nested conditionals · `try` / `except` · **Project teams formed (Thu)** | [Ch. 3 — Conditionals](https://books.trinket.io/pfe/03-conditional.html) | **W1** (Mon) <br> **Teams due** (Thu) |
+| **4** | Tue Sep 29 <br> Thu Oct 1 | Functions: definition, invocation, parameters, arguments, return values · Scope · Why we decompose | [Ch. 4 — Functions](https://books.trinket.io/pfe/04-functions.html) | **W2** (Mon) |
+| **5** | Tue Oct 6 <br> Thu Oct 8 | Iteration: `while`, `for`, `break`, `continue` · Loop patterns: counting, summing, max/min · Loop-and-a-half | [Ch. 5 — Iterations](https://books.trinket.io/pfe/05-iterations.html) | **W3** (Mon) |
+| **6** | Tue Oct 13 <br> **Thu Oct 15** | **Introduction to Git & GitHub:** repositories, cloning, `commit` / `push`, reading a commit history, working on a repository as a team · **Final project deliverables explained:** proposal, team repository, presentation & Q&A, peer assessment, and how the individual grade is computed (Tue) <br> **MIDTERM 1** — Moodle, closed-book, 9:30–10:30 (Thu) | [GitHub — Hello World](https://docs.github.com/en/get-started/start-your-journey/hello-world) <br> Review [Ch. 1](https://books.trinket.io/pfe/01-intro.html)–[5](https://books.trinket.io/pfe/05-iterations.html) for Thursday | **W4** (Mon) <br> **Midterm 1** |
+| **7** | Tue Oct 20 <br> Thu Oct 22 | Strings as sequences · Indexing, slicing, immutability · Traversal, `in`, string methods · **String & output formatting:** f-strings, `format()`, alignment, rounding | [Ch. 6 — Strings](https://books.trinket.io/pfe/06-strings.html) | **W5** (Mon) |
+| **8** | Tue Oct 27 <br> Thu Oct 29 | Files: `open`, reading line by line, searching, writing files · Handling missing files (Tue) <br> **Testing & documentation:** test plans, edge cases, `assert`, intro to `unittest`, docstrings, README files (Thu) | [Ch. 7 — Files](https://books.trinket.io/pfe/07-files.html) <br> [A Beginner's Guide to Unit Tests in Python](https://www.dataquest.io/blog/unit-tests-python/) <br> [Documenting Python Code: A Complete Guide](https://realpython.com/documenting-python-code/) | **W6** (Mon) |
+| **9** | Tue Nov 3 <br> Thu Nov 5 | Lists: mutability, traversal, slices, methods, `split`/`join` · Aliasing and list arguments · Parsing lines | [Ch. 8 — Lists](https://books.trinket.io/pfe/08-lists.html) | **W7** (Mon) <br> **Team proposal** (Thu) |
+| **10** | **Tue Nov 10** <br> ~~Thu Nov 12~~ | Dictionaries: key-value structures, counting patterns, `get`, looping over dictionaries <br> *(no class Thu — fall mid-term break)* | [Ch. 9 — Dictionaries](https://books.trinket.io/pfe/09-dictionaries.html) | **W8** (Mon) |
+| **11** | Tue Nov 17 <br> **Thu Nov 19** | Tuples, sorting with `sorted` and `items()` · Sets and unique collections *(supplementary notes)* · Review (Tue) · **MIDTERM 2** — Moodle, closed-book, 9:30–10:30 (Thu) | [Ch. 10 — Tuples](https://books.trinket.io/pfe/10-tuples.html) + Moodle notes | **W9** (Mon) <br> **Midterm 2** |
+| **12** | Tue Nov 24 <br> Thu Nov 26 | **Object-oriented programming I:** why classes, defining a class, attributes, methods, `__init__`, objects vs. dictionaries (Tue) <br> **OOP II:** multiple instances, object lifecycle, a first look at inheritance (Thu) | [Ch. 14 — Objects](https://books.trinket.io/pfe/14-objects.html) | **W10** (Mon) |
+| **13** | Tue Dec 1 <br> Thu Dec 3 | **Formatting & code style:** PEP 8, naming, layout, comments that earn their place, auto-formatters and linters · Polishing your project for submission (Tue) <br> **Final project presentations & Q&A** (Thu) | [PEP 8 style guide](https://peps.python.org/pep-0008/) | **W11** (Mon) |
 | **14** | **Tue Dec 8** <br> *(last day of classes)* | **Final project presentations & Q&A** (continued) · Where to go next: databases, web data, and data visualization · Course wrap-up | — | **Presentations** <br> **Final project due 11:59 PM** |
 
 > **Tuesday, December 8 is the last day of classes.** Final code, documentation, and confidential
@@ -400,13 +337,6 @@ If you miss a midterm with an approved concession, the standard remedy is a defe
 one week, on a different version of the quiz. If a deferred sitting is not feasible, the weight may
 be transferred to the other midterm at the instructor's discretion.
 
-### Technical Failures During a Moodle Midterm
-
-Make sure your TRU network login is working before exam day. If Moodle or your machine fails
-mid-exam, **raise your hand immediately** — do not attempt to fix it silently and lose time. I can
-extend your individual attempt or reopen the quiz. Problems reported after the quiz has closed
-cannot be verified and will not be remedied.
-
 ### Accessibility
 
 Students registered with Accessibility Services who require accommodations must provide their
@@ -473,8 +403,8 @@ for more information.
 
 1. **Type the code, don't read it.** Run every example from the textbook yourself. Change a value,
    break it deliberately, see what error you get.
-2. **Start worksheets on Thursday, not Monday night.** You will get stuck — that is the point — and
-   you need the weekend to be unstuck.
+2. **Start worksheets as soon as they are released.** You will get stuck — that is the point — and
+   you need the days before the deadline to be unstuck.
 3. **Read error messages from the bottom up.** The last line names the error; the line above it
    names the line number.
 4. **Ask early.** A five-minute question on Moodle on Friday saves a frustrating Monday.

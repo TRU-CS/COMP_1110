@@ -75,7 +75,8 @@ In order:
 8. **Common errors** (`slide`) — 2–4 mistakes students actually make on this week's material, each
    with the error message they will see and what it means.
 9. **Summary** (`slide`) — 4–6 bullets.
-10. **This week's worksheet** (`slide`) — what it covers, released Thursday, due Tuesday 9:00 AM.
+10. **This week's worksheet** (`slide`) — what it covers, released Tuesday 9:00 AM, due the
+    following Monday 11:59 PM.
 11. **Next class** (`slide`) — one or two lines.
 
 ## 4. Concept slides

@@ -1,27 +1,27 @@
 # COMP 1110 — Weekly Worksheets
 
 Eleven student-facing worksheets (2% each, best 10 count = 20%), one per release week, as
-Jupyter notebooks. Released **Thursday after class**, due the following **Tuesday 9:00 AM**.
+Jupyter notebooks. Released **Tuesday 9:00 AM**, due the following **Monday 11:59 PM**.
 Students do the work on the practice platform, which serves every task in these notebooks and
 records what each student finished — nothing is uploaded to Moodle.
 
 | File | WS | Released | Due | Topic (chapter) | The game |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| `worksheet01_hello_machine.ipynb` | 1 | Thu Sep 10 | Tue Sep 15 | `print`, arithmetic, errors (1) | ASCII name badge + Error Lab |
-| `worksheet02_mind_reader.ipynb` | 2 | Thu Sep 17 | Tue Sep 22 | Variables, types, `input` (2) | The Mind Reader number trick |
-| `worksheet03_vending_machine.ipynb` | 3 | Thu Sep 24 | Tue Sep 29 | Conditionals, `try`/`except` (3) | Vending machine + RPS judge |
-| `worksheet04_dice_dungeon.ipynb` | 4 | Thu Oct 1 | Tue Oct 6 | Functions, scope (4) | Dice Dungeon + Mad Libs |
-| `worksheet05_guess_bot.ipynb` | 5 | Thu Oct 8 | **Tue Oct 20** | Iteration (5) | Guess Bot + Collatz search |
-| `worksheet06_secret_messages.ipynb` | 6 | Thu Oct 22 | Tue Oct 27 | Strings, f-strings (6) | Caesar cipher + cracking |
-| `worksheet07_high_score_vault.ipynb` | 7 | Thu Oct 29 | Tue Nov 3 | Files, testing, docstrings (7 + articles) | High Score Vault + test plan |
-| `worksheet08_tic_tac_toe.ipynb` | 8 | Thu Nov 5 | Tue Nov 10 | Lists, aliasing (8) | Tic-tac-toe referee + bots |
-| `worksheet09_lyric_lab.ipynb` | 9 | **Tue Nov 10** | Tue Nov 17 | Dictionaries (9) | Lyric Lab word counts |
-| `worksheet10_common_ground.ipynb` | 10 | Thu Nov 19 | Tue Nov 24 | Tuples, sorting, sets (10 + notes) | Common Ground similarity map |
-| `worksheet11_robot_arena.ipynb` | 11 | Thu Nov 26 | Tue Dec 1 | OOP (14) | Robot Arena battles |
+| `worksheet01_hello_machine.ipynb` | 1 | Tue Sep 15 | Mon Sep 21 | `print`, arithmetic, errors (1) | ASCII name badge + Error Lab |
+| `worksheet02_mind_reader.ipynb` | 2 | Tue Sep 22 | Mon Sep 28 | Variables, types, `input` (2) | The Mind Reader number trick |
+| `worksheet03_vending_machine.ipynb` | 3 | Tue Sep 29 | Mon Oct 5 | Conditionals, `try`/`except` (3) | Vending machine + RPS judge |
+| `worksheet04_dice_dungeon.ipynb` | 4 | Tue Oct 6 | Mon Oct 12 | Functions, scope (4) | Dice Dungeon + Mad Libs |
+| `worksheet05_guess_bot.ipynb` | 5 | Tue Oct 13 | Mon Oct 19 | Iteration (5) | Guess Bot + Collatz search |
+| `worksheet06_secret_messages.ipynb` | 6 | Tue Oct 20 | Mon Oct 26 | Strings, f-strings (6) | Caesar cipher + cracking |
+| `worksheet07_high_score_vault.ipynb` | 7 | Tue Oct 27 | Mon Nov 2 | Files, testing, docstrings (7 + articles) | High Score Vault + test plan |
+| `worksheet08_tic_tac_toe.ipynb` | 8 | Tue Nov 3 | Mon Nov 9 | Lists, aliasing (8) | Tic-tac-toe referee + bots |
+| `worksheet09_lyric_lab.ipynb` | 9 | Tue Nov 10 | Mon Nov 16 | Dictionaries (9) | Lyric Lab word counts |
+| `worksheet10_common_ground.ipynb` | 10 | Tue Nov 17 | Mon Nov 23 | Tuples, sorting, sets (10 + notes) | Common Ground similarity map |
+| `worksheet11_robot_arena.ipynb` | 11 | Tue Nov 24 | Mon Nov 30 | OOP (14) | Robot Arena battles |
 
-Two dates are deliberately off the weekly rhythm and are explained inside the worksheets
-themselves: **WS5** is due after Midterm 1 (Oct 15), and **WS9** is released on the Tuesday
-because there is no class on Thursday Nov 12 (fall mid-term break).
+Eleven consecutive release weeks, Sep 15 through Nov 24, leaving Weeks 13–14 clear for the final
+project. Two due dates sit next to an assessment and are explained inside the worksheets themselves:
+**WS5** is due after Midterm 1 (Oct 15), and **WS10** spans Midterm 2 (Nov 19).
 
 ## The shape of every worksheet
 
