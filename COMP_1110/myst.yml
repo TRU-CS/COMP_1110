@@ -18,9 +18,18 @@ project:
       email: lnguyen@tru.ca
   open_access: true
   license: CC-BY-4.0
-  # In-page execution: readers press the power button at the top of a lecture page
-  # and every code cell becomes editable and runnable, using a Pyodide kernel that
-  # runs entirely in their browser. No install, no account, no server.
+  # In-page execution. Readers press the power button at the top of a lecture page
+  # to start a Pyodide kernel in their own browser, then run any code cell on the
+  # page. No install, no account, no server.
+  #
+  # This is project-level, so EVERY page in the toc below inherits it — a new week
+  # needs nothing beyond being uncommented. Do not set `thebe`/`jupyter` in an
+  # individual notebook; that would override this.
+  #
+  # Cells are run-only: MyST has no editable-cell option (its thebe frontmatter
+  # accepts only lite/binder/server/kernelName/sessionName/disableSessionSaving/
+  # mathjax*), and editable thebe cells are still an open upstream request. If
+  # students need to edit and keep their changes, that needs a JupyterLite build.
   jupyter:
     lite: true
   # Notebooks are committed with their outputs already stored, so the site builds
