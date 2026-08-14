@@ -18,6 +18,11 @@ project:
       email: lnguyen@tru.ca
   open_access: true
   license: CC-BY-4.0
+  # In-page execution: readers press the power button at the top of a lecture page
+  # and every code cell becomes editable and runnable, using a Pyodide kernel that
+  # runs entirely in their browser. No install, no account, no server.
+  jupyter:
+    lite: true
   # Notebooks are committed with their outputs already stored, so the site builds
   # without a kernel. Re-execute a notebook after editing any code cell (see README).
   # Flat TOC: syllabus.md is first, so it is the landing page.
