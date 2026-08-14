@@ -142,7 +142,7 @@ using appropriate programming constructs and algorithmic thinking strategies.
 
 | Component | Weight | Format | When |
 | :--- | :--- | :--- | :--- |
-| **Weekly Worksheets** (10 × 2%) | **20%** | Individual, submitted on Moodle | Weeks 2–12 (see schedule) |
+| **Weekly Worksheets** (10 × 2%) | **20%** | Individual, on the COMP 1110 Practice Platform (link posted on Moodle) | Weeks 2–12 (see schedule) |
 | **Midterm 1** | **25%** | Closed-book, 60 min, on Moodle in class | Thu, Oct 15 (Week 6) |
 | **Midterm 2** | **25%** | Closed-book, 60 min, on Moodle in class | Thu, Nov 19 (Week 11) |
 | **Final Project** | **25%** | Group build, **individually graded** | Proposal Nov 5 · Presentations Dec 3 & 8 · Final submission Dec 8 |
@@ -155,6 +155,10 @@ using appropriate programming constructs and algorithmic thinking strategies.
 Ten worksheets, 2% each. Each worksheet contains short programming exercises drawn from the week's
 textbook chapter plus one *trace-and-explain* question (predict the output, or find and fix the
 bug). They are designed to take 60–90 minutes if you have kept up with the readings.
+
+Worksheets are **not on Moodle**. They live on the **COMP 1110 Practice Platform**, where you log in
+with your TRU ID and work through each worksheet task by task, running your Python in the browser.
+The link is posted on Moodle.
 
 - Released **Thursday after class**, due the following **Tuesday at 9:00 AM** (before class).
 - We start most Tuesday classes by working through selected worksheet problems together.
@@ -450,12 +454,10 @@ conversation. Note that the final project's Q&A component (12% of your final gra
 this test, conducted formally — and the midterms are closed-book with no AI access, so code you
 never understood is a debt that comes due twice.
 
-If you use AI, acknowledge it. Suggested format:
-
-> **AI Acknowledgement:** This assignment was completed with assistance from [AI tool name, version,
-> and provider]. The AI was used for [specific purpose, e.g., explaining an error message, generating
-> practice problems, reviewing my code]. All AI-generated content was reviewed, verified, and edited
-> by me, and I can explain every line of the submitted code.
+For worksheets, the **AI tutor built into the Practice Platform** is the sanctioned AI help: it
+responds to every submission with Socratic feedback — questions and hints aimed at getting you to
+the answer yourself, rather than the answer. Use it. It is designed for this course, it knows which
+worksheet you are on, and it will not hand you code you cannot explain.
 
 Please refer to [TRU's guideline on the use of generative AI](https://libguides.tru.ca/artificialintelligence)
 for more information.
