@@ -1,8 +1,9 @@
 # COMP 1110 — Weekly Worksheets
 
 Eleven student-facing worksheets (2% each, best 10 count = 20%), one per release week, as
-Jupyter notebooks. Released **Thursday after class**, due the following **Tuesday 9:00 AM** on
-Moodle.
+Jupyter notebooks. Released **Thursday after class**, due the following **Tuesday 9:00 AM**.
+Students do the work on the practice platform, which serves every task in these notebooks and
+records what each student finished — nothing is uploaded to Moodle.
 
 | File | WS | Released | Due | Topic (chapter) | The game |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -10,13 +11,13 @@ Moodle.
 | `worksheet02_mind_reader.ipynb` | 2 | Thu Sep 17 | Tue Sep 22 | Variables, types, `input` (2) | The Mind Reader number trick |
 | `worksheet03_vending_machine.ipynb` | 3 | Thu Sep 24 | Tue Sep 29 | Conditionals, `try`/`except` (3) | Vending machine + RPS judge |
 | `worksheet04_dice_dungeon.ipynb` | 4 | Thu Oct 1 | Tue Oct 6 | Functions, scope (4) | Dice Dungeon + Mad Libs |
-| `worksheet05_guess_bot.ipynb` | 5 | Thu Oct 8 | **Tue Oct 20** | Iteration (5) | Guess Bot + Collatz race |
+| `worksheet05_guess_bot.ipynb` | 5 | Thu Oct 8 | **Tue Oct 20** | Iteration (5) | Guess Bot + Collatz search |
 | `worksheet06_secret_messages.ipynb` | 6 | Thu Oct 22 | Tue Oct 27 | Strings, f-strings (6) | Caesar cipher + cracking |
-| `worksheet07_high_score_vault.ipynb` | 7 | Thu Oct 29 | Tue Nov 3 | Files, testing, docstrings (7 + articles) | High Score Vault + Bug Bounty |
-| `worksheet08_tic_tac_toe.ipynb` | 8 | Thu Nov 5 | Tue Nov 10 | Lists, aliasing (8) | Tic-tac-toe referee + bot ladder |
+| `worksheet07_high_score_vault.ipynb` | 7 | Thu Oct 29 | Tue Nov 3 | Files, testing, docstrings (7 + articles) | High Score Vault + test plan |
+| `worksheet08_tic_tac_toe.ipynb` | 8 | Thu Nov 5 | Tue Nov 10 | Lists, aliasing (8) | Tic-tac-toe referee + bots |
 | `worksheet09_lyric_lab.ipynb` | 9 | **Tue Nov 10** | Tue Nov 17 | Dictionaries (9) | Lyric Lab word counts |
 | `worksheet10_common_ground.ipynb` | 10 | Thu Nov 19 | Tue Nov 24 | Tuples, sorting, sets (10 + notes) | Common Ground similarity map |
-| `worksheet11_robot_arena.ipynb` | 11 | Thu Nov 26 | Tue Dec 1 | OOP (14) | Robot Arena championship |
+| `worksheet11_robot_arena.ipynb` | 11 | Thu Nov 26 | Tue Dec 1 | OOP (14) | Robot Arena battles |
 
 Two dates are deliberately off the weekly rhythm and are explained inside the worksheets
 themselves: **WS5** is due after Midterm 1 (Oct 15), and **WS9** is released on the Tuesday
@@ -34,37 +35,12 @@ Identical structure, so students learn it once:
 4. **Part A** — three or four short exercises, each followed by a **✅ Self-check** cell.
 5. **The game** — the build, in staged functions that the self-checks test as students go.
 6. **🐛 Trace and explain** — one hand-trace table plus a find-the-bug, as the syllabus requires.
-7. **🤝 Team Arena** — the interactive part (below).
-8. **⭐ Bonus** — explicitly 0 marks, for the students who want more.
-9. **Checklist · AI acknowledgement · what's next.**
+7. **⭐ Bonus** — explicitly 0 marks, for the students who want more.
+8. **Checklist · what's next.**
 
-## How the interaction works
-
-Every worksheet ends with a **Team Arena**: a named Moodle forum thread, plus something that
-happens in the following Tuesday's class. The design constraint is the syllabus — students may
-discuss approaches but **must not share code** — so what they exchange is never a solution:
-
-| WS | Thread | What is exchanged |
-| :--- | :--- | :--- |
-| 1 | Error Bounty | error messages they caused on purpose |
-| 2 | Trick Swap | number tricks as English recipes, not code |
-| 3 | Break My Branch | inputs designed to break each other's vending machines |
-| 4 | Spec Swap | function specs, and test cases for each other's specs |
-| 5 | Collatz Leaderboard | results; a mismatch pinpoints somebody's bug |
-| 6 | Cipher Exchange | ciphertexts to crack |
-| 7 | Bug Bounty | deliberately planted bugs; others post failing tests |
-| 8 | Referee Disputes | board positions + a live bot tournament in class |
-| 9 | The Class Corpus | counts from an identical file — disagreement = bug |
-| 10 | Common Ground | favourites sets; the class similarity map on the board |
-| 11 | Robot Championship | robot stats and strategies; round-robin in class |
-
-**You need to create the eleven forum threads on Moodle**, named exactly as above prefixed with
-the week (e.g. `Week 1 — Error Bounty`), and to reserve ~15 minutes of the Tuesday class for the
-in-class half. Several Arenas explicitly promise a class activity: the WS8 bot ladder, the WS10
-similarity map, and the WS11 championship are the big ones.
-
-The Arenas from WS4 onward lean on **project teams** (formed Week 3), which is deliberate — the
-syllabus asks teams to be study groups from the moment they form.
+Every worksheet is individual work: students may discuss approaches but **must not share code**,
+as the syllabus requires. A few worksheets still promise a Tuesday class activity — the WS8 bots
+and the WS11 robot championship are the ones that need ~15 minutes at the front of the room.
 
 ## Self-checks
 
@@ -110,8 +86,8 @@ downloaded and there is no network access anywhere. Those files are gitignored.
 
 ## Not in the book
 
-These are **not** in `myst.yml`'s TOC — they are released weekly on Moodle, and publishing them
-in the book would put worksheet 11 in front of students in week 2. If you later want them
+These are **not** in `myst.yml`'s TOC — they are released weekly on the Practice Platform, and
+publishing them in the book would put worksheet 11 in front of students in week 2. If you later want them
 published after the term, add them as a second TOC section.
 
 ## Answer keys
