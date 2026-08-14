@@ -9,7 +9,7 @@
 | **Last class** | Tuesday, December 8, 2026 |
 | **Instructor** | Quan Nguyen |
 | **Email** | lnguyen[at]tru[dot]ca |
-| **Office Hours** | TBA — Clock Tower CT 409 (and by appointment) |
+| **Office Hours** | Thursdays, 11:30 AM – 12:30 PM — Clock Tower CT 409 (and by appointment) |
 
 ---
 
@@ -168,8 +168,8 @@ The link is posted on Moodle.
 
 ### Midterms — 25% each
 
-Two **closed-book, 60-minute** assessments written **on Moodle during class time**. You will use
-your own laptop; the exam opens at 9:30 and closes at 10:30. Each midterm mixes:
+Two **closed-book, 60-minute** assessments written **on Moodle during class time**. The exam opens
+at 9:30 and closes at 10:30. Each midterm mixes:
 
 1. **Trace-and-predict questions** — given a short program, state its exact output, identify the
    error, or name what it computes. (Auto-graded on Moodle.)
@@ -219,7 +219,7 @@ You build as a team, but **you are graded as an individual.**
 
 No prior experience with Git is assumed. We spend the class of **Tuesday, October 13** on an
 introduction to Git and GitHub, and on walking through exactly what the final project deliverables
-are and how they are graded — bring your laptop.
+are and how they are graded.
 
 Every team must keep its code in a **GitHub repository**, and every member must **commit and push
 their own contributions under their own GitHub account**. Do not have one person push the whole
@@ -402,7 +402,7 @@ be transferred to the other midterm at the instructor's discretion.
 
 ### Technical Failures During a Moodle Midterm
 
-Come to class with a charged laptop and a working TRU network login. If Moodle or your machine fails
+Make sure your TRU network login is working before exam day. If Moodle or your machine fails
 mid-exam, **raise your hand immediately** — do not attempt to fix it silently and lose time. I can
 extend your individual attempt or reopen the quiz. Problems reported after the quiz has closed
 cannot be verified and will not be remedied.
