@@ -29,8 +29,8 @@ Valid values and when to use them:
 | `slide` | A new top-level slide. Use for each major section. |
 | `subslide` | A step *down* from the current slide (press ↓). Use for a worked example belonging to the slide above. |
 | `fragment` | Content that appears on the *same* slide with the next click. Use to reveal an answer after a question. |
-| `skip` | Instructor-only cells never shown in the deck. |
-| `notes` | Speaker notes (visible in the RISE speaker view only). |
+| `skip` | Cells hidden from the live deck — completed solutions, setup helpers. Students still read them in the notebook, so write them for a student audience. |
+| `notes` | Speaker notes. **Do not use.** These notebooks are published for students to read, so a notes cell is student-visible in the rendered site — never write a note to yourself in one. |
 | `-` | Continues the current slide immediately (no click). |
 
 Notebook-level metadata must include:
@@ -69,7 +69,9 @@ In order:
    format, where students read code without running it.
 7. **Live coding** (`slide` × 1–2) — a near-empty code cell with a comment header stating the problem
    to be solved together in class. Include the completed solution in the immediately following cell
-   marked `slide_type: "skip"` so the instructor has it but the deck does not show it.
+   marked `slide_type: "skip"`, so the deck does not show it during the live session. Label it
+   `# Solution` — students read these notebooks, so never label a cell "instructor copy",
+   "not shown in the deck", or similar.
 8. **Common errors** (`slide`) — 2–4 mistakes students actually make on this week's material, each
    with the error message they will see and what it means.
 9. **Summary** (`slide`) — 4–6 bullets.

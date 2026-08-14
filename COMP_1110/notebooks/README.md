@@ -10,7 +10,7 @@ Weekly lecture notes for COMP 1110 (Fall 2026), written as Jupyter notebooks tha
 | `week03_conditionals.ipynb` | 3 | Sep 22, 24 | Booleans, `if`/`elif`/`else`, `try`/`except` · **teams form** |
 | `week04_functions.ipynb` | 4 | Sep 29, Oct 1 | Functions, parameters, return values, scope |
 | `week05_iteration.ipynb` | 5 | Oct 6, 8 | `while`, `for`, loop patterns |
-| `week06_midterm1_review.ipynb` | 6 | Oct 13 | Midterm 1 review (midterm Thu Oct 15) |
+| `week06_midterm1_review.ipynb` | 6 | — | Midterm 1 review — **self-study pack, not a class** (midterm Thu Oct 15). Oct 13 class is Git & GitHub + project deliverables, which has no notebook yet |
 | `week07_strings.ipynb` | 7 | Oct 20, 22 | Strings, slicing, methods, f-strings & formatting |
 | `week08_files_testing_docs.ipynb` | 8 | Oct 27, 29 | Files (Tue) · testing & documentation (Thu) |
 | `week09_lists.ipynb` | 9 | Nov 3, 5 | Lists, mutability, aliasing · **proposal due Thu** |
