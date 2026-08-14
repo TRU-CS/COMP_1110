@@ -29,6 +29,7 @@ project:
     # - file: notebooks/week03_conditionals.ipynb
     # - file: notebooks/week04_functions.ipynb
     # - file: notebooks/week05_iteration.ipynb
+    # - file: notebooks/week06_git_and_project.ipynb
     # - file: notebooks/week06_midterm1_review.ipynb
     # - file: notebooks/week07_strings.ipynb
     # - file: notebooks/week08_files_testing_docs.ipynb

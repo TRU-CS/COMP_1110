@@ -178,7 +178,7 @@ Both must pass. If `--execute` fails, fix the code — do not remove the check.
 | 3 | Sep 22, 24 | Booleans, `if`/`elif`/`else`, nesting, `try`/`except` (+ teams form Thu) | 3 |
 | 4 | Sep 29, Oct 1 | Functions, parameters, return values, scope | 4 |
 | 5 | Oct 6, 8 | Iteration: `while`, `for`, `break`/`continue`, loop patterns | 5 |
-| 6 | Oct 13, 15 | **Midterm 1 review** (Tue); midterm is Thu — notebook covers Tue only | 1–5 |
+| 6 | Oct 13, 15 | **Git & GitHub + final project deliverables** (Tue); midterm is Thu. `week06_midterm1_review.ipynb` is a self-study pack, not a class | GitHub Hello World |
 | 7 | Oct 20, 22 | Strings, slicing, methods + f-strings and output formatting | 6 |
 | 8 | Oct 27, 29 | Files (Tue); **testing & documentation** (Thu) | 7 + articles |
 | 9 | Nov 3, 5 | Lists, mutability, slices, methods, `split`/`join`, aliasing | 8 |
