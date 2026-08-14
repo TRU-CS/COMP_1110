@@ -217,6 +217,10 @@ You build as a team, but **you are graded as an individual.**
 
 #### Version control on GitHub — required
 
+No prior experience with Git is assumed. We spend the class of **Tuesday, October 13** on an
+introduction to Git and GitHub, and on walking through exactly what the final project deliverables
+are and how they are graded — bring your laptop.
+
 Every team must keep its code in a **GitHub repository**, and every member must **commit and push
 their own contributions under their own GitHub account**. Do not have one person push the whole
 project on everyone's behalf, and do not paste teammates' code into your own commits.
@@ -304,7 +308,7 @@ Classes run Tuesdays and Thursdays, 9:30 – 11:20 AM in OM 1241. Chapter number
 | **3** | Tue Sep 22 <br> Thu Sep 24 | Boolean expressions and logical operators · `if` / `elif` / `else`, nested conditionals · `try` / `except` · **Project teams formed (Thu)** | [Ch. 3 — Conditionals](https://books.trinket.io/pfe/03-conditional.html) | **W2** (Tue) <br> **Teams due** (Thu) |
 | **4** | Tue Sep 29 <br> Thu Oct 1 | Functions: definition, invocation, parameters, arguments, return values · Scope · Why we decompose | [Ch. 4 — Functions](https://books.trinket.io/pfe/04-functions.html) | **W3** (Tue) |
 | **5** | Tue Oct 6 <br> Thu Oct 8 | Iteration: `while`, `for`, `break`, `continue` · Loop patterns: counting, summing, max/min · Loop-and-a-half | [Ch. 5 — Iterations](https://books.trinket.io/pfe/05-iterations.html) | **W4** (Tue) |
-| **6** | Tue Oct 13 <br> **Thu Oct 15** | Review & guided practice (Tue) · **MIDTERM 1** — Moodle, closed-book, 9:30–10:30 (Thu) | Review [Ch. 1](https://books.trinket.io/pfe/01-intro.html)–[5](https://books.trinket.io/pfe/05-iterations.html) | **Midterm 1** |
+| **6** | Tue Oct 13 <br> **Thu Oct 15** | **Introduction to Git & GitHub:** repositories, cloning, `commit` / `push`, reading a commit history, working on a repository as a team · **Final project deliverables explained:** proposal, team repository, presentation & Q&A, peer assessment, and how the individual grade is computed (Tue) <br> **MIDTERM 1** — Moodle, closed-book, 9:30–10:30 (Thu) | [GitHub — Hello World](https://docs.github.com/en/get-started/start-your-journey/hello-world) <br> Review [Ch. 1](https://books.trinket.io/pfe/01-intro.html)–[5](https://books.trinket.io/pfe/05-iterations.html) for Thursday | **Midterm 1** |
 | **7** | Tue Oct 20 <br> Thu Oct 22 | Strings as sequences · Indexing, slicing, immutability · Traversal, `in`, string methods · **String & output formatting:** f-strings, `format()`, alignment, rounding | [Ch. 6 — Strings](https://books.trinket.io/pfe/06-strings.html) | **W5** (Tue) |
 | **8** | Tue Oct 27 <br> Thu Oct 29 | Files: `open`, reading line by line, searching, writing files · Handling missing files (Tue) <br> **Testing & documentation:** test plans, edge cases, `assert`, intro to `unittest`, docstrings, README files (Thu) | [Ch. 7 — Files](https://books.trinket.io/pfe/07-files.html) <br> [A Beginner's Guide to Unit Tests in Python](https://www.dataquest.io/blog/unit-tests-python/) <br> [Documenting Python Code: A Complete Guide](https://realpython.com/documenting-python-code/) | **W6** (Tue) |
 | **9** | Tue Nov 3 <br> Thu Nov 5 | Lists: mutability, traversal, slices, methods, `split`/`join` · Aliasing and list arguments · Parsing lines | [Ch. 8 — Lists](https://books.trinket.io/pfe/08-lists.html) | **W7** (Tue) <br> **Team proposal** (Thu) |
@@ -320,11 +324,12 @@ Classes run Tuesdays and Thursdays, 9:30 – 11:20 AM in OM 1241. Chapter number
 > **There is no final exam in this course.** The December 10–23 examination period does not apply to
 > COMP 1110 — once you have presented and submitted, you are finished.
 
-**Readings beyond the textbook.** Three topics in this course are not in *Python for Everybody*, so
+**Readings beyond the textbook.** Four topics in this course are not in *Python for Everybody*, so
 their readings are linked directly in the schedule above:
 
 | Topic | Week | Reading |
 | :--- | :--- | :--- |
+| Git & GitHub | 6 | [GitHub — Hello World](https://docs.github.com/en/get-started/start-your-journey/hello-world) (GitHub Docs) |
 | Unit testing | 8 | [A Beginner's Guide to Unit Tests in Python](https://www.dataquest.io/blog/unit-tests-python/) (Dataquest) |
 | Documentation & docstrings | 8 | [Documenting Python Code: A Complete Guide](https://realpython.com/documenting-python-code/) (Real Python) |
 | Code style | 13 | [PEP 8 — Style Guide for Python Code](https://peps.python.org/pep-0008/) |
