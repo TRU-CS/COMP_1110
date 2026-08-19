@@ -1,12 +1,5 @@
 # COMP 1110 — Introduction to Computer Programming (Python)
 
-| | |
-| :--- | :--- |
-| **Term** | Fall 2026 (September – December 2026) |
-| **Meeting times** | Tuesdays & Thursdays, 9:30 – 11:20 AM |
-| **Room** | OM 1241 |
-| **First class** | Thursday, September 10, 2026 |
-| **Last class** | Tuesday, December 8, 2026 |
 | **Instructor** | Quan Nguyen |
 | **Email** | lnguyen[at]tru[dot]ca |
 | **Office Hours** | Thursdays, 11:30 AM – 12:30 PM — Clock Tower CT 409 (and by appointment) |
@@ -22,37 +15,19 @@ variables, input/output, conditionals, and loops — through functions and modul
 Python's core data structures (strings, lists, dictionaries, tuples, sets) and working with files
 and real data.
 
-Throughout, equal weight is given to *writing* programs and to *reading, tracing, and repairing*
-them. Debugging is treated as a first-class skill rather than an afterthought: every week you will
-be asked not only to produce code but to explain what a program does, predict its output, and
-locate why it misbehaves. The course closes with a team final project in which you specify, build,
-test, document, and present a program of your own design.
-
-The last third of the course turns to the habits that separate code that merely runs from code
-someone else can use: **testing and documentation**, **object-oriented programming**, and
-**formatting and code style**.
-
-This course covers **Chapters 1–10 and 14** of the textbook, plus supplementary material on testing,
-documentation, and style. Regular expressions, networked programs, web services, databases, and data
-visualization (Chapters 11, 12, 13, 15, 16) are **not covered** — those topics belong to later
-courses.
-
 ---
 
 ## Textbook
 
 **Required (free):** Charles R. Severance, *Python for Everybody: Exploring Data Using Python 3*.
 
-- **Read it online:** **<https://books.trinket.io/pfe/index.html>** — this is the version we use, and
-  every reading link in the course schedule below points into it.
-- **Companion site** with lecture videos and auto-graded practice exercises: <https://www.py4e.com/>
+- **Read it online:** **<https://books.trinket.io/pfe/index.html>** 
 
-The book is free and openly licensed (CC BY-NC-SA). There is **nothing to buy** for this course.
+The book is free and openly licensed (CC BY-NC-SA). 
+
 Please use the Trinket edition linked above rather than a PDF copy — its code examples are
 **runnable in the browser**, so you can edit and re-run every example as you read.
 
-**Software:** Python 3.11 or newer, plus a code editor. We will use **Visual Studio Code** with the
-Python extension in class.
 
 ---
 
@@ -79,85 +54,48 @@ By the end of this course, students will be able to:
 
 | Component | Weight | Format | When |
 | :--- | :--- | :--- | :--- |
-| **Weekly Worksheets** (10 × 2%) | **20%** | Individual, on the COMP 1110 Practice Platform (link posted on Moodle) | Weeks 3–13 (see schedule) |
+| **Weekly Worksheets** (10 × 2%) | **20%** | Individual, on the COMP 1110 Practice Platform (link posted on Moodle) | Due every Monday |
 | **Midterm 1** | **25%** | Closed-book, 60 min, on Moodle in class | Thu, Oct 15 (Week 6) |
 | **Midterm 2** | **25%** | Closed-book, 60 min, on Moodle in class | Thu, Nov 19 (Week 11) |
 | **Final Project** | **25%** | Group build, **individually graded** | Proposal Nov 5 · Presentations Dec 3 & 8 · Final submission Dec 8 |
-| **Final Exam** | **none** | — | This course has **no final exam** |
 | **Attendance & Participation** | **5%** | Moodle QR check-in each class | Every class |
 | **Total** | **100%** | | |
 
 ### Weekly Worksheets — 20%
 
-Ten worksheets, 2% each. Each worksheet contains short programming exercises drawn from the week's
+- Ten worksheets, 2% each. Each worksheet contains short programming exercises drawn from the week's
 textbook chapter plus one *trace-and-explain* question (predict the output, or find and fix the
-bug). They are designed to take 60–90 minutes if you have kept up with the readings.
-
-Worksheets are **not on Moodle**. They live on the **COMP 1110 Practice Platform**, where you log in
-with your TRU ID and work through each worksheet task by task, running your Python in the browser.
-The link is posted on Moodle.
-
-- Released **Tuesday at 9:00 AM**, due the following **Monday at 11:59 PM**.
-- We start most Tuesday classes by working through problems from the worksheet that closed the
-  night before.
+bug). 
 - Worksheets are graded for correctness *and* for readable code (meaningful variable names,
   comments where the logic is non-obvious).
 - **The lowest worksheet score is dropped**, so 11 worksheets are released and your best 10 count.
 
 ### Midterms — 25% each
 
-Two **closed-book, 60-minute** assessments written **on Moodle during class time**. The exam opens
-at 9:30 and closes at 10:30. Each midterm mixes:
-
-1. **Trace-and-predict questions** — given a short program, state its exact output, identify the
-   error, or name what it computes. (Auto-graded on Moodle.)
-2. **Short code-writing questions** — write a function or a small program in a Moodle text box.
-   Graded by hand for correctness and readability.
-
-**Closed-book means:** no textbook, no notes, no cheat sheet, no AI assistants, no browsing beyond
-the Moodle quiz page, no communication with anyone. The quiz is time-limited and question order is
-randomized. You may **not** run Python during the exam — you must be able to read code without
+- Two **closed-book, 60-minute** assessments written **on Moodle during class time**. 
+- **Closed-book means:** no textbook, no notes, no cheat sheet, no AI assistants, no browsing beyond
+the Moodle quiz page, no communication with anyone. 
+- You may **not** run Python during the exam — you must be able to read code without
 executing it, which is exactly what the weekly trace-and-explain questions prepare you for.
 
-| | Coverage | CLOs |
-| :--- | :--- | :--- |
-| **Midterm 1** (Thu Oct 15, 9:30–10:30) | Chapters 1–5: variables, expressions, conditionals, functions, iteration | CLO 1, 2, 4 |
-| **Midterm 2** (Thu Nov 19, 9:30–10:30) | Chapters 6–10: strings and string formatting, files, lists, dictionaries, tuples, sets · testing and docstrings | CLO 2, 3, 4 |
+| | Coverage | 
+| :--- | :--- | 
+| **Midterm 1** (Thu Oct 15, 9:30–10:30) | Chapters 1–5: variables, expressions, conditionals, functions, iteration |
+| **Midterm 2** (Thu Nov 19, 9:30–10:30) | Chapters 6–10: strings and string formatting, files, lists, dictionaries, tuples, sets · testing and docstrings | 
 
 Midterm 2 is *cumulative in tools* — you will still need conditionals, loops, and functions — but
 its new material is drawn from Chapters 6–10.
 
-A practice quiz in the identical Moodle format is released one week before each midterm, so no one
-meets the interface for the first time under time pressure.
 
 ### Final Project — 25%
 
-Teams of **3–4 students** design and build a Python program that reads data from a file or user
-input, processes it using the constructs from this course, and produces a useful result. Scope
-should be roughly 400–600 lines of Python across the team. Examples: a gradebook analyzer, a
-text-adventure game, a budget tracker, a word-frequency tool for a novel, a quiz app, a simple data
-report generator.
+**Overview & Requirements**
 
-Because the project is submitted after we cover testing, documentation, OOP, and style, it is
-expected to show them: **at least one class of your own design**, **a documented test plan with
-`assert`-based or `unittest` checks**, **docstrings on every function**, and **PEP 8-conformant
-formatting**. A program that merely works but is untested, undocumented, and unformatted will not
-earn full marks.
+* **Teams:** 3–4 students. Teams are formed by Week 3 (Sept 24) and will also serve as your study group for the term.
+* **Scope:** 400–600 lines of Python that reads data, processes it, and produces a useful result.
+* **Code Standards:** Submissions must include at least one custom class, automated tests (`assert` or `unittest`), docstrings for every function, and PEP 8 formatting.
 
-**Teams are formed in Week 3** (by Thursday, September 24) — long before the project itself begins.
-This is deliberate: your team is also your study group for the rest of the term. Sit together, work
-through worksheet problems together, and prepare for the midterms together. By the time the project
-starts in Week 9, you will already know how each other works.
-
-If you do not have a team by the Week 3 deadline, I will assign you to one.
-
-You build as a team, but **you are graded as an individual.**
-
-#### Version control on GitHub — required
-
-No prior experience with Git is assumed. We spend the class of **Tuesday, October 13** on an
-introduction to Git and GitHub, and on walking through exactly what the final project deliverables
-are and how they are graded.
+**GitHub (Mandatory)**
 
 Every team must keep its code in a **GitHub repository**, and every member must **commit and push
 their own contributions under their own GitHub account**. Do not have one person push the whole
@@ -181,55 +119,7 @@ copy from it. See [Academic Integrity](#academic-integrity).
 | **Team deliverable** (code, tests, documentation), **adjusted by peer factor** | **10%** | One team mark, multiplied by your individual peer-assessment factor |
 | **Project proposal** (team) | **3%** | 1-page team submission: problem, inputs, outputs, planned functions, who owns what, GitHub repository URL |
 
-**1. Presentation & Q&A — 12%, entirely individual.**
-Each team gets 20 minutes: a demo plus a segment from every member, followed by open Q&A. Your
-segment must cover the part of the code *you* wrote. During Q&A I will ask each member questions
-about **any** part of the team's codebase — including code you did not personally write — such as:
 
-- "Walk me through what happens when this function receives an empty list."
-- "Why a dictionary here rather than a list of pairs?"
-- "Change this loop to stop at the first match — what do you edit?"
-
-Marks come from the accuracy and specificity of your answers. A team that divided work so narrowly
-that no member can discuss the whole program will lose marks individually, not collectively. This
-component **cannot** be carried by teammates, and it is the reason a non-contributing member cannot
-pass the project on someone else's code.
-
-**2. Peer assessment factor.**
-At submission, each member confidentially rates every teammate (including a self-assessment) on
-contribution, reliability, communication, and code quality, with brief written justification. Ratings
-are averaged into a **peer factor**, normally between **0.75 and 1.10**, applied to your share of the
-team deliverable mark.
-
-- A member who contributed fully receives a factor of 1.00.
-- Substantial extra load may earn up to 1.10.
-- A member who repeatedly missed commitments may fall to 0.75 or below.
-- In documented cases of a member contributing essentially nothing, the factor may be set to **0**
-  after I review the evidence.
-
-Peer ratings are **not** taken at face value. I corroborate them against the GitHub commit history,
-the proposal's ownership plan, and your Q&A performance. Retaliatory,
-collusive ("we all give each other 5"), or unjustified ratings are discarded.
-
-**3. Team deliverable — one mark, then adjusted.**
-Judged on correctness, appropriate use of functions, data structures, and classes, code style and
-readability (PEP 8), a test plan with sample runs and automated checks, and documentation —
-docstrings throughout plus a README covering design decisions and known limitations. The README must
-include an **individual contribution statement** naming who wrote which functions.
-
-#### If a team is not working
-
-Tell me *before* the deadline, not in your peer assessment afterwards. I can reassign work,
-re-scope, or in serious cases split the team. Once the project is submitted, my options are limited
-to the peer factor.
-
-The project is the primary assessment for **CLO 5** and is where CLO 1–4 are shown working
-together.
-
-### Attendance & Participation — 5%
-
-This is a hands-on course; most classes involve live coding that is difficult to reconstruct from
-notes alone. See the attendance policy below.
 
 ---
 
