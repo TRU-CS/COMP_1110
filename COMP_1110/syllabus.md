@@ -1,8 +1,8 @@
 # COMP 1110 — Introduction to Computer Programming (Python)
 
-| **Instructor** | Quan Nguyen |
-| **Email** | lnguyen[at]tru[dot]ca |
-| **Office Hours** | Thursdays, 11:30 AM – 12:30 PM — Clock Tower CT 409 (and by appointment) |
+- **Instructor**: Dr. Quan Nguyen
+- **Email**: lnguyen[at]tru[dot]ca
+- **Office Hours**: Thursdays, 11:30 AM – 12:30 PM — Clock Tower CT 409 
 
 ---
 
@@ -23,10 +23,7 @@ and real data.
 
 - **Read it online:** **<https://books.trinket.io/pfe/index.html>** 
 
-The book is free and openly licensed (CC BY-NC-SA). 
 
-Please use the Trinket edition linked above rather than a PDF copy — its code examples are
-**runnable in the browser**, so you can edit and re-run every example as you read.
 
 
 ---
