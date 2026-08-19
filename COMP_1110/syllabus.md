@@ -63,9 +63,7 @@ By the end of this course, students will be able to:
 - Ten worksheets, 2% each. Each worksheet contains short programming exercises drawn from the week's
 textbook chapter plus one *trace-and-explain* question (predict the output, or find and fix the
 bug). 
-- Worksheets are graded for correctness *and* for readable code (meaningful variable names,
-  comments where the logic is non-obvious).
-- **The lowest worksheet score is dropped**, so 11 worksheets are released and your best 10 count.
+- Worksheets are graded as Pass/Fail. To receive a Pass, you must attempt all questions and correctly solve at least 80% of them
 
 ### Midterms — 25% each
 
