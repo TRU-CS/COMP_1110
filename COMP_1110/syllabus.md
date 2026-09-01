@@ -60,6 +60,7 @@ By the end of this course, students will be able to:
 
 ### Weekly Worksheets — 20%
 
+- Access the COMP 1110 TRU-Think platform (link posted on Moodle)
 - Ten worksheets, 2% each. Each worksheet contains short programming exercises drawn from the week's
 textbook chapter plus one *trace-and-explain* question (predict the output, or find and fix the
 bug). 
