@@ -116,17 +116,17 @@ Link to the Trinket edition, which is what the syllabus assigns:
 
 | Ch | URL |
 | :--- | :--- |
-| 1 Introduction | https://books.trinket.io/pfe/01-intro.html |
-| 2 Variables | https://books.trinket.io/pfe/02-variables.html |
-| 3 Conditionals | https://books.trinket.io/pfe/03-conditional.html |
-| 4 Functions | https://books.trinket.io/pfe/04-functions.html |
-| 5 Iterations | https://books.trinket.io/pfe/05-iterations.html |
-| 6 Strings | https://books.trinket.io/pfe/06-strings.html |
-| 7 Files | https://books.trinket.io/pfe/07-files.html |
-| 8 Lists | https://books.trinket.io/pfe/08-lists.html |
-| 9 Dictionaries | https://books.trinket.io/pfe/09-dictionaries.html |
-| 10 Tuples | https://books.trinket.io/pfe/10-tuples.html |
-| 14 Objects | https://books.trinket.io/pfe/14-objects.html |
+| 1 Introduction | https://www.py4e.com/html3/01-intro |
+| 2 Variables | https://www.py4e.com/html3/02-variables |
+| 3 Conditionals | https://www.py4e.com/html3/03-conditional |
+| 4 Functions | https://www.py4e.com/html3/04-functions |
+| 5 Iterations | https://www.py4e.com/html3/05-iterations |
+| 6 Strings | https://www.py4e.com/html3/06-strings |
+| 7 Files | https://www.py4e.com/html3/07-files |
+| 8 Lists | https://www.py4e.com/html3/08-lists |
+| 9 Dictionaries | https://www.py4e.com/html3/09-dictionaries |
+| 10 Tuples | https://www.py4e.com/html3/10-tuples |
+| 14 Objects | https://www.py4e.com/html3/14-objects |
 
 Non-textbook readings:
 
