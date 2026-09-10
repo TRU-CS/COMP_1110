@@ -26,72 +26,58 @@ Week 14 (Dec 8) is project presentations — no lecture notebook.
 
 ---
 
-## Running a notebook on Binder
+## Running a notebook in Colab
 
-Every notebook carries two links to a live copy of itself, both pointing at
-[mybinder.org](https://mybinder.org):
+Every notebook carries an **Open in Colab** badge just under its title. It opens that week
+in [Google Colab](https://colab.research.google.com), reading the `.ipynb` straight from
+`main` on GitHub, so a student can run *and edit* cells without installing anything.
 
-- the **launch binder** badge just under the title, and
-- an **Open in Binder** entry in the ⬇ download menu at the top of the page on the
-  published site.
+This is the editable counterpart to the in-page Pyodide kernel configured in `myst.yml`
+(`jupyter.lite`), which runs cells on the website itself but cannot save changes.
 
-Both open JupyterLab on Binder with that week's notebook already loaded, so a student can
-run and *edit* cells without installing anything. This is the fallback for the in-page
-Pyodide kernel configured in `myst.yml` (`jupyter.lite`), which runs cells on the website
-itself but cannot save edits.
+There is nothing to configure and no environment file in the repo: Colab supplies its own
+Python, and these notebooks are standard-library-only by design, so nothing needs
+installing.
 
-**Tell students their Binder session is disposable.** It is deleted after ~10 minutes idle
-and nothing they type is saved. To keep work, use *File → Download* before leaving.
+**Three things to tell students:**
 
-### The environment
+- **A Google account is required.** Colab will not open without one. Anyone who cannot or
+  will not sign in still has the in-page power button on the website, and the `.ipynb`
+  download.
+- **Edits do not go back to GitHub.** Colab opens a throwaway copy. To keep work, use
+  *File → Save a copy in Drive* before leaving.
+- **Colab always loads the current `main`.** Push a fix to a notebook and the next student
+  to click the badge gets it — no cache to clear.
 
-`binder/requirements.txt` and `binder/runtime.txt` at the **repo root** define the image
-(`python-3.11`, matching the kernel these notebooks were executed with, so error messages
-students see on Binder match the ones printed in the notes). The notebooks import only the
-standard library, so the requirements file exists mainly to pin JupyterLab and to install
-`jupyterlab-myst`, which renders the MyST frontmatter cell at the top of each notebook as a
-frontmatter block instead of raw YAML.
+### The Python version is not ours to pin
 
-The first launch after a push to `main` rebuilds the image and can take several minutes;
-every launch after that is cached and starts in seconds. **Open one Binder session yourself
-the morning of a class you plan to use it in** — that pays the build cost before 40 students
-hit it at once.
+Colab runs whatever Python Google currently ships, and these notebooks were executed
+against 3.11. That matters for Week 1's error taxonomy and the "common errors" cells
+throughout: traceback wording and `SyntaxError` carets have changed between recent Python
+releases, so what a student sees in Colab can differ from what is printed in the notes.
 
-### When a launch fails
+**Check this at the start of term** — run `import sys; print(sys.version)` in Colab and
+skim the error-message cells for the weeks you teach before relying on them.
 
-mybinder.org is a federation of independent clusters, and each click is load-balanced to a
-random one. A broken member fails for every repo on it, so the failures look alarming but
-are not caused by anything here. Observed:
+### The badge cell
 
-- `failed to create fsnotify watcher: too many open files` — inotify exhausted on that
-  build node.
-- `Could not resolve ref for gh:TRU-CS/COMP_1110/main` — that cluster has burned through
-  its anonymous GitHub API quota.
-
-**Both clear on a retry**, which lands on a different member. Tell students to click again
-rather than assume the notebook is broken — and do not make a Binder launch the only path
-through a class activity.
-
-### The two extra cells
-
-Each notebook starts with two cells that are *not* lecture content, both `slide_type: skip`
-so they never appear in the RISE deck:
+Each notebook has one cell that is not lecture content, `slide_type: skip` so it never
+appears in the RISE deck:
 
 | Cell id | What it is |
 | :--- | :--- |
-| `myst-frontmatter` | MyST page frontmatter — the `downloads:` list that puts **Open in Binder** in the site's download menu |
-| `binder-badge` | The visible **launch binder** badge and its one-line caption |
+| `colab-badge` | The **Open in Colab** badge and its one-line caption |
 
-Both are generated, and both hard-code the notebook's own filename. **If you rename or add
-a notebook, regenerate them** rather than hand-editing the URL:
+It is generated and hard-codes the notebook's own filename. **If you rename or add a
+notebook, regenerate it** rather than hand-editing the URL:
 
 ```bash
-python3 add_binder_links.py                 # every week*.ipynb here
-python3 add_binder_links.py week14_new.ipynb
+python3 add_colab_links.py                 # every week*.ipynb here
+python3 add_colab_links.py week14_new.ipynb
 ```
 
-`add_binder_links.py` rewrites the two cells in place, is safe to run repeatedly, and
-touches nothing else in the notebook.
+`add_colab_links.py` rewrites the cell in place, is safe to run repeatedly, and touches
+nothing else in the notebook.
 
 ---
 
