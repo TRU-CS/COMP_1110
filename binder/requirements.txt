@@ -1,0 +1,14 @@
+# Environment for the "Open in Binder" links at the top of each lecture notebook
+# (COMP_1110/notebooks/*.ipynb). repo2docker reads this file plus runtime.txt.
+#
+# The notebooks import only the standard library (math, random, sys, time,
+# unittest), so nothing below is needed to *run* them:
+#
+#   jupyterlab       - the interface students land in.
+#   jupyterlab-myst  - renders the MyST frontmatter cell at the top of each
+#                      notebook as a frontmatter block instead of raw YAML.
+#
+# Pinned to a minor series so a Binder image built in week 13 behaves like the
+# one built in week 1. Bump deliberately, not by accident.
+jupyterlab==4.6.*
+jupyterlab-myst==2.7.*

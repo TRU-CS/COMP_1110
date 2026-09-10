@@ -26,6 +26,75 @@ Week 14 (Dec 8) is project presentations — no lecture notebook.
 
 ---
 
+## Running a notebook on Binder
+
+Every notebook carries two links to a live copy of itself, both pointing at
+[mybinder.org](https://mybinder.org):
+
+- the **launch binder** badge just under the title, and
+- an **Open in Binder** entry in the ⬇ download menu at the top of the page on the
+  published site.
+
+Both open JupyterLab on Binder with that week's notebook already loaded, so a student can
+run and *edit* cells without installing anything. This is the fallback for the in-page
+Pyodide kernel configured in `myst.yml` (`jupyter.lite`), which runs cells on the website
+itself but cannot save edits.
+
+**Tell students their Binder session is disposable.** It is deleted after ~10 minutes idle
+and nothing they type is saved. To keep work, use *File → Download* before leaving.
+
+### The environment
+
+`binder/requirements.txt` and `binder/runtime.txt` at the **repo root** define the image
+(`python-3.11`, matching the kernel these notebooks were executed with, so error messages
+students see on Binder match the ones printed in the notes). The notebooks import only the
+standard library, so the requirements file exists mainly to pin JupyterLab and to install
+`jupyterlab-myst`, which renders the MyST frontmatter cell at the top of each notebook as a
+frontmatter block instead of raw YAML.
+
+The first launch after a push to `main` rebuilds the image and can take several minutes;
+every launch after that is cached and starts in seconds. **Open one Binder session yourself
+the morning of a class you plan to use it in** — that pays the build cost before 40 students
+hit it at once.
+
+### When a launch fails
+
+mybinder.org is a federation of independent clusters, and each click is load-balanced to a
+random one. A broken member fails for every repo on it, so the failures look alarming but
+are not caused by anything here. Observed:
+
+- `failed to create fsnotify watcher: too many open files` — inotify exhausted on that
+  build node.
+- `Could not resolve ref for gh:TRU-CS/COMP_1110/main` — that cluster has burned through
+  its anonymous GitHub API quota.
+
+**Both clear on a retry**, which lands on a different member. Tell students to click again
+rather than assume the notebook is broken — and do not make a Binder launch the only path
+through a class activity.
+
+### The two extra cells
+
+Each notebook starts with two cells that are *not* lecture content, both `slide_type: skip`
+so they never appear in the RISE deck:
+
+| Cell id | What it is |
+| :--- | :--- |
+| `myst-frontmatter` | MyST page frontmatter — the `downloads:` list that puts **Open in Binder** in the site's download menu |
+| `binder-badge` | The visible **launch binder** badge and its one-line caption |
+
+Both are generated, and both hard-code the notebook's own filename. **If you rename or add
+a notebook, regenerate them** rather than hand-editing the URL:
+
+```bash
+python3 add_binder_links.py                 # every week*.ipynb here
+python3 add_binder_links.py week14_new.ipynb
+```
+
+`add_binder_links.py` rewrites the two cells in place, is safe to run repeatedly, and
+touches nothing else in the notebook.
+
+---
+
 ## Presenting the notebooks as slides
 
 These notebooks carry RISE slideshow metadata on every cell, so any of them can be presented as a
