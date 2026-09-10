@@ -112,7 +112,7 @@ temperatures, shopping totals, text messages, song playlists. Avoid `foo`/`bar`.
 
 ## 6. Textbook links
 
-Link to the Trinket edition, which is what the syllabus assigns:
+Link to the free online edition at py4e.com, which is what the syllabus assigns:
 
 | Ch | URL |
 | :--- | :--- |
@@ -163,7 +163,7 @@ Both must pass. If `--execute` fails, fix the code — do not remove the check.
 ## 8. Course facts (do not contradict)
 
 - COMP 1110, Fall 2026, Tue & Thu 9:30–11:20, OM 1241, first class Thu Sep 10.
-- Instructor: Quan Nguyen. Textbook: *Python for Everybody* (Trinket edition).
+- Instructor: Quan Nguyen. Textbook: *Python for Everybody* (free online edition at py4e.com).
 - Assessment: 11 worksheets (best 10 × 2% = 20%), Midterm 1 25% (Thu Oct 15), Midterm 2 25%
   (Thu Nov 19), group final project 25% (individually graded), attendance 5%. **No final exam.**
 - Midterms are **closed-book, 60 minutes, on Moodle, no running Python**.
