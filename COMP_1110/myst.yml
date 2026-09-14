@@ -51,7 +51,7 @@ project:
   toc:
     - file: syllabus.md
     - file: notebooks/week01_intro.ipynb
-    # - file: notebooks/week02_variables.ipynb
+    - file: notebooks/week02_variables.ipynb
     # - file: notebooks/week03_conditionals.ipynb
     # - file: notebooks/week04_functions.ipynb
     # - file: notebooks/week05_iteration.ipynb
