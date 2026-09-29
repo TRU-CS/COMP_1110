@@ -87,9 +87,9 @@ its new material is drawn from Chapters 6–10.
 
 **Overview & Requirements**
 
-* **Teams:** 3–4 students. Teams are formed by Week 3 (Sept 24) and will also serve as your study group for the term.
-* **Scope:** 400–600 lines of Python that reads data, processes it, and produces a useful result.
-* **Code Standards:** Submissions must include at least one custom class, automated tests (`assert` or `unittest`), docstrings for every function, and PEP 8 formatting.
+* **Teams:** 3–4 students. Teams are formed in Week 4 — names in class **Thu Oct 1**, one-page teamwork contract to Moodle by **Sun Oct 4** — and will also serve as your study group for the term.
+* **Scope:** 400–600 lines of Python. The design and implementation of the project are up to your team, subject to the requirements in [Final Project](final_project.md).
+* **Code Standards:** Submissions must include at least one custom class, automated tests written with `pytest`, docstrings for every function, and PEP 8 formatting.
 
 **GitHub (Mandatory)**
 
@@ -128,12 +128,12 @@ Classes run Tuesdays and Thursdays, 9:30 – 11:20 AM in OM 1241. Chapter number
 | :--- | :--- | :--- | :--- | :--- |
 | **1** | **Thu Sep 10** | Course intro · What is a program? · Hardware, interpreters, and your first `print` · Setting up Python + VS Code | [Ch. 1 — Introduction](https://www.py4e.com/html3/01-intro) | — |
 | **2** | Tue Sep 15 <br> Thu Sep 17 | Values, types, variables, expressions · `input()`, type conversion, operators, mnemonic names, comments | [Ch. 2 — Variables](https://www.py4e.com/html3/02-variables) | — |
-| **3** | Tue Sep 22 <br> Thu Sep 24 | Boolean expressions and logical operators · `if` / `elif` / `else`, nested conditionals · `try` / `except` · **Project teams formed (Thu)** | [Ch. 3 — Conditionals](https://www.py4e.com/html3/03-conditional) | **W1** (Mon Sep 21) <br> **W2** (Thu Sep 24) <br> **Teams due** (Thu) |
-| **4** | Tue Sep 29 <br> Thu Oct 1 | Functions: definition, invocation, parameters, arguments, return values · Scope · Why we decompose | [Ch. 4 — Functions](https://www.py4e.com/html3/04-functions) | **W3** (Thu Oct 1) |
+| **3** | Tue Sep 22 <br> Thu Sep 24 | Boolean expressions and logical operators · `if` / `elif` / `else`, nested conditionals · `try` / `except` | [Ch. 3 — Conditionals](https://www.py4e.com/html3/03-conditional) | **W1** (Mon Sep 21) <br> **W2** (Thu Sep 24) |
+| **4** | Tue Sep 29 <br> Thu Oct 1 | Functions: definition, invocation, parameters, arguments, return values · Scope · Why we decompose · **Project teams formed (Thu)** | [Ch. 4 — Functions](https://www.py4e.com/html3/04-functions) | **W3** (Thu Oct 1) <br> **Teams due** (Thu Oct 1) <br> **Teamwork contract** (Sun Oct 4) |
 | **5** | Tue Oct 6 <br> Thu Oct 8 | Iteration: `while`, `for`, `break`, `continue` · Loop patterns: counting, summing, max/min · Loop-and-a-half | [Ch. 5 — Iterations](https://www.py4e.com/html3/05-iterations) | **W4** (Thu Oct 8) |
 | **6** | Tue Oct 13 <br> **Thu Oct 15** | **Introduction to Git & GitHub:** repositories, cloning, `commit` / `push`, reading a commit history, working on a repository as a team · **Final project deliverables explained:** proposal, team repository, presentation & Q&A, peer assessment, and how the individual grade is computed (Tue) <br> **MIDTERM 1** — Moodle, closed-book, 9:30–10:30 (Thu) | [GitHub — Hello World](https://docs.github.com/en/get-started/start-your-journey/hello-world) <br> Review [Ch. 1](https://www.py4e.com/html3/01-intro)–[5](https://www.py4e.com/html3/05-iterations) for Thursday | **W5** (Fri Oct 16) <br> **Midterm 1** |
 | **7** | Tue Oct 20 <br> Thu Oct 22 | Strings as sequences · Indexing, slicing, immutability · Traversal, `in`, string methods · **String & output formatting:** f-strings, `format()`, alignment, rounding | [Ch. 6 — Strings](https://www.py4e.com/html3/06-strings) | — |
-| **8** | Tue Oct 27 <br> Thu Oct 29 | Files: `open`, reading line by line, searching, writing files · Handling missing files (Tue) <br> **Testing & documentation:** test plans, edge cases, `assert`, intro to `unittest`, docstrings, README files (Thu) | [Ch. 7 — Files](https://www.py4e.com/html3/07-files) <br> [A Beginner's Guide to Unit Tests in Python](https://www.dataquest.io/blog/unit-tests-python/) <br> [Documenting Python Code: A Complete Guide](https://realpython.com/documenting-python-code/) | **W6** (Thu Oct 29) |
+| **8** | Tue Oct 27 <br> Thu Oct 29 | Files: `open`, reading line by line, searching, writing files · Handling missing files (Tue) <br> **Testing & documentation:** test plans, edge cases, `assert`, writing and running tests with `pytest`, docstrings, README files (Thu) | [Ch. 7 — Files](https://www.py4e.com/html3/07-files) <br> [Get Started — pytest](https://docs.pytest.org/en/stable/getting-started.html) <br> [Documenting Python Code: A Complete Guide](https://realpython.com/documenting-python-code/) | **W6** (Thu Oct 29) |
 | **9** | Tue Nov 3 <br> Thu Nov 5 | Lists: mutability, traversal, slices, methods, `split`/`join` · Aliasing and list arguments · Parsing lines | [Ch. 8 — Lists](https://www.py4e.com/html3/08-lists) | **W7** (Thu Nov 5) <br> **Team proposal** (Thu) |
 | **10** | **Tue Nov 10** <br> ~~Thu Nov 12~~ | Dictionaries: key-value structures, counting patterns, `get`, looping over dictionaries <br> *(no class Thu — fall mid-term break)* | [Ch. 9 — Dictionaries](https://www.py4e.com/html3/09-dictionaries) | **W8** (Thu Nov 12) |
 | **11** | Tue Nov 17 <br> **Thu Nov 19** | Tuples, sorting with `sorted` and `items()` · Sets and unique collections *(supplementary notes)* · Review (Tue) · **MIDTERM 2** — Moodle, closed-book, 9:30–10:30 (Thu) | [Ch. 10 — Tuples](https://www.py4e.com/html3/10-tuples) + Moodle notes | **W9** (Fri Nov 20) <br> **Midterm 2** |
@@ -153,13 +153,13 @@ their readings are linked directly in the schedule above:
 | Topic | Week | Reading |
 | :--- | :--- | :--- |
 | Git & GitHub | 6 | [GitHub — Hello World](https://docs.github.com/en/get-started/start-your-journey/hello-world) (GitHub Docs) |
-| Unit testing | 8 | [A Beginner's Guide to Unit Tests in Python](https://www.dataquest.io/blog/unit-tests-python/) (Dataquest) |
+| Unit testing | 8 | [Get Started — pytest](https://docs.pytest.org/en/stable/getting-started.html) (pytest documentation) |
 | Documentation & docstrings | 8 | [Documenting Python Code: A Complete Guide](https://realpython.com/documenting-python-code/) (Real Python) |
 | Code style | 13 | [PEP 8 — Style Guide for Python Code](https://peps.python.org/pep-0008/) |
 
-Read the testing and documentation articles for their **`assert`, `unittest.TestCase`, and docstring**
-sections. Both go further than this course requires — you are not responsible for `setUp`/`tearDown`,
-Sphinx, or doctest.
+Read the testing and documentation articles for their **`assert`, test-function, and docstring**
+sections. Both go further than this course requires — you are not responsible for fixtures,
+parametrisation, Sphinx, or doctest.
 
 **Note on sets:** *Python for Everybody* does not devote a chapter to sets. Supplementary notes and
 exercises covering sets and set operations will be posted on Moodle for Week 11 (CLO 3).

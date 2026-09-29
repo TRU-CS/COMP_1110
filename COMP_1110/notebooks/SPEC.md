@@ -130,7 +130,7 @@ Link to the free online edition at py4e.com, which is what the syllabus assigns:
 
 Non-textbook readings:
 
-- Unit testing (Week 8): https://www.dataquest.io/blog/unit-tests-python/
+- Testing with pytest (Week 8): https://docs.pytest.org/en/stable/getting-started.html
 - Documentation (Week 8): https://realpython.com/documenting-python-code/
 - Code style (Week 13): https://peps.python.org/pep-0008/
 
@@ -167,7 +167,7 @@ Both must pass. If `--execute` fails, fix the code — do not remove the check.
 - Assessment: 11 worksheets (best 10 × 2% = 20%), Midterm 1 25% (Thu Oct 15), Midterm 2 25%
   (Thu Nov 19), group final project 25% (individually graded), attendance 5%. **No final exam.**
 - Midterms are **closed-book, 60 minutes, on Moodle, no running Python**.
-- Project teams are formed in **Week 3**; the team proposal is due Thu Nov 5.
+- Project teams are formed in **Week 4** (names Thu Oct 1, teamwork contract Sun Oct 4); the team proposal is due Thu Nov 5.
 - No class Thu Nov 12 (fall mid-term break). Last day of classes Tue Dec 8.
 
 ## 9. Weekly assignments
