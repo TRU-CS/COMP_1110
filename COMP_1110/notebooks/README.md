@@ -12,6 +12,7 @@ Weekly lecture notes for COMP 1110 (Fall 2026), written as Jupyter notebooks tha
 | `week05_iteration.ipynb` | 5 | Oct 6, 8 | `while`, `for`, loop patterns |
 | `week06_git_and_project.ipynb` | 6 | Oct 13 | Git & GitHub · final project deliverables and how they are graded |
 | `week06_midterm1_review.ipynb` | 6 | — | Midterm 1 review — **self-study pack, not a class** (midterm Thu Oct 15) |
+| `week06_midterm1_practice.ipynb` | 6 | — | Midterm 1 practice — ~60 multiple-choice questions with answer reveals, plus four write-the-code exercises with model solutions |
 | `week07_strings.ipynb` | 7 | Oct 20, 22 | Strings, slicing, methods, f-strings & formatting |
 | `week08_files_testing_docs.ipynb` | 8 | Oct 27, 29 | Files (Tue) · testing & documentation (Thu) |
 | `week09_lists.ipynb` | 9 | Nov 3, 5 | Lists, mutability, aliasing · **proposal due Thu** |
