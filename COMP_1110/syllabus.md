@@ -54,7 +54,7 @@ By the end of this course, students will be able to:
 | **Weekly Worksheets** (10 × 2%) | **20%** | Individual, on the COMP 1110 Practice Platform (link posted on Moodle) | Due every Thursday, 11:59 PM |
 | **Midterm 1** | **25%** | Closed-book, 60 min, on Moodle in class | Thu, Oct 15 (Week 6) |
 | **Midterm 2** | **25%** | Closed-book, 60 min, on Moodle in class | Thu, Nov 19 (Week 11) |
-| **Final Project** | **25%** | Group build, **individually graded** | Proposal Nov 5 · Presentations Dec 3 & 8 · Final submission Dec 8 |
+| **Final Project** | **25%** | Group build, **individually graded** | Proposal Nov 5 · Presentations Dec 8 & 10 · Final submission Dec 8 |
 | **Attendance & Participation** | **5%** | Moodle QR check-in each class | Every class |
 | **Total** | **100%** | | |
 
@@ -138,14 +138,16 @@ Classes run Tuesdays and Thursdays, 9:30 – 11:20 AM in OM 1241. Chapter number
 | **10** | **Tue Nov 10** <br> ~~Thu Nov 12~~ | Dictionaries: key-value structures, counting patterns, `get`, looping over dictionaries <br> *(no class Thu — fall mid-term break)* | [Ch. 9 — Dictionaries](https://www.py4e.com/html3/09-dictionaries) | **W8** (Thu Nov 12) |
 | **11** | Tue Nov 17 <br> **Thu Nov 19** | Tuples, sorting with `sorted` and `items()` · Sets and unique collections *(supplementary notes)* · Review (Tue) · **MIDTERM 2** — Moodle, closed-book, 9:30–10:30 (Thu) | [Ch. 10 — Tuples](https://www.py4e.com/html3/10-tuples) + Moodle notes | **W9** (Fri Nov 20) <br> **Midterm 2** |
 | **12** | Tue Nov 24 <br> Thu Nov 26 | **Object-oriented programming I:** why classes, defining a class, attributes, methods, `__init__`, objects vs. dictionaries (Tue) <br> **OOP II:** multiple instances, object lifecycle, a first look at inheritance (Thu) | [Ch. 14 — Objects](https://www.py4e.com/html3/14-objects) | **W10** (Thu Nov 26) |
-| **13** | Tue Dec 1 <br> Thu Dec 3 | **Formatting & code style:** PEP 8, naming, layout, comments that earn their place, auto-formatters and linters · Polishing your project for submission (Tue) <br> **Final project presentations & Q&A** (Thu) | [PEP 8 style guide](https://peps.python.org/pep-0008/) | **W11** (Thu Dec 3) |
-| **14** | **Tue Dec 8** <br> *(last day of classes)* | **Final project presentations & Q&A** (continued) · Where to go next: databases, web data, and data visualization · Course wrap-up | — | **Presentations** <br> **Final project due 11:59 PM** |
+| **13** | Tue Dec 1 <br> Thu Dec 3 | **Formatting & code style:** PEP 8, naming, layout, comments that earn their place, auto-formatters and linters · Polishing your project for submission (Tue) <br> Project work session & presentation prep (Thu) | [PEP 8 style guide](https://peps.python.org/pep-0008/) | **W11** (Thu Dec 3) |
+| **14** | **Tue Dec 8** <br> *(last day of classes)* | **Final project presentations & Q&A** · Where to go next: databases, web data, and data visualization · Course wrap-up | — | **Presentations** <br> **Final project due 11:59 PM** |
+| **Exam period** | **Thu Dec 10** <br> *(scheduled final exam slot)* | **Final project presentations & Q&A** (continued) — time and room as in the TRU final exam schedule | — | **Presentations** |
 
 > **Tuesday, December 8 is the last day of classes.** Final code, documentation, and confidential
 > peer assessments are due that night at **11:59 PM**.
 >
-> **There is no final exam in this course.** The December 10–23 examination period does not apply to
-> COMP 1110 — once you have presented and submitted, you are finished.
+> **There is no written final exam in this course.** The scheduled final exam slot on **Thursday,
+> December 10** is used for the remaining team presentations — once you have presented and
+> submitted, you are finished.
 
 **Readings beyond the textbook.** Four topics in this course are not in *Python for Everybody*, so
 their readings are linked directly in the schedule above:

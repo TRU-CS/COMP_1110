@@ -159,7 +159,7 @@ organised the same way.
 | 0 | **Team formed + Teamwork Contract** — 1 page, from the team | Thu Oct 1 (names) · Sun Oct 4 (contract) | Required, ungraded |
 | 1 | **Project proposal** — 1 page, from the team | **Thu Nov 5** | **3%** |
 | 2 | **Status report** — 2 pages max, from the team | Thu Nov 19 | Required, ungraded |
-| 3 | **Presentation & Q&A** — your own segment | Thu Dec 3 / Tue Dec 8 | **12%**, individual |
+| 3 | **Presentation & Q&A** — your own segment | Tue Dec 8 / Thu Dec 10 (scheduled final exam slot) | **12%**, individual |
 | 4 | **Final submission** — `project.py`, `test_project.py`, `requirements.txt`, `README.md`, video link | **Tue Dec 8, 11:59 PM** | **10%** × peer factor |
 | 4b | **Peer assessments** — confidential, individual | Tue Dec 8, 11:59 PM | Sets your peer factor |
 
@@ -301,7 +301,8 @@ any say about your teammates.
 ## 5. Presentation & Q&A
 
 **12% of your final grade, entirely individual.** Each team gets **10 minutes** in class on
-**Thu Dec 3** or **Tue Dec 8**: a live demo, a segment from every member, then open Q&A.
+**Tue Dec 8** or **Thu Dec 10** (the course's scheduled final exam slot, used for
+presentations instead of an exam): a live demo, a segment from every member, then open Q&A.
 
 ### The demo video
 - Create a 3 mins video to demonstrate your project in action, as with slides, screenshots, voiceover, and/or live action.
