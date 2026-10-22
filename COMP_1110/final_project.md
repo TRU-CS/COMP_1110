@@ -224,27 +224,6 @@ the repository.
 `github.com/<owner>/<repo>/invitations`. Until you accept it, you cannot push. The invitation
 expires after 7 days; if it does, ask for a new one.
 
-**5. Everyone clones the repository** — click the green **Code** button, copy the HTTPS URL, and run:
-
-```{image} img/github/code-button.png
-:alt: The green Code button on the repository page
-:width: 60%
-```
-
-```{image} img/github/https-url-clone-cli.png
-:alt: The Code menu with the copy button next to the HTTPS URL
-:width: 60%
-```
-
-
-```bash
-git clone https://github.com/<owner>/<repo>.git
-```
-
-Check that it works: each member commits and pushes one small change (for example, adding their
-name to `README.md`) under their own account. If all three commits show up in the repository's
-history, you are set up.
-
 *Screenshots: [GitHub Docs](https://docs.github.com), CC BY 4.0. Your screen may differ slightly.*
 
 
