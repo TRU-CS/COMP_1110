@@ -54,7 +54,7 @@ By the end of this course, students will be able to:
 | **Weekly Worksheets** (10 × 2%) | **20%** | Individual, on the COMP 1110 Practice Platform (link posted on Moodle) | Due every Thursday, 11:59 PM |
 | **Midterm 1** | **25%** | Closed-book, 60 min, on Moodle in class | Thu, Oct 15 (Week 6) |
 | **Midterm 2** | **25%** | Closed-book, 60 min, on Moodle in class | Thu, Nov 19 (Week 11) |
-| **Final Project** | **25%** | Group build, **individually graded** | Proposal Nov 5 · Presentations Dec 8 & 10 · Final submission Dec 8 |
+| **Final Project** | **25%** | Group build, **individually graded** | Proposal Nov 5 · Group presentations Dec 8 & 10 · Final submission Dec 8 |
 | **Attendance & Participation** | **5%** | Moodle QR check-in each class | Every class |
 | **Total** | **100%** | | |
 
@@ -111,7 +111,7 @@ copy from it. See [Academic Integrity](#academic-integrity).
 
 | Component | Weight (of final grade) | Basis |
 | :--- | :--- | :--- |
-| **Individual presentation & Q&A** | **12%** | Your own 4-minute segment of the team presentation, plus your answers when questioned about the code |
+| **Group presentation & Q&A** (marked individually) | **12%** | Your own 4-minute segment of the team presentation, plus your answers when questioned about the code |
 | **Team deliverable** (code, tests, documentation), **adjusted by peer factor** | **10%** | One team mark, multiplied by your individual peer-assessment factor |
 | **Project proposal** (team) | **3%** | 1-page team submission: problem, inputs, outputs, planned functions, who owns what, GitHub repository URL |
 
@@ -139,8 +139,8 @@ Classes run Tuesdays and Thursdays, 9:30 – 11:20 AM in OM 1241. Chapter number
 | **11** | Tue Nov 17 <br> **Thu Nov 19** | Tuples, sorting with `sorted` and `items()` · Sets and unique collections *(supplementary notes)* · Review (Tue) · **MIDTERM 2** — Moodle, closed-book, 9:30–10:30 (Thu) | [Ch. 10 — Tuples](https://www.py4e.com/html3/10-tuples) + Moodle notes | **W9** (Fri Nov 20) <br> **Midterm 2** |
 | **12** | Tue Nov 24 <br> Thu Nov 26 | **Object-oriented programming I:** why classes, defining a class, attributes, methods, `__init__`, objects vs. dictionaries (Tue) <br> **OOP II:** multiple instances, object lifecycle, a first look at inheritance (Thu) | [Ch. 14 — Objects](https://www.py4e.com/html3/14-objects) | **W10** (Thu Nov 26) |
 | **13** | Tue Dec 1 <br> Thu Dec 3 | **Formatting & code style:** PEP 8, naming, layout, comments that earn their place, auto-formatters and linters · Polishing your project for submission (Tue) <br> Project work session & presentation prep (Thu) | [PEP 8 style guide](https://peps.python.org/pep-0008/) | **W11** (Thu Dec 3) |
-| **14** | **Tue Dec 8** <br> *(last day of classes)* | **Final project presentations & Q&A** · Where to go next: databases, web data, and data visualization · Course wrap-up | — | **Presentations** <br> **Final project due 11:59 PM** |
-| **Exam period** | **Thu Dec 10** <br> *(scheduled final exam slot)* | **Final project presentations & Q&A** (continued) — time and room as in the TRU final exam schedule | — | **Presentations** |
+| **14** | **Tue Dec 8** <br> *(last day of classes)* | **Final project group presentations & Q&A** · Where to go next: databases, web data, and data visualization · Course wrap-up | — | **Presentations** <br> **Final project due 11:59 PM** |
+| **Exam period** | **Thu Dec 10** <br> *(scheduled final exam slot)* | **Final project group presentations & Q&A** (continued) — time and room as in the TRU final exam schedule | — | **Presentations** |
 
 > **Tuesday, December 8 is the last day of classes.** Final code, documentation, and confidential
 > peer assessments are due that night at **11:59 PM**.
