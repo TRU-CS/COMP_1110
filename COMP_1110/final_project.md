@@ -1,4 +1,4 @@
-# COMP 1110 — Group Final Project (25%)
+# Group Final Project
 
 ---
 
@@ -177,6 +177,75 @@ organised the same way.
 
 The ownership plan matters well beyond the 3%: at the end of term I read it next to the commit
 history and the peer assessments. Three documents that agree tell a clear story.
+
+#### Setting up your team repository
+
+Do this before you submit the proposal, so the URL in point 5 already works. **One member**
+creates the repository; everyone else joins it as a collaborator.
+
+**1. Every member** — have a GitHub account, and send your username to the teammate creating
+the repository.
+
+**2. One member creates the repository**
+
+- Sign in to [github.com](https://github.com), click **+** (top right) → **New repository**.
+
+```{image} img/github/repo-create-global-nav-update.png
+:alt: The + menu with New repository highlighted
+:width: 40%
+```
+
+- **Repository name**: something short and descriptive, e.g. `comp1110-budget-tracker`.
+
+```{image} img/github/create-repository-name.png
+:alt: The Repository name field
+:width: 80%
+```
+
+- Set it to **Public**.
+- Tick **Add a README file**, so the repository is not empty and can be cloned straight away.
+- **Add .gitignore** → choose **Python**.
+- Click **Create repository**.
+
+**3. The same member adds the others as collaborators**
+
+- In the repository, open **Settings** → **Collaborators** (under *Access*). GitHub may ask
+  for your password again.
+
+```{image} img/github/repo-actions-settings.png
+:alt: The repository tabs with Settings highlighted
+:width: 100%
+```
+
+- Click **Add people**, type a teammate's GitHub username, and click **Add … to this
+  repository**. Repeat for each teammate.
+
+**4. Every other member accepts the invitation** — it arrives by email and also appears at
+`github.com/<owner>/<repo>/invitations`. Until you accept it, you cannot push. The invitation
+expires after 7 days; if it does, ask for a new one.
+
+**5. Everyone clones the repository** — click the green **Code** button, copy the HTTPS URL, and run:
+
+```{image} img/github/code-button.png
+:alt: The green Code button on the repository page
+:width: 60%
+```
+
+```{image} img/github/https-url-clone-cli.png
+:alt: The Code menu with the copy button next to the HTTPS URL
+:width: 60%
+```
+
+
+```bash
+git clone https://github.com/<owner>/<repo>.git
+```
+
+Check that it works: each member commits and pushes one small change (for example, adding their
+name to `README.md`) under their own account. If all three commits show up in the repository's
+history, you are set up.
+
+*Screenshots: [GitHub Docs](https://docs.github.com), CC BY 4.0. Your screen may differ slightly.*
 
 
 ### Milestone 2 — the status report (ungraded, required)
