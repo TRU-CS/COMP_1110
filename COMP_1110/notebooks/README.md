@@ -18,6 +18,7 @@ Weekly lecture notes for COMP 1110 (Fall 2026), written as Jupyter notebooks tha
 | `week09_lists.ipynb` | 9 | Nov 3, 5 | Lists, mutability, aliasing · **proposal due Thu** |
 | `week10_dictionaries.ipynb` | 10 | Nov 10 | Dictionaries, counting patterns *(no Thu class)* |
 | `week11_tuples_sets_review.ipynb` | 11 | Nov 17 | Tuples, sets, Midterm 2 review (midterm Thu Nov 19) |
+| `week11_midterm2_practice.ipynb` | 11 | — | Midterm 2 practice — strings, lists and dictionaries: 45 short-answer questions (predict the output, find the bug, explain) with answer reveals, plus 19 write-the-code exercises (≤ 5 lines) with model solutions |
 | `week12_oop.ipynb` | 12 | Nov 24, 26 | OOP I: classes, `__init__`, `self` · OOP II: instances, inheritance |
 | `week13_style_and_polish.ipynb` | 13 | Dec 1 | PEP 8, linters, project polish checklist |
 

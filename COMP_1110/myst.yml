@@ -64,6 +64,7 @@ project:
     - file: notebooks/week09_lists.ipynb
     - file: notebooks/week10_dictionaries.ipynb
     # - file: notebooks/week11_tuples_sets_review.ipynb
+    - file: notebooks/week11_midterm2_practice.ipynb
     # - file: notebooks/week12_oop.ipynb
     # - file: notebooks/week13_style_and_polish.ipynb
 site:
