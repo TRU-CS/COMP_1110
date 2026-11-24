@@ -67,7 +67,6 @@ project:
     - file: notebooks/week11_midterm2_practice.ipynb
     - file: notebooks/week12_scripts_testing_github.ipynb
     - file: notebooks/week12_pokemon_project_walkthrough.ipynb
-    - file: worksheets/worksheet11_team_repo_lab.md
     # - file: notebooks/week13_style_and_polish.ipynb
 site:
   template: book-theme
