@@ -19,7 +19,8 @@ Weekly lecture notes for COMP 1110 (Fall 2026), written as Jupyter notebooks tha
 | `week10_dictionaries.ipynb` | 10 | Nov 10 | Dictionaries, counting patterns *(no Thu class)* |
 | `week11_tuples_sets_review.ipynb` | 11 | Nov 17 | Tuples, sets, Midterm 2 review (midterm Thu Nov 19) |
 | `week11_midterm2_practice.ipynb` | 11 | — | Midterm 2 practice — strings, lists and dictionaries: 45 short-answer questions (predict the output, find the bug, explain) with answer reveals, plus 19 write-the-code exercises (≤ 5 lines) with model solutions |
-| `week12_oop.ipynb` | 12 | Nov 24, 26 | OOP I: classes, `__init__`, `self` · OOP II: instances, inheritance |
+| `week12_scripts_testing_github.ipynb` | 12 | Nov 24, 26 | Python scripts & the `__name__` guard, running `pytest` (Tue) · GitHub as a team, merge conflicts (Thu) |
+| `week12_pokemon_project_walkthrough.ipynb` | 12 | Nov 24, 26 | Worked example: a small group project (Pokemon Battle Helper) built step by step — README, dictionaries, three functions, `main()`, `__name__` guard, `test_project.py` |
 | `week13_style_and_polish.ipynb` | 13 | Dec 1 | PEP 8, linters, project polish checklist |
 
 Week 14 (Dec 8) is project presentations — no lecture notebook.

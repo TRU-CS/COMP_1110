@@ -65,7 +65,9 @@ project:
     - file: notebooks/week10_dictionaries.ipynb
     - file: notebooks/week11_tuples_sets_review.ipynb
     - file: notebooks/week11_midterm2_practice.ipynb
-    # - file: notebooks/week12_oop.ipynb
+    - file: notebooks/week12_scripts_testing_github.ipynb
+    - file: notebooks/week12_pokemon_project_walkthrough.ipynb
+    - file: worksheets/worksheet11_team_repo_lab.md
     # - file: notebooks/week13_style_and_polish.ipynb
 site:
   template: book-theme

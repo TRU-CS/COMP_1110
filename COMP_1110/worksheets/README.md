@@ -17,7 +17,7 @@ records what each student finished — nothing is uploaded to Moodle.
 | `worksheet08_tic_tac_toe.ipynb` | 8 | Tue Nov 3 | Mon Nov 9 | Lists, aliasing (8) | Tic-tac-toe referee + bots |
 | `worksheet09_lyric_lab.ipynb` | 9 | Tue Nov 10 | Mon Nov 16 | Dictionaries (9) | Lyric Lab word counts |
 | `worksheet10_common_ground.ipynb` | 10 | Tue Nov 17 | Mon Nov 23 | Tuples, sorting, sets (10 + notes) | Common Ground similarity map |
-| `worksheet11_robot_arena.ipynb` | 11 | Tue Nov 24 | Mon Nov 30 | OOP (14) | Robot Arena battles |
+| `worksheet11_team_repo_lab.md` | 11 | Tue Nov 24 | Thu Dec 3 | Scripts, `pytest`, GitHub (Week 12) | Bill Splitter + first project function |
 
 Eleven consecutive release weeks, Sep 15 through Nov 24, leaving Weeks 13–14 clear for the final
 project. Two due dates sit next to an assessment and are explained inside the worksheets themselves:
@@ -39,8 +39,14 @@ Identical structure, so students learn it once:
 8. **Checklist · what's next.**
 
 Every worksheet is individual work: students may discuss approaches but **must not share code**,
-as the syllabus requires. A few worksheets still promise a Tuesday class activity — the WS8 bots
-and the WS11 robot championship are the ones that need ~15 minutes at the front of the room.
+as the syllabus requires. One worksheet still promises a Tuesday class activity — the WS8 bots
+need ~15 minutes at the front of the room.
+
+**WS11 is the exception to everything below.** It is a Markdown page, not a notebook, done in
+each team's GitHub repository on the student's own laptop, and it is **not on the practice
+platform** (the ingester only reads `worksheetNN_*.ipynb`). It is marked from each student's
+commits: `practice/<github-username>/` plus one function and test in the team's `project.py`.
+It replaced the OOP worksheet (*Robot Arena*), which is in `archive/` with the Week 12 OOP notes.
 
 ## Self-checks
 

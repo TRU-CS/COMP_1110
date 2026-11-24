@@ -185,7 +185,7 @@ Both must pass. If `--execute` fails, fix the code — do not remove the check.
 | 9 | Nov 3, 5 | Lists, mutability, slices, methods, `split`/`join`, aliasing | 8 |
 | 10 | Nov 10 only | Dictionaries, counting patterns, `get`, looping | 9 |
 | 11 | Nov 17, 19 | Tuples, `sorted`, `items()`, **sets**; Midterm 2 review (Tue) | 10 |
-| 12 | Nov 24, 26 | OOP I: classes, attributes, methods, `__init__` (Tue); OOP II: instances, inheritance (Thu) | 14 |
+| 12 | Nov 24, 26 | Scripts, `__name__` guard, running `pytest` (Tue); GitHub as a team (Thu). *Replaced OOP in Fall 2026* | Project brief + pytest |
 | 13 | Dec 1 | **Formatting & code style**: PEP 8, naming, layout, linters | PEP 8 |
 
 Week 14 (Dec 8) is project presentations — no lecture notebook.

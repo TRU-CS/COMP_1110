@@ -35,7 +35,8 @@ minimum, and they are what I run first.
 
 ### Required content
 
-- **At least one class of your own design** *(Week 12)*
+- **A `main()` guarded by `if __name__ == "__main__":`**, so that `pytest` can import
+  `project.py` without running it *(Week 12)*
 - Tests written as **`pytest` functions using `assert`** *(Week 8)*
 - **A docstring on every function** *(Week 8)*
 - **PEP 8-conformant formatting** *(Week 13)*
@@ -334,7 +335,7 @@ requirements.txt — which libraries, and why you need them.
 data/ — what is in it and where it came from.
 
 ## Design decisions
-Why a dictionary here, why a class there, what you tried first and abandoned.
+Why a dictionary here, why a list there, what you tried first and abandoned.
 This is the section I read most closely. Explain your reasoning, not just your
 structure.
 
