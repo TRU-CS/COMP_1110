@@ -160,8 +160,8 @@ organised the same way.
 | 0 | **Team formed + Teamwork Contract** — 1 page, from the team | Thu Oct 1 (names) · Sun Oct 4 (contract) | Required, ungraded |
 | 1 | **Project proposal** — 1 page, from the team | **Thu Nov 5** | **3%** |
 | 2 | **Status report** — 2 pages max, from the team | Thu Nov 19 | Required, ungraded |
-| 3 | **Group presentation & Q&A** — the team presents together; your own segment is marked | Tue Dec 8 / Thu Dec 10 (scheduled final exam slot) | **12%**, marked individually |
-| 4 | **Final submission** — `project.py`, `test_project.py`, `requirements.txt`, `README.md`, video link | **Tue Dec 8, 11:59 PM** | **10%** × peer factor |
+| 3 | **Oral examination** — 5 minutes per member, in your team's time slot; you explain the functions you wrote | Tue Dec 8 / Thu Dec 10 (see [§5](#oral-exam)) | **12%**, marked individually |
+| 4 | **Final submission** — `project.py`, `test_project.py`, `requirements.txt`, `README.md`, AI Studio app link | **Tue Dec 8, 11:59 PM** | **10%** × peer factor |
 | 4b | **Peer assessments** — confidential, individual | Tue Dec 8, 11:59 PM | Sets your peer factor |
 
 
@@ -251,7 +251,7 @@ November; in December there is not.
 | :--- | :--- | :--- |
 | **Project proposal** | **3%** | One team submission |
 | **Team deliverable** — code, tests, documentation | **10%** | One team mark × **your** peer factor |
-| **Group presentation & Q&A** | **12%** | Presented as a team, **marked individually** |
+| **Oral examination** | **12%** | Team time slot, **marked individually** |
 | **Total** | **25%** | |
 
 
@@ -271,26 +271,87 @@ share of the 10% team deliverable:
 | Contributed essentially nothing (documented) | may be **0** |
 
 **Ratings are corroborated, not taken at face value.** I check every peer assessment against the
-GitHub commit history, the ownership plan in your proposal, and your Q&A performance. Retaliatory
+GitHub commit history, the ownership plan in your proposal, and your oral examination. Retaliatory
 ratings, collusive ones — *"we all give each other 5"* — and ratings with no justification are
 **discarded**. Submit no peer assessment and you receive a **1.00** factor yourself and forfeit
 any say about your teammates.
 
 ---
 
-## 5. Presentation & Q&A
+(oral-exam)=
+## 5. Oral examination
 
-**12% of your final grade — you present as a team, but each member is marked individually.**
-Each team gets **10 minutes** on
-**Tue Dec 8** or **Thu Dec 10** (the course's scheduled final exam slot, used for
-presentations instead of an exam): a live demo, a segment from every member, then open Q&A.
+**12% of your final grade, marked individually.** There is no team presentation. Instead, each
+team has one time slot with **5 minutes per member**: a team of 3 gets 15 minutes, a team of 4
+gets 20, and a team of 2 gets 10. The whole team comes in together, and I examine each member in
+turn.
 
-### The demo video
-- Create a 3 mins video to demonstrate your project in action, as with slides, screenshots, voiceover, and/or live action.
-- You can use Microsoft Teams to record your screen and share a link of the recording. 
-- Open with a title card giving the
-**project title**, **all team members**, and the **date recorded**, then show
-the program running.
+### What happens
+
+I open your repository and ask you to **explain the functions you wrote**: the ones your proposal
+and README list against your name, and that the commit history shows you committing. Then I ask a
+few questions about them, for example:
+
+- What does this line do? Why is it here?
+- What happens if the input is empty, negative, or the wrong type?
+- Why did you use a dictionary (or list, or loop) here and not something else?
+- Which test checks this function, and what does it check? What case does it miss?
+- How would you change it to do *X*?
+
+Only **you** answer questions about your functions; your teammates cannot answer for you. If you
+cannot explain code that your commits say you wrote, that affects this mark and can affect your
+peer factor ([§4](#the-peer-factor)).
+
+### How to prepare
+
+- Know every line of your own functions and their tests well enough to explain them without notes.
+- Be ready to run your tests (`pytest test_project.py`) and your program (`python3 project.py`)
+  on the spot.
+- Read your teammates' functions too, so that you know how yours fit into `main()`.
+- If you used AI, a tutorial, or a classmate's help, be ready to explain that code as if you had
+  written it yourself, and list it in the README's **Sources** section.
+
+### Rules
+
+- Bring a laptop with your repository cloned and Python and `pytest` installed. I will also have
+  your repository open on my screen.
+- **Arrive 5 minutes early** and wait outside. Slots run back to back, so a late start cannot run
+  over into the next team's time.
+- A slot **cannot be swapped or made up** without an approved academic concession. A member who
+  misses the team's slot loses this 12%. Teams that want to swap slots with each other must both
+  email me **by Thu Dec 3**.
+
+### Schedule
+
+Teams were placed in slots at random. Your group number is your group on Moodle.
+
+**Tuesday, December 8** (9:30–11:20)
+
+| Time | Group | Members | Slot |
+| :--- | :--- | :---: | :---: |
+| 9:30–9:40 | **Group 10** | 2 | 10 min |
+| 9:40–10:00 | **Group 3** | 4 | 20 min |
+| 10:00–10:15 | **Group 20** | 3 | 15 min |
+| 10:15–10:30 | **Group 19** | 3 | 15 min |
+| 10:30–10:45 | **Group 15** | 3 | 15 min |
+| 10:45–11:05 | **Group 2** | 4 | 20 min |
+| 11:05–11:20 | **Group 18** | 3 | 15 min |
+
+**Thursday, December 10** (9:30–12:20, in the scheduled final exam slot)
+
+| Time | Group | Members | Slot |
+| :--- | :--- | :---: | :---: |
+| 9:30–9:45 | **Group 7** | 3 | 15 min |
+| 9:45–10:00 | **Group 12** | 3 | 15 min |
+| 10:00–10:20 | **Group 9** | 4 | 20 min |
+| 10:20–10:40 | **Group 11** | 4 | 20 min |
+| 10:40–10:55 | **Group 13** | 3 | 15 min |
+| 10:55–11:05 | **Group 17** | 2 | 10 min |
+| 11:05–11:20 | **Group 8** | 3 | 15 min |
+| 11:20–11:35 | **Group 6** | 3 | 15 min |
+| 11:35–11:50 | **Group 4** | 3 | 15 min |
+| 11:50–12:05 | **Group 16** | 3 | 15 min |
+| 12:05–12:20 | **Group 1** | 3 | 15 min |
 
 
 ---
@@ -321,7 +382,7 @@ one, and it is worth real marks.
 ```markdown
 # Project title
 
-#### Video demo: <YouTube URL>
+#### Interactive app: <Google AI Studio app URL>
 #### Team: name, name, name — COMP 1110, Fall 2026
 #### Repository: <GitHub URL>
 
@@ -358,8 +419,84 @@ Any external code, tutorial, or documentation you drew on, and where it is used.
 
 ---
 
+(ai-studio-app)=
+## 7. Interactive app (Google AI Studio)
+
+There is **no demo video**. Instead, you turn your program into an **interactive web app** with
+[Google AI Studio](https://aistudio.google.com) and put the app's link at the top of your README.
+Anyone who opens the link should be able to use your program in a browser without installing
+Python.
+
+### What is required
+
+- A working AI Studio app that does **what your `project.py` does**: same inputs, same rules,
+  same results. You can give it buttons, menus, and text boxes instead of typed input.
+- A link to it on the **`#### Interactive app:`** line of your README (see the template in
+  [§6](#repository-readme)). Test the link from a browser where you are **not** signed in, or ask
+  a classmate to open it. If I cannot open it, it counts as missing.
+- A sentence in the README's **Sources** section saying the app was generated with Google AI
+  Studio, and anything you changed by hand.
+
+**`project.py` and `test_project.py` are still what I mark for code, tests, and design.** AI
+Studio writes the app in its own language (usually TypeScript), not Python, and that generated
+code is not graded. The app is how people use your work; the Python is how you show you can
+write it.
+
+### How to build and publish it
+
+One team member does this, signed in with a personal Google (Gmail) account. TRU does not
+provide Google accounts, so if nobody on your team has one, create a free one at
+[accounts.google.com](https://accounts.google.com).
+
+**1. Open Build mode.** Go to [aistudio.google.com](https://aistudio.google.com) and click
+**Build** in the left-hand menu.
+
+**2. Describe the app and give it your code.** In the prompt box, paste a prompt like the one
+below, then paste the full contents of your `project.py` underneath it:
+
+```text
+Turn the Python program below into a simple interactive web app.
+- Keep the exact same logic, rules, and results as the Python code.
+  Do not add new features.
+- Show the same error messages when the user gives bad input.
+- Put the title "<project title>" and the names "<name, name, name>" at the top.
+
+<You can add more customized design prompts here such as make it a vintage game, make the theme starworld, etc...>
+
+<paste project.py here>
+```
+
+**3. Check that it behaves like your program.** The app appears in the preview on the right.
+Try the same inputs you use in `test_project.py`, including the bad ones, and compare the
+results with `python3 project.py`. If something is wrong, tell it in the chat box, e.g.
+*"With input 7 the Python prints 49 but the app shows 14. Fix it to match the Python."* Repeat
+until they agree.
+
+**4. Publish it.** Click **Publish** (top right). Accept the suggested web address or type your
+own (for example `comp1110-budget-tracker`), then click **Publish App**. After a minute or two
+you get a public URL. Open it in a private/incognito window to check that it works.
+
+- Publishing is free on AI Studio's **Starter Tier** (up to two apps per account), with no
+  credit card. If your account is not offered it, try a teammate's account. **Do not add a
+  credit card or billing account for this course.**
+- If nobody on your team can publish, use **Share** instead: share the app so that
+  *anyone with the link* can view it, and put that link in your README. Tell me in the README
+  that it is a share link.
+
+**5. Paste the URL into your README** on the `#### Interactive app:` line, then commit and push.
+
+**6. If you change `project.py` later**, open the app in AI Studio again, paste the new code with
+*"Update the app to match this new version"*, check it again, and publish again. The URL stays
+the same.
+
+*AI Studio changes often, so a button may have moved or been renamed. Google's own instructions
+are [Build apps in Google AI Studio](https://ai.google.dev/gemini-api/docs/aistudio-build-mode)
+and [Deploy apps from AI Studio](https://ai.google.dev/gemini-api/docs/aistudio-deploying).*
+
+---
+
 *Acknowledgement: the file structure (`project.py`, `test_project.py`, `requirements.txt`), the
-README and demo-video requirements, the Good/Better/Best framing, and the
+README requirement, the Good/Better/Best framing, and the
 scope–correctness–design–style grading axes are adapted from Harvard University's
 [CS50P final project](https://cs50.harvard.edu/python/project/), scaled here to a three-person
 team in a first course.*
