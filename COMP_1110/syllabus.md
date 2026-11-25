@@ -141,12 +141,12 @@ Classes run Tuesdays and Thursdays, 9:30 – 11:20 AM in OM 1241. Chapter number
 | **12** | Tue Nov 24 <br> Thu Nov 26 | **From notebook to script:** running Python files from the terminal, `main()` and the `if __name__ == "__main__":` guard · **The testing script:** running `test_project.py` with `pytest`, reading failure reports (Tue) <br> **GitHub as a team:** cloning the team repository, pull → commit → push from your own account, `.gitignore`, merge conflicts (Thu) | [Final project brief](final_project.md) <br> [Get Started — pytest](https://docs.pytest.org/en/stable/getting-started.html) | **W10** (Thu Nov 26) |
 | **13** | Tue Dec 1 <br> Thu Dec 3 | **Formatting & code style:** PEP 8, naming, layout, comments that earn their place, auto-formatters and linters · Polishing your project for submission (Tue) <br> Project work session & final exam prep (Thu) | [PEP 8 style guide](https://peps.python.org/pep-0008/) | **W11** (Thu Dec 3) |
 | **14** | **Tue Dec 8** <br> *(last day of classes)* | Where to go next: databases, web data, and data visualization · Course wrap-up | — | **Final project due 11:59 PM** |
-| **Exam period** | **Thu Dec 10** <br> *(scheduled final exam slot)* | **Final exam** on your own project code, 10:00 AM, OM 1241, in person, on paper | — | **Final exam** |
+| **Exam period** | **Thu Dec 10** <br> *(scheduled final exam slot)* | **Final exam** on your own project code, 10:00 AM–12:00 PM, OM 1241, in person, on paper | — | **Final exam** |
 
 > **Tuesday, December 8 is the last day of classes.** Final code, documentation, and confidential
 > peer assessments are due that night at **11:59 PM**.
 >
-> **The final exam is on Thursday, December 10, at 10:00 AM in OM 1241**, in person and on paper. It is not a
+> **The final exam is on Thursday, December 10, from 10:00 AM to 12:00 PM in OM 1241**, in person and on paper. It is not a
 > general exam on the whole course: each student answers questions about the functions they wrote
 > for the final project.
 
