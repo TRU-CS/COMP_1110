@@ -281,8 +281,8 @@ any say about your teammates.
 (oral-exam)=
 ## 5. Oral examination
 
-**12% of your final grade, marked individually.** There is no team presentation. The exam is **online, in Microsoft Teams**. The whole team
-joins together, and I examine each member in turn.
+**12% of your final grade, marked individually.** There is no team presentation. The exam is **in person, in OM 1241**, on both days. The whole
+team comes in together, and I examine each member in turn.
 
 ### What happens
 
@@ -298,23 +298,6 @@ few questions about them, for example:
 
 Only **you** answer questions about your functions; your teammates cannot answer for you. 
 
-### Joining the meeting
-
-All slots on both days use the same Teams meeting:
-
-- **Join:** <https://teams.microsoft.com/meet/274011644576197?p=87uNfobbLO66ifppjO>
-- **Meeting ID:** 274 011 644 576 197
-- **Passcode:** Qf3iY6mH
-
-You wait in the **lobby** until I admit you. I only admit people whose Teams display name
-matches a student in the group whose slot it is, so:
-
-- **Show your full name as it appears on Moodle.** If you join from the browser without signing
-  in, type your full name when Teams asks for it. If you join with an account whose name is
-  different (for example a nickname or a personal account), change it before your slot.
-- Someone I cannot identify stays in the lobby.
-- Test your camera, microphone, and screen sharing in Teams before the day.
-
 ### How to prepare
 
 - Know every line of your own functions and their tests well enough to explain them without notes.
@@ -324,11 +307,9 @@ matches a student in the group whose slot it is, so:
 
 ### Rules
 
-- Keep your **camera on** while you are being
-  examined.
-- **Join 5 minutes early** and wait in the lobby. Slots run back to back, so a late start cannot
-  run over into the next team's time. If I am still with the previous team, keep waiting.
-- Leave the meeting when your team's slot ends.
+- **Arrive 5 minutes early** and wait outside OM 1241 until I call your team in. Slots run back to
+  back, so a late start cannot run over into the next team's time. If I am still with the
+  previous team, keep waiting.
 - A slot **cannot be swapped or made up** without an approved academic concession. A member who
   misses the team's slot loses this 12%. Teams that want to swap slots with each other must both
   email me **by Thu Dec 3**.
@@ -337,7 +318,7 @@ matches a student in the group whose slot it is, so:
 
 Teams were placed in slots at random. Your group number is your group on Moodle.
 
-**Tuesday, December 8** (9:30–11:20)
+**Tuesday, December 8** (9:30–11:20, OM 1241)
 
 | Time | Group |
 | :--- | :--- |
@@ -349,21 +330,21 @@ Teams were placed in slots at random. Your group number is your group on Moodle.
 | 10:45–11:05 | **Group 2** |
 | 11:05–11:20 | **Group 18** |
 
-**Thursday, December 10** (9:30–12:20, in the scheduled final exam slot, but online)
+**Thursday, December 10** (9:00–11:50, OM 1241)
 
 | Time | Group |
 | :--- | :--- |
-| 9:30–9:45 | **Group 7** |
-| 9:45–10:00 | **Group 12** |
-| 10:00–10:20 | **Group 9** |
-| 10:20–10:40 | **Group 11** |
-| 10:40–10:55 | **Group 13** |
-| 10:55–11:05 | **Group 17** |
-| 11:05–11:20 | **Group 8** |
-| 11:20–11:35 | **Group 6** |
-| 11:35–11:50 | **Group 4** |
-| 11:50–12:05 | **Group 16** |
-| 12:05–12:20 | **Group 1** |
+| 9:00–9:15 | **Group 7** |
+| 9:15–9:30 | **Group 12** |
+| 9:30–9:50 | **Group 9** |
+| 9:50–10:10 | **Group 11** |
+| 10:10–10:25 | **Group 13** |
+| 10:25–10:35 | **Group 17** |
+| 10:35–10:50 | **Group 8** |
+| 10:50–11:05 | **Group 6** |
+| 11:05–11:20 | **Group 4** |
+| 11:20–11:35 | **Group 16** |
+| 11:35–11:50 | **Group 1** |
 
 
 ---
