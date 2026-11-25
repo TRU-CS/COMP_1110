@@ -112,7 +112,7 @@ copy from it. See [Academic Integrity](#academic-integrity).
 
 | Component | Weight (of final grade) | Basis |
 | :--- | :--- | :--- |
-| **Oral examination** (marked individually) | **12%** | 5 minutes per student, in your team's time slot: explaining the functions you wrote and answering questions about them. See the [schedule](final_project.md#oral-exam) |
+| **Oral examination** (marked individually) | **12%** | 5 minutes per student, in your team's time slot: explaining the functions you wrote and answering questions about them |
 | **Team deliverable** (code, tests, documentation, interactive app link), **adjusted by peer factor** | **10%** | One team mark, multiplied by your individual peer-assessment factor |
 | **Project proposal** (team) | **3%** | 1-page team submission: problem, inputs, outputs, planned functions, who owns what, GitHub repository URL |
 

@@ -28,7 +28,7 @@ Your project must be implemented in **Python**.
 - **`requirements.txt`**, listing any pip-installable library your project needs, one per line,
   so that somebody else can run `pip install -r requirements.txt`. If you use nothing beyond the
   standard library, submit the file empty with a comment saying so.
-- **`README.md`** — see [§6, Repository & README](#repository-readme).
+- **`README.md`** — see [§5, Repository & README](#repository-readme).
 
 You may add as many further files, functions, and classes as you like; those four files are the
 minimum, and they are what I run first.
@@ -160,7 +160,7 @@ organised the same way.
 | 0 | **Team formed + Teamwork Contract** — 1 page, from the team | Thu Oct 1 (names) · Sun Oct 4 (contract) | Required, ungraded |
 | 1 | **Project proposal** — 1 page, from the team | **Thu Nov 5** | **3%** |
 | 2 | **Status report** — 2 pages max, from the team | Thu Nov 19 | Required, ungraded |
-| 3 | **Oral examination** — 5 minutes per member, in your team's time slot; you explain the functions you wrote | Tue Dec 8 / Thu Dec 10 (see [§5](#oral-exam)) | **12%**, marked individually |
+| 3 | **Oral examination** — 5 minutes per member, in your team's time slot; you explain the functions you wrote | Tue Dec 8 / Thu Dec 10 | **12%**, marked individually |
 | 4 | **Final submission** — `project.py`, `test_project.py`, `requirements.txt`, `README.md`, AI Studio app link | **Tue Dec 8, 11:59 PM** | **10%** × peer factor |
 | 4b | **Peer assessments** — confidential, individual | Tue Dec 8, 11:59 PM | Sets your peer factor |
 
@@ -278,97 +278,8 @@ any say about your teammates.
 
 ---
 
-(oral-exam)=
-## 5. Oral examination
-
-**12% of your final grade, marked individually.** There is no team presentation. The exam is **online, in Microsoft Teams**, on both days. The
-whole team joins together, and I examine each member in turn.
-
-### What happens
-
-I open your repository and ask you to **explain the functions you wrote**: the ones your proposal
-and README list against your name, and that the commit history shows you committing. Then I ask a
-few questions about them, for example:
-
-- What does this line do? Why is it here?
-- What happens if the input is empty, negative, or the wrong type?
-- Why did you use a dictionary (or list, or loop) here and not something else?
-- Which test checks this function, and what does it check? What case does it miss?
-- How would you change it to do *X*?
-
-Only **you** answer questions about your functions; your teammates cannot answer for you. 
-
-### Joining the meeting
-
-All slots on both days use the same Teams meeting:
-
-- **Join:** <https://teams.microsoft.com/meet/274011644576197?p=87uNfobbLO66ifppjO>
-- **Meeting ID:** 274 011 644 576 197
-- **Passcode:** Qf3iY6mH
-
-You wait in the **lobby** until I admit you. I only admit people whose Teams display name
-matches a student in the group whose slot it is, so:
-
-- **Show your full name as it appears on Moodle.** If you join from the browser without signing
-  in, type your full name when Teams asks for it. If you join with an account whose name is
-  different (for example a nickname or a personal account), change it before your slot.
-- Someone I cannot identify stays in the lobby.
-- Test your camera, microphone, and screen sharing in Teams before the day.
-
-### How to prepare
-
-- Know every line of your own functions and their tests well enough to explain them without notes.
-- Read your teammates' functions too, so that you know how yours fit into `main()`.
-- If you used AI, a tutorial, or a classmate's help, be ready to explain that code as if you had
-  written it yourself, and list it in the README's **Sources** section.
-
-### Rules
-
-- Keep your **camera on** while you are being examined.
-- **Join 5 minutes early** and wait in the lobby. Slots run back to back, so a late start cannot
-  run over into the next team's time. If I am still with the previous team, keep waiting.
-- Leave the meeting when your team's slot ends.
-- A slot **cannot be swapped or made up** without an approved academic concession. A member who
-  misses the team's slot loses this 12%. Teams that want to swap slots with each other must both
-  email me **by Thu Dec 3**.
-
-### Schedule
-
-Teams were placed in slots at random. Your group number is your group on Moodle.
-
-**Tuesday, December 8** (9:30–11:20, online)
-
-| Time | Group |
-| :--- | :--- |
-| 9:30–9:40 | **Group 10** |
-| 9:40–10:00 | **Group 3** |
-| 10:00–10:15 | **Group 20** |
-| 10:15–10:30 | **Group 19** |
-| 10:30–10:45 | **Group 15** |
-| 10:45–11:05 | **Group 2** |
-| 11:05–11:20 | **Group 18** |
-
-**Thursday, December 10** (9:00–11:50, online)
-
-| Time | Group |
-| :--- | :--- |
-| 9:00–9:15 | **Group 7** |
-| 9:15–9:30 | **Group 12** |
-| 9:30–9:50 | **Group 9** |
-| 9:50–10:10 | **Group 11** |
-| 10:10–10:25 | **Group 13** |
-| 10:25–10:35 | **Group 17** |
-| 10:35–10:50 | **Group 8** |
-| 10:50–11:05 | **Group 6** |
-| 11:05–11:20 | **Group 4** |
-| 11:20–11:35 | **Group 16** |
-| 11:35–11:50 | **Group 1** |
-
-
----
-
 (repository-readme)=
-## 6. Repository & README
+## 5. Repository & README
 
 ### GitHub
 
@@ -431,7 +342,7 @@ Any external code, tutorial, or documentation you drew on, and where it is used.
 ---
 
 (ai-studio-app)=
-## 7. Interactive app (Google AI Studio)
+## 6. Interactive app (Google AI Studio)
 
 There is **no demo video**. Instead, you turn your program into an **interactive web app** with
 [Google AI Studio](https://aistudio.google.com) and put the app's link at the top of your README.
@@ -443,7 +354,7 @@ Python.
 - A working AI Studio app that does **what your `project.py` does**: same inputs, same rules,
   same results. You can give it buttons, menus, and text boxes instead of typed input.
 - A link to it on the **`#### Interactive app:`** line of your README (see the template in
-  [§6](#repository-readme)). The link must be set to **Public: Anyone with the link can view**. If I cannot open it, it
+  [§5](#repository-readme)). The link must be set to **Public: Anyone with the link can view**. If I cannot open it, it
   counts as missing.
 - A sentence in the README's **Sources** section saying the app was generated with Google AI
   Studio, and anything you changed by hand.
