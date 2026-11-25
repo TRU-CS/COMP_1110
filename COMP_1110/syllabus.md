@@ -54,7 +54,7 @@ By the end of this course, students will be able to:
 | **Weekly Worksheets** (10 × 2%) | **20%** | Individual, on the COMP 1110 Practice Platform (link posted on Moodle) | Due every Thursday, 11:59 PM |
 | **Midterm 1** | **25%** | Closed-book, 60 min, on Moodle in class | Thu, Oct 15 (Week 6) |
 | **Midterm 2** | **25%** | Closed-book, 60 min, on Moodle in class | Thu, Nov 19 (Week 11) |
-| **Final Project** | **25%** | Group build, **individually graded** | Proposal Nov 5 · Oral examinations Dec 8 & 10 · Final submission Dec 8 |
+| **Final Project** | **25%** | Group build, **individually graded** | Proposal Nov 5 · Final submission Dec 8 · Final exam on your own code Dec 10 |
 | **Attendance & Participation** | **5%** | Moodle QR check-in each class | Every class |
 | **Total** | **100%** | | |
 
@@ -112,7 +112,7 @@ copy from it. See [Academic Integrity](#academic-integrity).
 
 | Component | Weight (of final grade) | Basis |
 | :--- | :--- | :--- |
-| **Oral examination** (marked individually) | **12%** | 5 minutes per student, in your team's time slot: explaining the functions you wrote and answering questions about them |
+| **Final exam** (individual) | **12%** | In person, on paper, Thu Dec 10: written questions about the functions you wrote. See [Final exam](final_project.md#final-exam) |
 | **Team deliverable** (code, tests, documentation, interactive app link), **adjusted by peer factor** | **10%** | One team mark, multiplied by your individual peer-assessment factor |
 | **Project proposal** (team) | **3%** | 1-page team submission: problem, inputs, outputs, planned functions, who owns what, GitHub repository URL |
 
@@ -132,23 +132,23 @@ Classes run Tuesdays and Thursdays, 9:30 – 11:20 AM in OM 1241. Chapter number
 | **3** | Tue Sep 22 <br> Thu Sep 24 | Boolean expressions and logical operators · `if` / `elif` / `else`, nested conditionals · `try` / `except` | [Ch. 3 — Conditionals](https://www.py4e.com/html3/03-conditional) | **W1** (Mon Sep 21) <br> **W2** (Thu Sep 24) |
 | **4** | Tue Sep 29 <br> Thu Oct 1 | Functions: definition, invocation, parameters, arguments, return values · Scope · Why we decompose · **Project teams formed (Thu)** | [Ch. 4 — Functions](https://www.py4e.com/html3/04-functions) | **W3** (Thu Oct 1) <br> **Teams due** (Thu Oct 1) <br> **Teamwork contract** (Sun Oct 4) |
 | **5** | Tue Oct 6 <br> Thu Oct 8 | Iteration: `while`, `for`, `break`, `continue` · Loop patterns: counting, summing, max/min · Loop-and-a-half | [Ch. 5 — Iterations](https://www.py4e.com/html3/05-iterations) | **W4** (Thu Oct 8) |
-| **6** | Tue Oct 13 <br> **Thu Oct 15** | **Introduction to Git & GitHub:** repositories, cloning, `commit` / `push`, reading a commit history, working on a repository as a team · **Final project deliverables explained:** proposal, team repository, oral examination, peer assessment, and how the individual grade is computed (Tue) <br> **MIDTERM 1** — Moodle, closed-book, 9:30–10:30 (Thu) | [GitHub — Hello World](https://docs.github.com/en/get-started/start-your-journey/hello-world) <br> Review [Ch. 1](https://www.py4e.com/html3/01-intro)–[5](https://www.py4e.com/html3/05-iterations) for Thursday | **W5** (Fri Oct 16) <br> **Midterm 1** |
+| **6** | Tue Oct 13 <br> **Thu Oct 15** | **Introduction to Git & GitHub:** repositories, cloning, `commit` / `push`, reading a commit history, working on a repository as a team · **Final project deliverables explained:** proposal, team repository, final exam, peer assessment, and how the individual grade is computed (Tue) <br> **MIDTERM 1** — Moodle, closed-book, 9:30–10:30 (Thu) | [GitHub — Hello World](https://docs.github.com/en/get-started/start-your-journey/hello-world) <br> Review [Ch. 1](https://www.py4e.com/html3/01-intro)–[5](https://www.py4e.com/html3/05-iterations) for Thursday | **W5** (Fri Oct 16) <br> **Midterm 1** |
 | **7** | Tue Oct 20 <br> Thu Oct 22 | Strings as sequences · Indexing, slicing, immutability · Traversal, `in`, string methods · **String & output formatting:** f-strings, `format()`, alignment, rounding | [Ch. 6 — Strings](https://www.py4e.com/html3/06-strings) | — |
 | **8** | Tue Oct 27 <br> Thu Oct 29 | Files: `open`, reading line by line, searching, writing files · Handling missing files (Tue) <br> **Testing & documentation:** test plans, edge cases, `assert`, writing and running tests with `pytest`, docstrings, README files (Thu) | [Ch. 7 — Files](https://www.py4e.com/html3/07-files) <br> [Get Started — pytest](https://docs.pytest.org/en/stable/getting-started.html) <br> [Documenting Python Code: A Complete Guide](https://realpython.com/documenting-python-code/) | **W6** (Thu Oct 29) |
 | **9** | Tue Nov 3 <br> Thu Nov 5 | Lists: mutability, traversal, slices, methods, `split`/`join` · Aliasing and list arguments · Parsing lines | [Ch. 8 — Lists](https://www.py4e.com/html3/08-lists) | **W7** (Thu Nov 5) <br> **Team proposal** (Thu) |
 | **10** | **Tue Nov 10** <br> ~~Thu Nov 12~~ | Dictionaries: key-value structures, counting patterns, `get`, looping over dictionaries <br> *(no class Thu — fall mid-term break)* | [Ch. 9 — Dictionaries](https://www.py4e.com/html3/09-dictionaries) | **W8** (Thu Nov 12) |
 | **11** | Tue Nov 17 <br> **Thu Nov 19** | Tuples, sorting with `sorted` and `items()` · Sets and unique collections *(supplementary notes)* · Review (Tue) · **MIDTERM 2** — Moodle, closed-book, 9:30–10:30 (Thu) | [Ch. 10 — Tuples](https://www.py4e.com/html3/10-tuples) + Moodle notes | **W9** (Fri Nov 20) <br> **Midterm 2** |
 | **12** | Tue Nov 24 <br> Thu Nov 26 | **From notebook to script:** running Python files from the terminal, `main()` and the `if __name__ == "__main__":` guard · **The testing script:** running `test_project.py` with `pytest`, reading failure reports (Tue) <br> **GitHub as a team:** cloning the team repository, pull → commit → push from your own account, `.gitignore`, merge conflicts (Thu) | [Final project brief](final_project.md) <br> [Get Started — pytest](https://docs.pytest.org/en/stable/getting-started.html) | **W10** (Thu Nov 26) |
-| **13** | Tue Dec 1 <br> Thu Dec 3 | **Formatting & code style:** PEP 8, naming, layout, comments that earn their place, auto-formatters and linters · Polishing your project for submission (Tue) <br> Project work session & oral exam prep (Thu) | [PEP 8 style guide](https://peps.python.org/pep-0008/) | **W11** (Thu Dec 3) |
-| **14** | **Tue Dec 8** <br> *(last day of classes)* | **Final project oral examinations**, 9:30–11:20, online in Microsoft Teams · Where to go next: databases, web data, and data visualization · Course wrap-up | — | **Oral exams** <br> **Final project due 11:59 PM** |
-| **Exam period** | **Thu Dec 10** <br> *(scheduled final exam slot)* | **Final project oral examinations** (continued), 9:00–11:50, online in Microsoft Teams | — | **Oral exams** |
+| **13** | Tue Dec 1 <br> Thu Dec 3 | **Formatting & code style:** PEP 8, naming, layout, comments that earn their place, auto-formatters and linters · Polishing your project for submission (Tue) <br> Project work session & final exam prep (Thu) | [PEP 8 style guide](https://peps.python.org/pep-0008/) | **W11** (Thu Dec 3) |
+| **14** | **Tue Dec 8** <br> *(last day of classes)* | Where to go next: databases, web data, and data visualization · Course wrap-up | — | **Final project due 11:59 PM** |
+| **Exam period** | **Thu Dec 10** <br> *(scheduled final exam slot)* | **Final exam** on your own project code, 9:00–12:00, in person, on paper — room as in the TRU final exam schedule | — | **Final exam** |
 
 > **Tuesday, December 8 is the last day of classes.** Final code, documentation, and confidential
 > peer assessments are due that night at **11:59 PM**.
 >
-> **There is no written final exam in this course.** The scheduled final exam slot on **Thursday,
-> December 10** is used for the remaining oral examinations — once you have done yours and
-> submitted, you are finished.
+> **The final exam is on Thursday, December 10, 9:00–12:00**, in person and on paper. It is not a
+> general exam on the whole course: each student answers questions about the functions they wrote
+> for the final project.
 
 **Readings beyond the textbook.** Four topics in this course are not in *Python for Everybody*, so
 their readings are linked directly in the schedule above:
@@ -215,8 +215,8 @@ meeting course requirements:
   accepted (grade = 0). Because December 8 is the last day of classes and final grades must be
   submitted shortly after, **no extension beyond December 11 is possible** for any reason short of a
   formal academic concession granted by the university.
-- **Oral examinations:** cannot be made up. If you miss your team's slot without an approved
-  concession, that 12% is lost regardless of your team's performance.
+- **Final exam:** cannot be made up. If you miss it without an approved academic concession,
+  that 12% is lost regardless of your team's performance.
 - **Midterms:** the Moodle quiz opens and closes at fixed times and must be written at the scheduled
   time. Deferred midterms are arranged only through the academic concession process above.
 
@@ -277,7 +277,7 @@ in an introductory course the point of every exercise is to build the mental mod
 
 **A practical test:** if I ask you in class to explain any line of your submitted code and change
 it on the spot, you should be able to. Worksheet and project marks may be adjusted following such a
-conversation. Note that the final project's oral examination (12% of your final grade) is precisely
+conversation. Note that the final exam (12% of your final grade) is precisely
 this test, conducted formally — and the midterms are closed-book with no AI access, so code you
 never understood is a debt that comes due twice.
 

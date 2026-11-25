@@ -28,7 +28,7 @@ Your project must be implemented in **Python**.
 - **`requirements.txt`**, listing any pip-installable library your project needs, one per line,
   so that somebody else can run `pip install -r requirements.txt`. If you use nothing beyond the
   standard library, submit the file empty with a comment saying so.
-- **`README.md`** — see [§5, Repository & README](#repository-readme).
+- **`README.md`** — see [§6, Repository & README](#repository-readme).
 
 You may add as many further files, functions, and classes as you like; those four files are the
 minimum, and they are what I run first.
@@ -160,7 +160,7 @@ organised the same way.
 | 0 | **Team formed + Teamwork Contract** — 1 page, from the team | Thu Oct 1 (names) · Sun Oct 4 (contract) | Required, ungraded |
 | 1 | **Project proposal** — 1 page, from the team | **Thu Nov 5** | **3%** |
 | 2 | **Status report** — 2 pages max, from the team | Thu Nov 19 | Required, ungraded |
-| 3 | **Oral examination** — 5 minutes per member, in your team's time slot; you explain the functions you wrote | Tue Dec 8 / Thu Dec 10 | **12%**, marked individually |
+| 3 | **Final exam** — in person, on paper, about the functions **you** wrote (see [§5](#final-exam)) | **Thu Dec 10, 9:00–12:00** (scheduled final exam slot) | **12%**, individual |
 | 4 | **Final submission** — `project.py`, `test_project.py`, `requirements.txt`, `README.md`, AI Studio app link | **Tue Dec 8, 11:59 PM** | **10%** × peer factor |
 | 4b | **Peer assessments** — confidential, individual | Tue Dec 8, 11:59 PM | Sets your peer factor |
 
@@ -243,6 +243,7 @@ November; in December there is not.
 
 ---
 
+(grading)=
 ## 4. Grading
 
 ### How your individual grade is computed
@@ -251,7 +252,7 @@ November; in December there is not.
 | :--- | :--- | :--- |
 | **Project proposal** | **3%** | One team submission |
 | **Team deliverable** — code, tests, documentation | **10%** | One team mark × **your** peer factor |
-| **Oral examination** | **12%** | Team time slot, **marked individually** |
+| **Final exam** (on your own code) | **12%** | **Individual** |
 | **Total** | **25%** | |
 
 
@@ -271,15 +272,58 @@ share of the 10% team deliverable:
 | Contributed essentially nothing (documented) | may be **0** |
 
 **Ratings are corroborated, not taken at face value.** I check every peer assessment against the
-GitHub commit history, the ownership plan in your proposal, and your oral examination. Retaliatory
+GitHub commit history, the ownership plan in your proposal, and your final exam. Retaliatory
 ratings, collusive ones — *"we all give each other 5"* — and ratings with no justification are
 **discarded**. Submit no peer assessment and you receive a **1.00** factor yourself and forfeit
 any say about your teammates.
 
 ---
 
+(final-exam)=
+## 5. Final exam
+
+**12% of your final grade, individual.** The final exam is **in person and on paper**, on
+**Thursday, December 10, 9:00–12:00**, in the course's scheduled final exam slot (room as in the
+TRU final exam schedule). It is about **your own project code**.
+
+### What is on your paper
+
+Every student gets a different paper. Yours shows **the functions you wrote**, printed from your
+team's repository as it stands at the submission deadline (**Tue Dec 8, 11:59 PM**). I decide which
+functions are yours from your README's *Individual contributions* section and the commit history,
+so make sure the two agree.
+
+You then answer questions about that code in writing, for example:
+
+- Explain what a given line does and why it is there.
+- Trace a call: given these arguments, what does the function return?
+- What happens if the input is empty, negative, or the wrong type?
+- Why did you use a dictionary (or list, or loop) here and not something else?
+- Which test checks this function, and what case does it miss?
+- How would you change the function to do *X*? Write the change.
+
+This is your chance to **explain the code you wrote** in your own words. If you cannot explain code
+that your commits say you wrote, that affects this mark and can affect your peer factor.
+
+### How to prepare
+
+- Know every line of your own functions and their tests well enough to explain them without notes.
+- Practise tracing your functions by hand with a few different inputs, including bad ones.
+- Read your teammates' functions too, so that you know how yours fit into `main()`.
+- If you used AI, a tutorial, or a classmate's help, be ready to explain that code as if you had
+  written it yourself, and list it in the README's **Sources** section.
+
+### Rules
+
+- **Closed-book.** No notes, laptops, phones, or AI. Bring a pen and your student ID.
+- If your README and commit history do not show any functions as yours, your paper uses your
+  team's code instead, and the peer-factor rules in [§4](#grading) apply.
+- Missing the exam without an approved academic concession means a 0 for this 12%.
+
+---
+
 (repository-readme)=
-## 5. Repository & README
+## 6. Repository & README
 
 ### GitHub
 
@@ -342,7 +386,7 @@ Any external code, tutorial, or documentation you drew on, and where it is used.
 ---
 
 (ai-studio-app)=
-## 6. Interactive app (Google AI Studio)
+## 7. Interactive app (Google AI Studio)
 
 There is **no demo video**. Instead, you turn your program into an **interactive web app** with
 [Google AI Studio](https://aistudio.google.com) and put the app's link at the top of your README.
@@ -354,7 +398,7 @@ Python.
 - A working AI Studio app that does **what your `project.py` does**: same inputs, same rules,
   same results. You can give it buttons, menus, and text boxes instead of typed input.
 - A link to it on the **`#### Interactive app:`** line of your README (see the template in
-  [§5](#repository-readme)). The link must be set to **Public: Anyone with the link can view**. If I cannot open it, it
+  [§6](#repository-readme)). The link must be set to **Public: Anyone with the link can view**. If I cannot open it, it
   counts as missing.
 - A sentence in the README's **Sources** section saying the app was generated with Google AI
   Studio, and anything you changed by hand.
