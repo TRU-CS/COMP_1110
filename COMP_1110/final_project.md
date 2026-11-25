@@ -425,8 +425,8 @@ Python.
 - A working AI Studio app that does **what your `project.py` does**: same inputs, same rules,
   same results. You can give it buttons, menus, and text boxes instead of typed input.
 - A link to it on the **`#### Interactive app:`** line of your README (see the template in
-  [§6](#repository-readme)). Test the link from a browser where you are **not** signed in, or ask
-  a classmate to open it. If I cannot open it, it counts as missing.
+  [§6](#repository-readme)). The link must be set to **Public: Anyone with the link can view**. If I cannot open it, it
+  counts as missing.
 - A sentence in the README's **Sources** section saying the app was generated with Google AI
   Studio, and anything you changed by hand.
 
@@ -435,7 +435,7 @@ Studio writes the app in its own language (usually TypeScript), not Python, and 
 code is not graded. The app is how people use your work; the Python is how you show you can
 write it.
 
-### How to build and publish it
+### How to build and share it
 
 One team member does this, signed in with a personal Google (Gmail) account. TRU does not
 provide Google accounts, so if nobody on your team has one, create a free one at
@@ -465,26 +465,25 @@ results with `python3 project.py`. If something is wrong, tell it in the chat bo
 *"With input 7 the Python prints 49 but the app shows 14. Fix it to match the Python."* Repeat
 until they agree.
 
-**4. Publish it.** Click **Publish** (top right). Accept the suggested web address or type your
-own (for example `comp1110-budget-tracker`), then click **Publish App**. After a minute or two
-you get a public URL. Open it in a private/incognito window to check that it works.
+**4. Share it.** Click **Share** (top right). Under **General access**, change the setting to
+**Public: Anyone with the link can view**, then copy the app's link.
 
-- Publishing is free on AI Studio's **Starter Tier** (up to two apps per account), with no
-  credit card. If your account is not offered it, try a teammate's account. **Do not add a
-  credit card or billing account for this course.**
-- If nobody on your team can publish, use **Share** instead: share the app so that
-  *anyone with the link* can view it, and put that link in your README. Tell me in the README
-  that it is a share link.
+```{image} img/share.png
+:alt: The Share panel in AI Studio with General access set to Public: Anyone with the link can view
+:width: 80%
+```
 
-**5. Paste the URL into your README** on the `#### Interactive app:` line, then commit and push.
+Open the link in a private/incognito window, or ask a classmate on another team to open it, to
+check that it works for someone who is not you.
+
+**5. Paste the link into your README** on the `#### Interactive app:` line, then commit and push.
 
 **6. If you change `project.py` later**, open the app in AI Studio again, paste the new code with
-*"Update the app to match this new version"*, check it again, and publish again. The URL stays
+*"Update the app to match this new version"*, and check it again. The link stays
 the same.
 
 *AI Studio changes often, so a button may have moved or been renamed. Google's own instructions
-are [Build apps in Google AI Studio](https://ai.google.dev/gemini-api/docs/aistudio-build-mode)
-and [Deploy apps from AI Studio](https://ai.google.dev/gemini-api/docs/aistudio-deploying).*
+are at [Build apps in Google AI Studio](https://ai.google.dev/gemini-api/docs/aistudio-build-mode).*
 
 ---
 
