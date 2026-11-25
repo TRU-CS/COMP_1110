@@ -283,8 +283,8 @@ any say about your teammates.
 
 **12% of your final grade, marked individually.** There is no team presentation. Instead, each
 team has one time slot with **5 minutes per member**: a team of 3 gets 15 minutes, a team of 4
-gets 20, and a team of 2 gets 10. The whole team comes in together, and I examine each member in
-turn.
+gets 20, and a team of 2 gets 10. The exam is **online, in Microsoft Teams**. The whole team
+joins together, and I examine each member in turn.
 
 ### What happens
 
@@ -302,6 +302,23 @@ Only **you** answer questions about your functions; your teammates cannot answer
 cannot explain code that your commits say you wrote, that affects this mark and can affect your
 peer factor ([§4](#the-peer-factor)).
 
+### Joining the meeting
+
+All slots on both days use the same Teams meeting:
+
+- **Join:** <https://teams.microsoft.com/meet/274011644576197?p=87uNfobbLO66ifppjO>
+- **Meeting ID:** 274 011 644 576 197
+- **Passcode:** Qf3iY6mH
+
+You wait in the **lobby** until I admit you. I only admit people whose Teams display name
+matches a student in the group whose slot it is, so:
+
+- **Show your full name as it appears on Moodle.** If you join from the browser without signing
+  in, type your full name when Teams asks for it. If you join with an account whose name is
+  different (for example a nickname or a personal account), change it before your slot.
+- Someone I cannot identify stays in the lobby.
+- Test your camera, microphone, and screen sharing in Teams before the day.
+
 ### How to prepare
 
 - Know every line of your own functions and their tests well enough to explain them without notes.
@@ -313,10 +330,12 @@ peer factor ([§4](#the-peer-factor)).
 
 ### Rules
 
-- Bring a laptop with your repository cloned and Python and `pytest` installed. I will also have
-  your repository open on my screen.
-- **Arrive 5 minutes early** and wait outside. Slots run back to back, so a late start cannot run
-  over into the next team's time.
+- Join from a computer with your repository cloned and Python and `pytest` installed. You will
+  **share your screen** to show your code and run it. Keep your **camera on** while you are being
+  examined.
+- **Join 5 minutes early** and wait in the lobby. Slots run back to back, so a late start cannot
+  run over into the next team's time. If I am still with the previous team, keep waiting.
+- Leave the meeting when your team's slot ends.
 - A slot **cannot be swapped or made up** without an approved academic concession. A member who
   misses the team's slot loses this 12%. Teams that want to swap slots with each other must both
   email me **by Thu Dec 3**.
@@ -337,7 +356,7 @@ Teams were placed in slots at random. Your group number is your group on Moodle.
 | 10:45–11:05 | **Group 2** |
 | 11:05–11:20 | **Group 18** |
 
-**Thursday, December 10** (9:30–12:20, in the scheduled final exam slot)
+**Thursday, December 10** (9:30–12:20, in the scheduled final exam slot, but online)
 
 | Time | Group |
 | :--- | :--- |
