@@ -281,9 +281,7 @@ any say about your teammates.
 (oral-exam)=
 ## 5. Oral examination
 
-**12% of your final grade, marked individually.** There is no team presentation. Instead, each
-team has one time slot with **5 minutes per member**: a team of 3 gets 15 minutes, a team of 4
-gets 20, and a team of 2 gets 10. The exam is **online, in Microsoft Teams**. The whole team
+**12% of your final grade, marked individually.** There is no team presentation. The exam is **online, in Microsoft Teams**. The whole team
 joins together, and I examine each member in turn.
 
 ### What happens
@@ -298,9 +296,7 @@ few questions about them, for example:
 - Which test checks this function, and what does it check? What case does it miss?
 - How would you change it to do *X*?
 
-Only **you** answer questions about your functions; your teammates cannot answer for you. If you
-cannot explain code that your commits say you wrote, that affects this mark and can affect your
-peer factor ([§4](#the-peer-factor)).
+Only **you** answer questions about your functions; your teammates cannot answer for you. 
 
 ### Joining the meeting
 
@@ -322,16 +318,13 @@ matches a student in the group whose slot it is, so:
 ### How to prepare
 
 - Know every line of your own functions and their tests well enough to explain them without notes.
-- Be ready to run your tests (`pytest test_project.py`) and your program (`python3 project.py`)
-  on the spot.
 - Read your teammates' functions too, so that you know how yours fit into `main()`.
 - If you used AI, a tutorial, or a classmate's help, be ready to explain that code as if you had
   written it yourself, and list it in the README's **Sources** section.
 
 ### Rules
 
-- Join from a computer with your repository cloned and Python and `pytest` installed. You will
-  **share your screen** to show your code and run it. Keep your **camera on** while you are being
+- Keep your **camera on** while you are being
   examined.
 - **Join 5 minutes early** and wait in the lobby. Slots run back to back, so a late start cannot
   run over into the next team's time. If I am still with the previous team, keep waiting.
